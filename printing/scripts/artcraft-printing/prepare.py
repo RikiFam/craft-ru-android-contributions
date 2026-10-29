@@ -70,7 +70,7 @@ labels={
 'Printer properties…':'Свойства принтера…',
 'Quality and paper type are set in Printer properties. Copies, color and page layout are set here.':'Качество и тип бумаги — в свойствах принтера. Число копий, цвет и расположение страниц — здесь.',
 'Select printer and settings…':'Выбрать принтер и настроить печать…',
-'Select Epson in the next window. Expand the options for paper, color and copies; Other options opens Epson quality settings. Printing starts only after confirmation there.':'В следующем окне выберите Epson. Разверните параметры бумаги, цвета и копий. Кнопка «Другие параметры» открывает настройки качества Epson. Печать начнётся только после подтверждения в том окне.'}
+'Select Epson in the next window. Expand the options for paper, color and copies; Other options opens Epson quality settings. Printing starts only after confirmation there.':'Откройте свойства принтера: на вкладках «Главное» и «Дополнительные настройки» выберите бумагу, качество, цвет и размещение страниц. Печать начнётся только после отдельного подтверждения.'}
 p=root/'tmp/artcraft/craft-i18n/locales/ru/wordcraft.tsv';s=p.read_text('utf-8')
 for key,value in labels.items():
  if key+'\t' not in s:s+='\n\t'+key+'\t'+value

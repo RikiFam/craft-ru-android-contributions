@@ -12,9 +12,10 @@
       "sha256": "1018b390cb90f54962f6dcb780b9af4eefa4e6001363a810cf1acfa46f65f76b"
     },
     "printing": {
-      "files": 12,
-      "archive": "downloads/printing-93708b2.zip",
-      "sha256": "789c37b35839fcb343fb6752fd5e7727795ae2f4fd5fff94376e0510c4d3e009"
+      "source_snapshot": "d49897d8fab1e526e8a49d4e45f81eb36b370079",
+      "files": 37,
+      "archive": "downloads/printing-d49897d.zip",
+      "sha256": "4db181e40fdd93d4cd641678b58510c0ed35d56a81d632254cdc5df6b51e9da9"
     }
   }
 }

@@ -29,5 +29,6 @@
       "base": "92d392cff132eaf53e13afff77f38b5c11b73aa0",
       "destination": "tmp/artcraft/print-vendor"
     }
-  }
+  },
+  "printing_overlay_snapshot": "d49897d8fab1e526e8a49d4e45f81eb36b370079"
 }
