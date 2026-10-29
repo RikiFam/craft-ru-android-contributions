@@ -1,0 +1,128 @@
+{
+  "cadcraft": {
+    "version": "0.14.0",
+    "installed": true,
+    "installed_visual_check": true,
+    "installed_hash_verified": true,
+    "registered_version_verified": true,
+    "exe_version_verified": true,
+    "sha256": "E4E2753050BCE5C03AE81F7DBAE7555FF717CFCB3A43DF538A4E93DB9F5A91AF"
+  },
+  "deckcraft": {
+    "version": "0.12.0",
+    "installed": true,
+    "installed_visual_check": true,
+    "installed_hash_verified": true,
+    "registered_version_verified": true,
+    "exe_version_verified": true,
+    "sha256": "71BACED0E4B5EF53181FC3FEE30DD2B197D2C9F64BC1675EAC0FAB83592351F1"
+  },
+  "photocraft": {
+    "version": "0.17.0",
+    "installed": true,
+    "installed_visual_check": true,
+    "installed_hash_verified": true,
+    "registered_version_verified": true,
+    "exe_version_verified": true,
+    "sha256": "026B121A72282E90BC05287CE72AA8C0376A88FAC9BF8A3CF25EE9E5E09D366E"
+  },
+  "craft-launcher": {
+    "version": "0.9.0",
+    "installed": true,
+    "installed_visual_check": true,
+    "installed_hash_verified": true,
+    "registered_version_verified": true,
+    "exe_version_verified": true,
+    "sha256": "D195273B92916B829EDAD7D06398DC35EFCCCF7EC969E18C325C23F2ED53C52B"
+  },
+  "designcraft": {
+    "version": "0.14.0",
+    "installed": true,
+    "installed_visual_check": true,
+    "installed_hash_verified": true,
+    "registered_version_verified": true,
+    "exe_version_verified": true,
+    "sha256": "DDDD9EE1ACA9C03DF362CCF33D1855A53E1812ED7870B1493DD46D4F4808EB15"
+  },
+  "effectcraft": {
+    "version": "0.18.0",
+    "installed": true,
+    "installed_visual_check": true,
+    "installed_hash_verified": true,
+    "registered_version_verified": true,
+    "exe_version_verified": true,
+    "sha256": "E2896F021F166AFDF905E21121E5ABCA67413EFA452E02624874C80575BE1920"
+  },
+  "figcraft": {
+    "version": "0.12.1",
+    "installed": true,
+    "installed_visual_check": true,
+    "installed_hash_verified": true,
+    "registered_version_verified": true,
+    "exe_version_verified": true,
+    "sha256": "4CE3A345DFCDB12EFCCB9A62787CD65574AF581422F5C1B451EF7DA4235D803A"
+  },
+  "filmcraft": {
+    "version": "0.14.0",
+    "installed": true,
+    "installed_visual_check": true,
+    "installed_hash_verified": true,
+    "registered_version_verified": true,
+    "exe_version_verified": true,
+    "sha256": "8908EE20940C524ABDE690B55E108F2F99CEBC99D06D4585ABD861ED527B6793"
+  },
+  "gridcraft": {
+    "version": "0.13.0",
+    "installed": true,
+    "installed_visual_check": true,
+    "installed_hash_verified": true,
+    "registered_version_verified": true,
+    "exe_version_verified": true,
+    "sha256": "6401FE15D3D85C265C070F36586FE4001B9F1C95197D9B43574F941ED5B5329A"
+  },
+  "lightcraft": {
+    "version": "0.15.0",
+    "installed": true,
+    "installed_visual_check": true,
+    "installed_hash_verified": true,
+    "registered_version_verified": true,
+    "exe_version_verified": true,
+    "sha256": "074B6F634CC3481E613D6FB873A8AE91D10EB1D082FE5E52F4E0F7DEA2B5F2A0"
+  },
+  "pdfcraft": {
+    "version": "0.15.0",
+    "installed": true,
+    "installed_visual_check": true,
+    "installed_hash_verified": true,
+    "registered_version_verified": true,
+    "exe_version_verified": true,
+    "sha256": "A648911A4FAD9FE565FCD8AB6E4257AE440BEF23D53663FDF8EE16A87865EC90"
+  },
+  "soundcraft": {
+    "version": "0.14.0",
+    "installed": true,
+    "installed_visual_check": true,
+    "installed_hash_verified": true,
+    "registered_version_verified": true,
+    "exe_version_verified": true,
+    "sha256": "E114A0C92D2325ABE0043CE8DD7C6F3175E1D08E0262A979D0D9F6770384FBFF"
+  },
+  "vectorcraft": {
+    "version": "0.18.0",
+    "installed": true,
+    "installed_visual_check": true,
+    "installed_hash_verified": true,
+    "registered_version_verified": true,
+    "exe_version_verified": true,
+    "sha256": "ED597C330C0BA1C24B0AF41CDFD2D15B1875D61E877D1A3806FDC37E78A40208"
+  },
+  "wordcraft": {
+    "version": "0.12.0",
+    "installed": true,
+    "installed_visual_check": true,
+    "installed_hash_verified": true,
+    "registered_version_verified": true,
+    "exe_version_verified": true,
+    "sha256": "5155AFF956A74FEC85DF308249F3A2CAFD66CD3E395022041E81D479F3623DD8"
+  }
+}

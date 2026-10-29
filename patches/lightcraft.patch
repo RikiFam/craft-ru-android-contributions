@@ -1,3 +1,15 @@
+diff --git a/Cargo.lock b/Cargo.lock
+index 461191754549c671983ebd22047299ac7d176cfb..7d0ceeaea0f125e85d3dd2afa0e723ee3ad311d5 100644
+--- a/Cargo.lock
++++ b/Cargo.lock
+@@ -3573,6 +3573,7 @@ dependencies = [
+  "lightcraft-testkit",
+  "log",
+  "proptest",
++ "rustix 1.1.5",
+  "serde",
+  "serde_json",
+  "thiserror 2.0.21",
 diff --git a/crates/catalog/Cargo.toml b/crates/catalog/Cargo.toml
 index b12e188036bcd00cd4e68597ffc0e0aff21f94ce..1c73ecc64c7ddaf9f1c7ed2e9bb6f91e3686ef74 100644
 --- a/crates/catalog/Cargo.toml
@@ -10,7 +22,7 @@ index b12e188036bcd00cd4e68597ffc0e0aff21f94ce..1c73ecc64c7ddaf9f1c7ed2e9bb6f91e
 +[target.'cfg(target_os = "android")'.dependencies]
 +rustix = { version = "1.1", features = ["fs"] }
 diff --git a/crates/catalog/src/lock.rs b/crates/catalog/src/lock.rs
-index f701087a69935da165863bbb1406818db6a850dc..b3960fd5042c8bbbe98f0bdc70adeeee11bf8fc1 100644
+index f701087a69935da165863bbb1406818db6a850dc..2140df7a8c88793bf0c1e679cc46942baefa8324 100644
 --- a/crates/catalog/src/lock.rs
 +++ b/crates/catalog/src/lock.rs
 @@ -108,7 +108,7 @@ impl LibraryLock {
@@ -22,7 +34,7 @@ index f701087a69935da165863bbb1406818db6a850dc..b3960fd5042c8bbbe98f0bdc70adeeee
              Ok(()) => {}
              Err(TryLockError::WouldBlock) => {
                  let owner = std::fs::read(dir.join(OWNER)).ok().and_then(|b| serde_json::from_slice::<LockOwner>(&b).ok());
-@@ -155,10 +155,34 @@ impl Drop for LibraryLock {
+@@ -155,10 +155,32 @@ impl Drop for LibraryLock {
          if self.held {
              let _ = std::fs::remove_file(self.dir.join(OWNER));
              if let Some(f) = &self.file
@@ -42,11 +54,7 @@ index f701087a69935da165863bbb1406818db6a850dc..b3960fd5042c8bbbe98f0bdc70adeeee
 +    {
 +        rustix::fs::flock(file, rustix::fs::FlockOperation::NonBlockingLockExclusive).map_err(|e| {
 +            let e = io::Error::from(e);
-+            if e.kind() == io::ErrorKind::WouldBlock {
-+                TryLockError::WouldBlock
-+            } else {
-+                TryLockError::Error(e)
-+            }
++            if e.kind() == io::ErrorKind::WouldBlock { TryLockError::WouldBlock } else { TryLockError::Error(e) }
 +        })
 +    }
 +    #[cfg(not(target_os = "android"))]
@@ -54,7 +62,9 @@ index f701087a69935da165863bbb1406818db6a850dc..b3960fd5042c8bbbe98f0bdc70adeeee
 +}
 +fn portable_unlock(file: &File) -> io::Result<()> {
 +    #[cfg(target_os = "android")]
-+    { rustix::fs::flock(file, rustix::fs::FlockOperation::Unlock).map_err(io::Error::from) }
++    {
++        rustix::fs::flock(file, rustix::fs::FlockOperation::Unlock).map_err(io::Error::from)
++    }
 +    #[cfg(not(target_os = "android"))]
 +    file.unlock()
 +}

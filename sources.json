@@ -1,6 +1,6 @@
 {
-  "workspace_snapshot": "a209e3b85721931bdf343f5aa07593d8ecc74166",
-  "status": "experimental; all 14 Android packages launch/version checked; Windows update incomplete",
+  "workspace_snapshot": "47ac8d20708abf6d198dee1087ec09b2f4406c8f",
+  "status": "experimental; all 14 Windows and Android applications installed and startup/version checked; not full functional coverage",
   "repositories": {
     "cadcraft": {
       "url": "https://github.com/storytold/cadcraft.git",
@@ -68,29 +68,29 @@
     "gridcraft": {
       "url": "https://github.com/storytold/gridcraft.git",
       "base": "43284377d2466037628e57d8ad0c891778fdb45c",
-      "local_commit": "da0d7a7f69ff55b336b2110e03a3761ed5f89678",
+      "local_commit": "681fddfed152efbba7d69422335c61046a606ce2",
       "destination": "tmp/artcraft/gridcraft/repo",
       "patch": "patches/gridcraft.patch",
       "apply_check": "passed",
-      "sha256": "d1966ae75484fdf27ef4bd6dbca5e6da64be12344e8f0b4e59b8bd74d594aa31"
+      "sha256": "5a1751e39c279f9b5bdfddf29a5c7261201dbeba7d06172557f3d96487b1357b"
     },
     "lightcraft": {
       "url": "https://github.com/storytold/lightcraft.git",
       "base": "e381c1ae6b2006ce627b243fe41697ce0d9608e0",
-      "local_commit": "ed3225143420390c35416b4796b7516b6b21ca1e",
+      "local_commit": "994bec5d315e44b002d7c05d0f100e5626ec458b",
       "destination": "tmp/artcraft/lightcraft/repo",
       "patch": "patches/lightcraft.patch",
       "apply_check": "passed",
-      "sha256": "c3362b64f5cee0ec3d89170f1f963685af9cb8d253e6abd736cb95253a1a834a"
+      "sha256": "c68c0c468f3e28b9f440eaaadfb17d85207a99c7ff4694fdb745074f254c80dd"
     },
     "pdfcraft": {
       "url": "https://github.com/storytold/pdfcraft.git",
       "base": "75360d1d7db06fed974f48c914d4c04132757187",
-      "local_commit": "b0aea66a218612f2cc3756d0bef21d3b4987c38d",
+      "local_commit": "bb2809f80c96ecfb470f4cc0f1ade37ed10c3a24",
       "destination": "tmp/artcraft/pdfcraft/repo",
       "patch": "patches/pdfcraft.patch",
       "apply_check": "passed",
-      "sha256": "8e2e2cf07eab3e82b695a4419fb53fb63efc30d71e7a22139a6eaab626e527e5"
+      "sha256": "e402e4f1b10944243bd63f5b077ab194ef5ec3e840ef004673cbd76d9f9f5918"
     },
     "photocraft": {
       "url": "https://github.com/storytold/photocraft.git",
@@ -104,11 +104,11 @@
     "soundcraft": {
       "url": "https://github.com/storytold/soundcraft.git",
       "base": "c6befe57afd0dc35fc4b86a01b2a19011ae1df1e",
-      "local_commit": "5c73e84974374d71a089382b8edb9e36447af3cb",
+      "local_commit": "825f633d40f9014090a9b8a624afaaa4623b73fc",
       "destination": "tmp/artcraft/soundcraft/repo",
       "patch": "patches/soundcraft.patch",
       "apply_check": "passed",
-      "sha256": "242624b8eae81aeabafa961810bf0fce7fdebee5014ac932b06d959ae038a813"
+      "sha256": "625da6dea21bd47b9c19a5eef4ebbc035d279b439d0ff7bc6f7eb9b90deb8c09"
     },
     "vectorcraft": {
       "url": "https://github.com/storytold/vectorcraft.git",

@@ -36,7 +36,8 @@ The source chat records installation, device version and Russian window checks f
 14 updated Android packages on Galaxy Tab S7+ (Android 13). PhotoCraft drawing/PSD saving
 and opening a test PDF in PdfCraft were checked. These are launch and selected workflow
 checks, not complete functional coverage. Shared craft-i18n: 26 tests and Clippy passed.
-Windows update work was still in progress at this snapshot. The export itself has not
+All 14 Windows applications were also installed and checked for Russian windows,
+versions, installed executable hashes and installer registration in the source chat. The export itself has not
 undergone an independent full rebuild. Historical subdirectory reports describe their
 own versions; the dated update report describes these newer device checks.
 Android document pickers use app folders; SAF, sharing, rotation and every editor function
@@ -55,4 +56,4 @@ retain their original terms. See LICENSE files and the source repositories' attr
 
 ## Download this source snapshot
 
-[Source ZIP](downloads/contribution-a209e3b.zip), SHA-256: `a06ab614753258a1fa4235d92a39a643f6414b504e3c0c001774e120ba5b6f1d`. The archive contains source files, not APKs.
+[Source ZIP](downloads/contribution-47ac8d2.zip), SHA-256: `dc4087092744404760ae76ef9ae67577155d8a2528a3c4fada987745610ec3f3`. The archive contains source files, not APKs.
