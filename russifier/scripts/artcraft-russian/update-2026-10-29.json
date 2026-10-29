@@ -1,0 +1,128 @@
+{
+  "cadcraft": {
+    "old_base": "1fcf654ea8414ea2ef052ca2b3b77411f2026f78",
+    "preserved_commit": "e2791cf30bd96eccd04fe70b338312deb655ed5a",
+    "tag": "v0.14.0",
+    "release_url": "https://github.com/storytold/cadcraft/releases/tag/v0.14.0",
+    "status": "installed-and-startup-verified-windows-and-android",
+    "upstream_commit": "fbd97d432cdf36a566c0c53739481bd6f0c32b0d",
+    "local_commit": "1966bfe0a01e7245e1fd3247ae27adf90f9f3ced"
+  },
+  "craft-launcher": {
+    "old_base": "932e718bbcad1cb9fb12c107d08715eb00340c68",
+    "preserved_commit": "5ca081080072e6c3dcd60d59c92151106801df88",
+    "tag": "v0.9.0",
+    "release_url": "https://github.com/storytold/craft-launcher/releases/tag/v0.9.0",
+    "status": "installed-and-startup-verified-windows-and-android",
+    "upstream_commit": "9613c285dd40095c47772ee4e47494c06618d57a",
+    "local_commit": "7933f9d49fe48ed23843182cad2b2154c9ec2a69"
+  },
+  "deckcraft": {
+    "old_base": "9ec39267931c0163dd5648c879043edcb9603cb8",
+    "preserved_commit": "58e6bacfede23a9260704c524e2a76f06d436091",
+    "tag": "v0.12.0",
+    "release_url": "https://github.com/storytold/deckcraft/releases/tag/v0.12.0",
+    "status": "installed-and-startup-verified-windows-and-android",
+    "upstream_commit": "29f0f7772c47aa2bfb74fcbb0c4d3b1503300849",
+    "local_commit": "dc640f9715bd02ab8c49b74928639f8fa8e4f5eb"
+  },
+  "designcraft": {
+    "old_base": "dcce40fb8731213c1f8e31cdd23444995afc62ce",
+    "preserved_commit": "47358fb8c2eed8b8de78905c2938d1db0aea815f",
+    "tag": "v0.14.0",
+    "release_url": "https://github.com/storytold/designcraft/releases/tag/v0.14.0",
+    "status": "installed-and-startup-verified-windows-and-android",
+    "upstream_commit": "7da69c16ce221f46e8f27cb41e0c88167c8be416",
+    "local_commit": "cb63ceae7dd84127f5707647d5dedd13dc1cc306"
+  },
+  "effectcraft": {
+    "old_base": "362474a843ddb67555d4c2d19ad6a590388aad0e",
+    "preserved_commit": "e033a77cdb9ad0793b0589219daa9d709317ade0",
+    "tag": "v0.18.0",
+    "release_url": "https://github.com/storytold/effectcraft/releases/tag/v0.18.0",
+    "status": "installed-and-startup-verified-windows-and-android",
+    "upstream_commit": "c3600f9b59b109da97871a43a6898683a0163cb1",
+    "local_commit": "28f15520daf1248e075aa5ca955c3fcaed6e8595"
+  },
+  "figcraft": {
+    "old_base": "d4a303d4708602a9df1738960852d18b185a616b",
+    "preserved_commit": "99def1f6111d32973f60bba8b24981ead37a26ef",
+    "tag": "v0.12.1",
+    "release_url": "https://github.com/storytold/figcraft/releases/tag/v0.12.1",
+    "status": "installed-and-startup-verified-windows-and-android",
+    "upstream_commit": "ef9721c5b9d0f1cc19a74449cbe175fc06bf8efa",
+    "local_commit": "c57b9472cfa5ce0e9e68451af3da75f86e630cd3"
+  },
+  "filmcraft": {
+    "old_base": "30536bc5d0ddf690f2181b7b97182db8658a6038",
+    "preserved_commit": "5c6aee4f2e96a9ad1bd8baf2dd997a84efeb6016",
+    "tag": "v0.14.0",
+    "release_url": "https://github.com/storytold/filmcraft/releases/tag/v0.14.0",
+    "status": "installed-and-startup-verified-windows-and-android",
+    "upstream_commit": "a2d8e9ce269aba9c399e36262522e11456df6fbf",
+    "local_commit": "5dd888e17d6159bdf623e407ff7db3748e7d4bee"
+  },
+  "gridcraft": {
+    "old_base": "f86aec12dabc744b5f75e1033f87bfe685e78481",
+    "preserved_commit": "a6387ef1db9688464c7b269a58b74db6d2b0e18f",
+    "tag": "v0.13.0",
+    "release_url": "https://github.com/storytold/gridcraft/releases/tag/v0.13.0",
+    "status": "installed-and-startup-verified-windows-and-android",
+    "upstream_commit": "43284377d2466037628e57d8ad0c891778fdb45c",
+    "local_commit": "681fddfed152efbba7d69422335c61046a606ce2"
+  },
+  "lightcraft": {
+    "old_base": "03c88c166c054c009db2a47187d59991f6232b85",
+    "preserved_commit": "d224c8873637222bea1a1de5f789420e4b8c9b86",
+    "tag": "v0.15.0",
+    "release_url": "https://github.com/storytold/lightcraft/releases/tag/v0.15.0",
+    "status": "installed-and-startup-verified-windows-and-android",
+    "upstream_commit": "e381c1ae6b2006ce627b243fe41697ce0d9608e0",
+    "local_commit": "994bec5d315e44b002d7c05d0f100e5626ec458b"
+  },
+  "pdfcraft": {
+    "old_base": "5a78b223871add8e3883856205cc653d741e0e94",
+    "preserved_commit": "b9c9e3acde38cb1aa5d6aca189f3813cd5e24926",
+    "tag": "v0.15.0",
+    "release_url": "https://github.com/storytold/pdfcraft/releases/tag/v0.15.0",
+    "status": "installed-and-startup-verified-windows-and-android",
+    "upstream_commit": "75360d1d7db06fed974f48c914d4c04132757187",
+    "local_commit": "bb2809f80c96ecfb470f4cc0f1ade37ed10c3a24"
+  },
+  "photocraft": {
+    "old_base": "b1794c6e0608ccfc887213dcf58398977c5cb75e",
+    "preserved_commit": "5d8d6cae6cda1d146be57bf968dab85d1ab5dbbe",
+    "tag": "v0.17.0",
+    "release_url": "https://github.com/storytold/photocraft/releases/tag/v0.17.0",
+    "status": "installed-and-startup-verified-windows-and-android",
+    "upstream_commit": "b8c3f3aa8e2918032cadc0e042664414a03be333",
+    "local_commit": "1472beb378b4f21d38eebfc06b7053b572b01be4"
+  },
+  "soundcraft": {
+    "old_base": "01b39850ad16e84b45904ba07bd5cec7cf96c4b7",
+    "preserved_commit": "051eafd6eccb7d13d9af39278d6a5e3a6329847f",
+    "tag": "v0.14.0",
+    "release_url": "https://github.com/storytold/soundcraft/releases/tag/v0.14.0",
+    "status": "installed-and-startup-verified-windows-and-android",
+    "upstream_commit": "c6befe57afd0dc35fc4b86a01b2a19011ae1df1e",
+    "local_commit": "825f633d40f9014090a9b8a624afaaa4623b73fc"
+  },
+  "vectorcraft": {
+    "old_base": "43313f9451de7ab5b909801006b8881458f2bf04",
+    "preserved_commit": "13abebe54f5cb58d47ac559d876fd64473a9112a",
+    "tag": "v0.18.0",
+    "release_url": "https://github.com/storytold/vectorcraft/releases/tag/v0.18.0",
+    "status": "installed-and-startup-verified-windows-and-android",
+    "upstream_commit": "68b68a30acad9b3d8a72802b35f43b82e2bd7d3a",
+    "local_commit": "37587ce15e3aba6c71b43f4493180d3eb288f68c"
+  },
+  "wordcraft": {
+    "old_base": "e31f2f06a5f8004ceaa88f68c00b47908e321aa4",
+    "preserved_commit": "e31f2f06a5f8004ceaa88f68c00b47908e321aa4",
+    "tag": "v0.12.0",
+    "release_url": "https://github.com/storytold/wordcraft/releases/tag/v0.12.0",
+    "status": "installed-and-startup-verified-windows-and-android",
+    "upstream_commit": "3de6ff95af86c19d67030cd96dba15cd6a45a25e",
+    "local_commit": "3de6ff95af86c19d67030cd96dba15cd6a45a25e"
+  }
+}

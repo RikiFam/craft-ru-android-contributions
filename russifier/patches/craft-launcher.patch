@@ -1,0 +1,345 @@
+diff --git a/crates/ui-egui/src/card_parts.rs b/crates/ui-egui/src/card_parts.rs
+index 5e9e497e3cab75178f2cf60119b746753a38551a..f35a6cc6175902de6f9eb31851bec829281dab56 100644
+--- a/crates/ui-egui/src/card_parts.rs
++++ b/crates/ui-egui/src/card_parts.rs
+@@ -30,7 +30,7 @@ pub(crate) fn last_updated(e: &AppEntry) -> Option<String> {
+ 
+ /// `text` in at most `rows` lines, ending in "…" when it is cut.
+ pub(crate) fn blurb(ui: &mut Ui, text: &str, color: Color32, rows: usize) {
+-    let mut job = egui::text::LayoutJob::simple(text.to_string(), FontId::proportional(13.0), color, ui.available_width());
++    let mut job = egui::text::LayoutJob::simple(crate::i18n::t(text).to_string(), FontId::proportional(13.0), color, ui.available_width());
+     job.wrap.max_rows = rows;
+     job.wrap.break_anywhere = false;
+     job.wrap.overflow_character = Some('…');
+diff --git a/crates/ui-egui/src/details.rs b/crates/ui-egui/src/details.rs
+index ad9fcb11828cd199b9c24bd20cb995f8d5eb0e75..c99d8088b0dad03957f3969c08a85a9cf93df008 100644
+--- a/crates/ui-egui/src/details.rs
++++ b/crates/ui-egui/src/details.rs
+@@ -190,7 +190,7 @@ impl LauncherUi {
+                     ui.set_width(left_w);
+                     ui.spacing_mut().item_spacing.y = 8.0;
+                     for p in details.paragraphs() {
+-                        ui.add(egui::Label::new(RichText::new(p).size(14.5).color(t.ink)).wrap());
++                        ui.add(egui::Label::new(RichText::new(crate::i18n::t(p)).size(14.5).color(t.ink)).wrap());
+                     }
+                     ui.add_space(14.0);
+                     features(ui, details, entry.app, t);
+@@ -214,7 +214,7 @@ impl LauncherUi {
+                     self.gallery(ui, details, t, app_color);
+                     ui.add_space(8.0);
+                     for p in details.paragraphs() {
+-                        ui.add(egui::Label::new(RichText::new(p).size(14.5).color(t.ink)).wrap());
++                        ui.add(egui::Label::new(RichText::new(crate::i18n::t(p)).size(14.5).color(t.ink)).wrap());
+                     }
+                 });
+                 ui.vertical(|ui| {
+@@ -232,7 +232,7 @@ impl LauncherUi {
+             self.gallery(ui, details, t, app_color);
+             ui.add_space(8.0);
+             for p in details.paragraphs() {
+-                ui.add(egui::Label::new(RichText::new(p).size(14.5).color(t.ink)).wrap());
++                ui.add(egui::Label::new(RichText::new(crate::i18n::t(p)).size(14.5).color(t.ink)).wrap());
+             }
+             ui.add_space(14.0);
+             features(ui, details, entry.app, t);
+@@ -364,7 +364,7 @@ impl LauncherUi {
+                 ui.set_width(text_w);
+                 ui.spacing_mut().item_spacing.y = 5.0;
+                 widgets::wordmark(ui, app, theme::PAGE_TITLE);
+-                ui.add(egui::Label::new(RichText::new(details.headline).size(15.0).color(t.ink)).wrap());
++                ui.add(egui::Label::new(RichText::new(crate::i18n::t(details.headline)).size(15.0).color(t.ink)).wrap());
+                 // "Version 0.5.0 · Oct 8, 2026", or the installed-versus-latest line.
+                 let version = crate::views::version_line(entry, status);
+                 if !version.trim().is_empty() {
+@@ -448,7 +448,11 @@ impl LauncherUi {
+                     None => placeholder(ui, pic, Id::unique("lightbox-placeholder"), failed.as_deref(), t, true),
+                 }
+                 ui.painter().rect_stroke(pic, CornerRadius::ZERO, Stroke::new(1.0, theme::backdrop_ink(40)), egui::StrokeKind::Outside);
+-                let caption = if count > 1 { format!("{} · {}/{count}", shot.caption, at + 1) } else { shot.caption.to_string() };
++                let caption = if count > 1 {
++                    format!("{} · {}/{count}", crate::i18n::t(shot.caption), at + 1)
++                } else {
++                    crate::i18n::t(shot.caption).to_string()
++                };
+                 let ink = theme::backdrop_ink(190);
+                 let galley = widgets::hud_galley(ui, &caption, ink);
+                 let caption_at = pos2(rect.center().x - galley.size().x / 2.0, pic.bottom() + 14.0);
+@@ -503,7 +507,7 @@ impl LauncherUi {
+         ui.painter().rect_stroke(pic, CornerRadius::ZERO, t.hairline(), egui::StrokeKind::Inside);
+         let count = details.shots.len();
+         if count < 2 {
+-            widgets::hud(ui, current.caption, t.faint);
++            widgets::hud(ui, crate::i18n::t(current.caption), t.faint);
+             return;
+         }
+         // Previous and next, over the sides of the picture.
+@@ -516,7 +520,7 @@ impl LauncherUi {
+         if arrow_button(ui, next, Id::unique("shot-next"), false, tl!("Next picture (→)"), t) {
+             self.flip_shot(count, true);
+         }
+-        widgets::hud(ui, &format!("{} · {}/{count}", current.caption, self.detail_shot.min(count - 1) + 1), t.faint);
++        widgets::hud(ui, &format!("{} · {}/{count}", crate::i18n::t(current.caption), self.detail_shot.min(count - 1) + 1), t.faint);
+         let gap = 8.0;
+         let thumb_w = ((w - gap * (count as f32 - 1.0)) / count as f32).floor().max(1.0);
+         ui.horizontal(|ui| {
+@@ -542,7 +546,7 @@ impl LauncherUi {
+                 let stroke = if selected { Stroke::new(2.0, app_color) } else { t.hairline() };
+                 ui.painter().rect_stroke(resp.rect, CornerRadius::ZERO, stroke, egui::StrokeKind::Inside);
+                 resp.widget_info(|| egui::WidgetInfo::labeled(egui::Role::Button, true, shot.caption));
+-                if resp.on_hover_cursor(egui::CursorIcon::PointingHand).on_hover_text(shot.caption).clicked() {
++                if resp.on_hover_cursor(egui::CursorIcon::PointingHand).on_hover_text(crate::i18n::t(shot.caption)).clicked() {
+                     self.detail_shot = i;
+                 }
+             }
+@@ -604,9 +608,9 @@ fn features(ui: &mut Ui, details: &AppDetails, app: &CraftApp, t: &Tokens) {
+             ui.spacing_mut().item_spacing.y = 3.0;
+             ui.horizontal(|ui| {
+                 widgets::hud(ui, &format!("{:02}", i + 1), t.app_ink(app));
+-                ui.label(RichText::new(f.title).size(15.0).family(theme::semibold()).color(t.ink_strong));
++                ui.label(RichText::new(crate::i18n::t(f.title)).size(15.0).family(theme::semibold()).color(t.ink_strong));
+             });
+-            ui.add(egui::Label::new(RichText::new(f.text).size(13.5).color(t.muted)).wrap());
++            ui.add(egui::Label::new(RichText::new(crate::i18n::t(f.text)).size(13.5).color(t.muted)).wrap());
+         });
+     }
+ }
+diff --git a/crates/ui-egui/src/i18n/ru.tsv b/crates/ui-egui/src/i18n/ru.tsv
+index 3f96193db02762305da3d61801ad7b9024ee7774..63219cb1ee55f16dfc0716ee2ad1a5a8173a6e39 100644
+--- a/crates/ui-egui/src/i18n/ru.tsv
++++ b/crates/ui-egui/src/i18n/ru.tsv
+@@ -377,3 +377,211 @@ filter	Installed	Установлены
+ 	Show {n} more changes	Показать ещё изменений: {n}
+ 	Last updated: {date}	Последнее обновление: {date}
+ column	Version	Версия
++
++# Local Russian product descriptions
++	The image editor you already know how to use.	Привычный редактор изображений.
++	Vector illustration, reimagined in pure Rust.	Редактор векторной графики, написанный на Rust.
++	Professional video editing, rebuilt from scratch.	Профессиональный видеомонтаж, созданный с нуля.
++	Your photos. Your pixels. Your machine.	Ваши фотографии. Ваши пиксели. Ваш компьютер.
++	The open-source PDF workbench.	Инструменты для PDF с открытым кодом.
++	Motion graphics and visual effects, in pure Rust.	Редактор анимации и визуальных эффектов на Rust.
++	Page layout and publishing, rebuilt in pure Rust.	Программа для вёрстки и подготовки публикаций на Rust.
++	The familiar word processor, native and offline.	Привычный текстовый редактор для работы без интернета.
++	Presentations, rebuilt in Rust.	Редактор презентаций на Rust.
++	Spreadsheets you already know how to use.	Привычные электронные таблицы.
++	Computer-aided drafting, in pure Rust.	Программа для черчения и проектирования на Rust.
++	Recording, editing and mixing, in Rust.	Запись, редактирование и сведение звука на Rust.
++	Interface design and prototyping, in pure Rust.	Дизайн интерфейсов и создание прототипов на Rust.
++	Layers, masks, adjustment layers, layer styles, type, vectors and brushes in a native app written in Rust. Open source, offline, and yours.	Слои, маски, корректирующие слои, стили слоёв, текст, векторная графика и кисти в приложении на Rust. Открытый код, работа без интернета и полный контроль над своими файлами.
++	PhotoCraft keeps the menus, shortcuts and panels your hands already know, so there is nothing to relearn.	PhotoCraft сохраняет привычные меню, сочетания клавиш и панели — переучиваться не придётся.
++	Native GPU canvas	Холст с ускорением на GPU
++	No Electron and no web view: a fast native compositor.	Быстрое отображение изображения средствами видеокарты, без Electron и встроенного браузера.
++	Real layered files	Работа с многослойными файлами
++	Opens and saves layered PSD and PSB documents.	Открытие и сохранение многослойных документов PSD и PSB.
++	Non-destructive editing	Неразрушающее редактирование
++	Adjustment layers, live-preview filters, smart objects and layer styles.	Корректирующие слои, фильтры с предпросмотром, смарт-объекты и стили слоёв.
++	On-device selection	Выделение на вашем устройстве
++	Subject and object selection and mask refinement run locally.	Выделение предметов и объектов, а также уточнение масок выполняются локально.
++	Serious color	Профессиональная работа с цветом
++	8-, 16- and 32-bit RGB, CMYK, Lab and Grayscale, with ICC color management and soft proofing.	RGB, CMYK, Lab и оттенки серого с глубиной 8, 16 и 32 бита, управление цветом ICC и экранная цветопроба.
++	Curves and type layers	Кривые и текстовые слои
++	Levels with a live histogram	Уровни с обновляемой гистограммой
++	Layer styles on live type	Стили слоёв для редактируемого текста
++	Selections and masked adjustments	Выделения и коррекция через маски
++	A native vector illustration app with the pen, panels and shortcuts illustrators expect. Open source, and it also runs in a browser.	Редактор векторной графики с привычными пером, панелями и сочетаниями клавиш. Открытый код; работает и в браузере.
++	The workflow you know	Привычный рабочий процесс
++	Pen, direct selection, shape booleans, snapping guides and an appearance panel, laid out the way you expect.	Перо, прямое выделение, логические операции с фигурами, направляющие с привязкой и панель оформления расположены привычным образом.
++	Genuinely fast	Высокая скорость
++	Drawings with thousands of shapes stay responsive on a retina display.	Плавная работа с тысячами фигур даже на экранах высокого разрешения.
++	Booleans that don't fail	Надёжные логические операции
++	Shape booleans work on the exact curves, so there is no "cannot perform operation", and undo is unlimited.	Операции с фигурами используют точную геометрию кривых, исключая ошибку «невозможно выполнить операцию». Число отмен не ограничено.
++	Live, editable effects	Редактируемые эффекты
++	Blends, envelope distort, gradient mesh, repeats, glows and drop shadows all stay editable.	Переходы между объектами, деформация по огибающей, градиентная сетка, повторы, свечение и тени остаются редактируемыми.
++	Image tracing	Трассировка изображений
++	Turn raster images into clean vector paths, with presets for the common cases.	Преобразование растровых изображений в аккуратные векторные контуры с готовыми настройками для частых задач.
++	Open formats	Открытые форматы
++	Native JSON documents, SVG and PDF import and export, and PNG, JPEG and WebP output.	Собственные документы JSON, импорт и экспорт SVG и PDF, вывод в PNG, JPEG и WebP.
++	The Neon Drive poster	Плакат Neon Drive
++	Live blends	Редактируемые переходы между объектами
++	A feature sheet and the Layers panel	Лист с примерами возможностей и панель «Слои»
++	Pathfinder and exact booleans	Обработка контуров и точные логические операции
++	A native video editor written in pure Rust, with source and program monitors, a real timeline and every trim mode.	Видеоредактор на Rust с отдельными окнами просмотра исходного видео и готового монтажа, полноценной монтажной шкалой и всеми режимами подрезки.
++	A timeline you already know	Привычная монтажная шкала
++	Source and program monitors, three-point editing, every trim mode and J/K/L trimming.	Просмотр исходного видео и результата монтажа, монтаж по трём точкам, все режимы подрезки и управление клавишами J/K/L.
++	Frame-exact time	Точность до кадра
++	An integer timebase keeps 23.976 and 29.97 drop-frame footage exact, with no drift.	Точный расчёт времени для видео с частотой 23,976 и 29,97 кадра/с, включая таймкод с пропуском номеров кадров. Ошибка синхронизации не накапливается.
++	Its own codecs	Собственные кодеки
++	No FFmpeg inside: native support for H.264, HEVC, ProRes, VP9, AAC and Opus.	Встроенная поддержка H.264, HEVC, ProRes, VP9, AAC и Opus без FFmpeg.
++	Color grading	Цветокоррекция
++	Curves, color wheels, HSL secondaries, LUTs and HDR and log workflows, with scopes to check the result.	Кривые, цветовые круги, выборочная коррекция HSL, LUT, работа с HDR и логарифмическим цветом, а также измерительные приборы для проверки результата.
++	Effects and keyframes	Эффекты и ключевые кадры
++	Video effects and transitions, keyframes with value and velocity graphs, and a linear-light GPU compositor.	Видеоэффекты и переходы, ключевые кадры с графиками значений и скорости. Совмещение слоёв выполняется на видеокарте в линейном цветовом пространстве.
++	Broadcast-ready audio	Звук для вещания
++	EBU R128 loudness meters, a mixer with automation and native audio effects.	Измерители громкости EBU R128, микшер с автоматизацией и встроенные звуковые эффекты.
++	The Color workspace, with scopes	Рабочая область «Цвет» с измерительными приборами
++	The Assembly workspace	Рабочая область «Сборка»
++	Keyframes in Effect Controls	Ключевые кадры на панели управления эффектами
++	A fast photo library and non-destructive raw developer, written from scratch in pure Rust. No account, no cloud, no telemetry and no subscription.	Быстрый каталог фотографий и редактор RAW, сохраняющий оригиналы без изменений. Программа написана с нуля на Rust. Без регистрации, облака, сбора данных об использовании и подписки.
++	Non-destructive by design	Сохранность оригиналов
++	A wide-gamut, 32-bit float pipeline that never touches your originals.	Широкий цветовой охват и точная обработка цвета в 32-битном формате. Исходные фотографии остаются нетронутыми.
++	Every control you reach for	Все нужные инструменты
++	Light, color, effects, tone curve, a color mixer, color grading wheels and built-in presets.	Свет, цвет, эффекты, тоновая кривая, смешение цветов, цветовые круги и встроенные наборы настроек.
++	Precise masking	Точные маски
++	Brush, gradient and range masks, plus sky, subject and background masks.	Маски кистью, градиентом и по диапазону, а также маски неба, объекта и фона.
++	Native raw decoding	Встроенное декодирование RAW
++	Pure-Rust decoders for the main camera raw formats: DNG, CR2, ARW, NEF, RAF, RW2, PEF and ORF.	Встроенная поддержка основных форматов RAW: DNG, CR2, ARW, NEF, RAF, RW2, PEF и ORF. Обработка написана на Rust.
++	A library that keeps up	Быстрая фотобиблиотека
++	Albums, ratings, flags and search, with grids that stay smooth on large catalogs.	Альбомы, оценки, флажки и поиск; плавное отображение сетки даже в больших каталогах.
++	Instant feedback	Мгновенный предпросмотр
++	The GPU pipeline updates the preview as you move a slider, even on large raw files.	Обработка на GPU обновляет изображение при перемещении ползунка даже для больших файлов RAW.
++	The Edit view	Режим редактирования
++	The tone curve	Тоновая кривая
++	Color grading wheels	Цветовые круги
++	A radial mask over a sky mask	Радиальная маска поверх маски неба
++	Read, organize, combine, split and secure PDFs in a fast, native app written in Rust from the ground up. No account, no telemetry and no cloud.	Просмотр, упорядочивание, объединение, разделение и защита PDF в быстром приложении на Rust. Без регистрации, сбора данных об использовании и облака.
++	Faithful rendering	Точное отображение
++	World scripts, vertical Japanese, color emoji and transparency.	Разные системы письма, вертикальный японский текст, цветные эмодзи и прозрачность.
++	Search as you type	Поиск по мере ввода
++	Instant find, and text selection that follows the document's real reading order.	Мгновенный поиск и выделение текста в соответствии с настоящим порядком чтения документа.
++	Organize like cards	Страницы как карточки
++	Rotate, delete, insert and reorder pages, with deep undo behind every change.	Поворот, удаление, вставка и перестановка страниц с подробной историей отмены изменений.
++	Combine, extract, split	Объединение, извлечение и разделение
++	Assemble and break apart documents while keeping links, form fields, layers and bookmarks intact.	Сборка и разделение документов с сохранением ссылок, полей форм, слоёв и закладок.
++	Fearless saves	Надёжное сохранение
++	Incremental, atomic saves with autosave and crash recovery.	Сохранение только внесённых изменений с защитой от неполной записи файла, автосохранение и восстановление после сбоя.
++	Built-in security	Встроенная защита
++	Opens files from RC4 to AES-256 encryption and honors the author's permissions.	Открытие файлов с шифрованием от RC4 до AES-256 с соблюдением разрешений автора.
++	A native compositor with compositions, layers, keyframes, effects, expressions, 3D cameras and lights, and a render queue. Young, moving fast, and already usable.	Создавайте анимацию и собирайте сцены из слоёв. Доступны ключевые кадры, эффекты, выражения, трёхмерные камеры, освещение и очередь рендеринга. Проект ещё молодой, но уже пригоден для работы и быстро развивается.
++	Animate the way you know	Привычная анимация
++	Familiar panels and keyframes (linear, bezier, hold and eased), with a graph editor for value and speed curves.	Знакомые панели и ключевые кадры с линейной интерполяцией, кривыми Безье, удержанием и сглаживанием; редактор графиков значений и скорости.
++	Layers of every kind	Разнообразные слои
++	Solids, shapes, text, footage, nested compositions, nulls and adjustment layers, with parenting, track mattes and blend modes.	Заливки, фигуры, текст, видеоматериалы, вложенные композиции, нулевые объекты и корректирующие слои с родительскими связями, масками дорожек и режимами наложения.
++	A large effects library	Большая библиотека эффектов
++	Blur, color correction, distortion, generators, keying, particles and simulation, stylize and time effects.	Размытие, цветокоррекция, искажения, генераторы, удаление фона, частицы и симуляция, стилизация и временные эффекты.
++	Real 3D	Полноценное 3D
++	3D layers with cameras, depth of field, and lights that cast soft ray-traced shadows.	Трёхмерные слои с камерами, глубиной резкости и источниками света, создающими мягкие тени с трассировкой лучей.
++	Expressions	Выражения
++	JavaScript expressions with wiggle, loops and layer references, edited inline.	Редактирование выражений JavaScript с wiggle, циклами и ссылками на слои прямо в интерфейсе.
++	Export anywhere	Разнообразный экспорт
++	H.264 and ProRes with alpha, PNG, TIFF and EXR sequences, GIF, and Lottie import and export.	H.264, ProRes с альфа-каналом, последовательности PNG, TIFF и EXR, GIF, а также импорт и экспорт Lottie.
++	An animated composition	Анимированная композиция
++	The Graph Editor	Редактор графиков
++	Particles and Effect Controls	Частицы и панель управления эффектами
++	3D layers with cameras and lights	Трёхмерные слои с камерами и источниками света
++	A native layout app with spreads, parent pages, threaded stories, styles, swatches, text wrap and a paragraph composer. No subscription, no license server and no telemetry.	Приложение для вёрстки с разворотами, страницами-шаблонами, связанными текстовыми блоками, стилями, образцами цветов, обтеканием и компоновкой абзацев. Без подписки, сервера лицензий и телеметрии.
++	The layout tools you know	Привычные инструменты вёрстки
++	Spreads and parent pages, frames and threaded stories, with paragraph and character styles.	Развороты и страницы-шаблоны, рамки и связанные текстовые блоки, стили абзацев и символов.
++	Beautiful type	Качественная типографика
++	A Knuth–Plass paragraph composer, dictionary hyphenation, optical margin alignment and baseline grids, with line breaks that match on screen and in PDF.	Компоновка абзацев по алгоритму Кнута — Пласса, словарные переносы, оптическое выравнивание полей и сетки базовых линий. Разбиение строк совпадает на экране и в PDF.
++	Print-ready PDF	PDF для печати
++	Real selectable text with embedded fonts, CMYK and spot colors, bleed, crop marks and PDF/A output.	Выделяемый текст со встроенными шрифтами, CMYK и плашечные цвета, вылеты, метки обрезки и вывод в PDF/A.
++	Fast	Быстрая работа
++	Multithreaded rendering, instant undo and cached text composition.	Быстрая отрисовка с использованием нескольких ядер процессора, мгновенная отмена и повторное использование уже рассчитанной вёрстки текста.
++	A documented native format, PNG export and layout interchange import and export.	Документированный собственный формат, экспорт PNG, импорт и экспорт обменных форматов вёрстки.
++	Built for automation	Возможности автоматизации
++	Every menu item, tool, panel and dialog can be driven over a JSON control channel and an MCP server.	Каждым пунктом меню, инструментом, панелью и диалогом можно управлять через канал JSON и сервер MCP.
++	A magazine spread with a threaded story	Журнальный разворот со связанными текстовыми блоками
++	A word processor with the ribbon, shortcuts and behavior you already know, written in Rust. Open source, and built from public specifications.	Создавайте и оформляйте документы с помощью привычной ленты инструментов и сочетаний клавиш. Редактор написан на Rust, имеет открытый код и использует общедоступные описания форматов.
++	Familiar	Знакомый интерфейс
++	Ribbon tabs and groups, a live Styles gallery and the editing behavior you expect, from list continuation to Format Painter.	Вкладки и группы ленты, галерея стилей с предпросмотром и привычное редактирование — от продолжения списков до копирования формата.
++	Your files	Ваши файлы
++	Opens and saves .docx, and also .odt, .rtf, .html, .md, .tex and .txt. Opens older .doc files and exports PDF with real, selectable text.	Открытие и сохранение .docx, .odt, .rtf, .html, .md, .tex и .txt. Открытие старых .doc и экспорт PDF с полноценным выделяемым текстом.
++	Paragraph layout is cached, so typing stays responsive even in long documents.	Уже рассчитанная вёрстка абзацев сохраняется в памяти, поэтому текст вводится без задержек даже в длинных документах.
++	Private	Конфиденциальность
++	Spelling, grammar and everything else work offline.	Проверка орфографии, грамматики и остальные функции работают без интернета.
++	Everywhere	На разных платформах
++	One Rust codebase for macOS, Windows, Linux, BSD and the web.	Работает на macOS, Windows, Linux, BSD и в браузере. Все версии используют один и тот же код на Rust.
++	Built for agents	Автоматизация через ИИ-агентов
++	Every action is a command, driven from the ribbon, shortcuts, a command-line tool, a JSON control channel or an MCP server.	Каждое действие — команда, доступная из ленты, через сочетания клавиш, командную строку, канал JSON или сервер MCP.
++	The Home tab and the Navigation pane	Вкладка «Главная» и панель навигации
++	Track Changes and comments	Исправления и комментарии
++	The Design tab	Вкладка «Дизайн»
++	The Layout tab	Вкладка «Макет»
++	A presentation app with slide masters, shapes, animations and a presenter view, written in Rust. In alpha, heading for beta.	Приложение для презентаций на Rust с образцами слайдов, фигурами, анимацией и режимом докладчика. Альфа-версия на пути к бета-версии.
++	Make decks	Создание презентаций
++	Slide masters and layouts with placeholders that inherit formatting, themes, sections, notes and comments.	Образцы и макеты слайдов с заполнителями, наследующими оформление, темы, разделы, заметки и комментарии.
++	Draw	Рисование
++	Preset shapes with adjust handles, connectors that stay glued to shapes, freeform tools, merged shapes, gradients, shadows and glow.	Готовые фигуры с маркерами настройки, закреплённые соединители, произвольные контуры, объединение фигур, градиенты, тени и свечение.
++	Write	Работа с текстом
++	In-place text editing with full font and paragraph formatting, bullets and numbering, columns and autofit.	Редактирование текста прямо на слайде с полным форматированием шрифта и абзаца, маркерами, нумерацией, колонками и автоподбором размера.
++	Add content	Добавление материалов
++	Pictures with crop and corrections, styled tables, charts, audio and video.	Изображения с обрезкой и коррекцией, оформленные таблицы, диаграммы, звук и видео.
++	Present	Показ презентаций
++	Transitions including Morph, animations and motion paths, a full-screen slide show, presenter view and rehearsed timings.	Переходы, включая трансформацию, анимация и траектории движения, полноэкранный показ, режим докладчика и репетиция времени показа.
++	Exchange files	Обмен файлами
++	Opens and saves .pptx presentation files and exports PDF (slides, notes pages and handouts), PNG and JPEG.	Открытие и сохранение презентаций .pptx, экспорт PDF со слайдами, страницами заметок и раздаточными материалами, а также PNG и JPEG.
++	Editing a slide, with sections and notes	Редактирование слайда с разделами и заметками
++	The Shape Format tab	Вкладка «Формат фигуры»
++	The slide sorter	Сортировщик слайдов
++	The Format Shape pane	Панель «Формат фигуры»
++	A spreadsheet with the ribbon, formula bar, sheet tabs and shortcuts you know, on a calculation engine written in Rust. No subscription, no license server and no telemetry.	Электронные таблицы с привычной лентой, строкой формул, вкладками листов и сочетаниями клавиш. Вычислительный движок написан на Rust. Без подписки, сервера лицензий и телеметрии.
++	The ribbon, formula bar, Name Box, fill handle, point-mode formulas, Format Cells, Paste Special, conditional formatting, tables and charts.	Лента, строка формул, поле имени, маркер заполнения, выбор ссылок в формулах мышью, формат ячеек, специальная вставка, условное форматирование, таблицы и диаграммы.
++	Compatible	Совместимость
++	XLSX is the native format, with formulas, tables, conditional formats, charts, pivot tables and print settings round-tripping. CSV and TSV too.	Основной формат — XLSX с сохранением формул, таблиц, условного форматирования, диаграмм, сводных таблиц и параметров печати при повторном открытии. Также поддерживаются CSV и TSV.
++	Capable	Широкие возможности
++	A dependency-graph calculation engine with dynamic arrays, LET and LAMBDA, structured table references, sort, AutoFilter and Flash Fill.	Вычисления по графу зависимостей, динамические массивы, LET и LAMBDA, структурированные ссылки на таблицы, сортировка, автофильтр и мгновенное заполнение.
++	Copy-on-write workbooks, incremental recalculation and a grid that only lays out what is on screen.	Экономное использование памяти, пересчёт только изменившихся данных и отображение лишь видимой части таблицы.
++	Agent-native	Управление через ИИ-агентов
++	Every ribbon button, menu item, dialog and keystroke is a command, available over a JSON control channel, an MCP server or the CLI.	Каждая кнопка ленты, пункт меню, диалог и нажатие клавиши — команда, доступная через канал JSON, сервер MCP или командную строку.
++	One Rust codebase for the desktop and the web.	Работает на компьютере и в браузере. Обе версии используют один и тот же код на Rust.
++	A quarterly sales dashboard	Панель квартальных продаж
++	A household budget	Семейный бюджет
++	A pivot table	Сводная таблица
++	Formatting a chart	Форматирование диаграммы
++	A drafting app with the command line, object snaps and workflow that drafters already know. Free, with no account and no subscription. In early, fast development.	Приложение для черчения с привычной командной строкой, объектными привязками и рабочим процессом. Бесплатно, без учётной записи и подписки. Ранняя стадия активной разработки.
++	Type L, click two points, type @5<45 and press Enter. Prompts with clickable keywords, polar tracking, direct distance entry and grips work the way drafting habit expects.	Введите L, укажите две точки, введите @5<45 и нажмите Enter. Подсказки с нажимаемыми ключевыми словами, полярное отслеживание, прямой ввод расстояний и ручки редактирования работают привычным образом.
++	Open files	Открытие файлов
++	Reads and writes DXF natively (R12 through 2018) and opens and saves DWG (R13 through 2018) with the open-source acadrust library. Exports SVG and PNG.	Чтение и запись DXF от R12 до 2018, открытие и сохранение DWG от R13 до 2018 с открытой библиотекой acadrust. Экспорт SVG и PNG.
++	Fast and native	Быстрое приложение для компьютера
++	Pure Rust and egui, with no Electron and no web view.	Чистый Rust и egui, без Electron и встроенного браузера.
++	A full drafting toolset	Полный набор инструментов черчения
++	Draw, modify, dimension, hatch and block commands, layers with a properties manager, paper-space layouts and PDF plotting.	Рисование, изменение, размеры, штриховки и блоки, слои с диспетчером свойств, листы и печать в PDF.
++	Every menu item, tool and prompt is a command, available over MCP, a JSON control channel or the CLI.	Каждый пункт меню, инструмент и запрос ввода — команда, доступная через MCP, канал JSON или командную строку.
++	An apartment floor plan	План квартиры
++	A mechanical bracket drawing	Чертёж механического кронштейна
++	A layout sheet	Лист чертежа
++	A digital audio workstation that follows the workflow audio engineers already know: an Edit window for arranging and editing, and a Mix window for balancing. Pre-alpha.	Программа для записи и обработки звука с привычными для звукорежиссёров инструментами: отдельное окно для монтажа и микшер для сведения. Пока находится на ранней стадии разработки.
++	Editing	Редактирование
++	Shuffle, Slip, Spot and Grid modes, Smart, Grabber, Trim and other tools, fades and crossfades, playlists with comping lanes and clip gain.	Свободное перемещение клипов, сдвиг соседних клипов, установка в точную позицию и привязка к сетке. Инструменты выделения и подрезки, плавное нарастание и затухание звука, перекрёстные переходы, сборка удачного исполнения из нескольких дублей и настройка громкости отдельных клипов.
++	Mixing	Сведение
++	Faders and pans with automation, sends, busses, aux inputs, VCA masters, routing folders and automatic plugin delay compensation.	Фейдеры и панорама с автоматизацией, посылы, шины, дополнительные входы, мастер-каналы VCA, папки маршрутизации и автоматическая компенсация задержки плагинов.
++	Automation	Автоматизация
++	Volume, pan, mute, send and every plugin parameter, with Write, Touch, Latch and Trim passes recorded live from the faders.	Громкость, панорама, отключение звука, посылы и все параметры плагинов с записью движений фейдеров в режимах записи, касания, фиксации и корректировки.
++	Plugins	Плагины
++	EQ, dynamics, reverbs, modulation effects, a subtractive synth and a drum synth, all original, and CLAP plugins load too.	Собственные эквалайзеры, динамическая обработка, реверберация, модуляционные эффекты, субтрактивный синтезатор и синтезатор ударных. Также загружаются плагины CLAP.
++	The Edit window with a nine-track session	Окно редактирования с девятью дорожками
++	The Mix window	Окно микшера
++	Automation and memory locations	Автоматизация и метки памяти
++	The Score Editor	Нотный редактор
++	Design screens, components and prototypes in a native app that opens instantly and works offline, with no account and no telemetry. Early alpha.	Создание экранов, компонентов и прототипов в приложении, которое быстро запускается и работает без интернета, учётной записи и телеметрии. Ранняя альфа-версия.
++	Auto layout	Автоматическая компоновка
++	Rows, columns, wrap and grids with padding, gaps and Hug, Fill or Fixed sizing, plus constraints and layout grids.	Строки, столбцы, перенос и сетки с отступами и промежутками, размерами по содержимому, по контейнеру или фиксированными; ограничения и сетки макета.
++	Components	Компоненты
++	Instances with overrides, variants and properties, styles, and variables with modes bound to fills, strokes and effects.	Экземпляры с переопределениями, вариантами и свойствами, стили и переменные с режимами, связанными с заливками, обводками и эффектами.
++	Vectors	Векторная графика
++	Real vector networks, the pen and pencil, the shape builder, editable booleans and variable width strokes.	Векторные сети, перо и карандаш, построение фигур, редактируемые логические операции и обводки переменной ширины.
++	Prototypes	Прототипы
++	Connections, triggers and animated transitions, variables with conditionals, flows and a presentation view with device frames.	Связи, события и анимированные переходы, переменные с условиями, сценарии и режим показа с рамками устройств.
++	Hand off	Передача в разработку
++	Inspect mode with measurements, annotations, ready-for-dev status, and code for CSS, HTML, React, SwiftUI and Compose.	Режим инспекции с размерами, аннотациями, статусом готовности к разработке и кодом для CSS, HTML, React, SwiftUI и Compose.
++	Plain .figcraft files on your own disk. SVG, PNG, JPEG, WebP and PDF in and out, and .fig files open, best effort.	Проекты хранятся в файлах .figcraft на вашем диске. Можно импортировать и экспортировать SVG, PNG, JPEG, WebP и PDF. Открытие файлов .fig поддерживается частично.
+diff --git a/crates/ui-egui/src/i18n/tests.rs b/crates/ui-egui/src/i18n/tests.rs
+index c9e3dc2f7c8c3b3c524912583d9908de680c653c..dc32769b2d899d637e52ce0a98f58df6e00c45c1 100644
+--- a/crates/ui-egui/src/i18n/tests.rs
++++ b/crates/ui-egui/src/i18n/tests.rs
+@@ -562,3 +562,19 @@ fn picker_lists_english_first_then_names_alphabetically() {
+     assert!(pos("ru") < pos("ja"), "Cyrillic names come before CJK");
+     assert_eq!(name_sort_key("Čeština"), "cestina");
+ }
++
++#[test]
++fn russian_product_pages_have_no_english_fallbacks() {
++    for page in &artcraft_launcher_core::details::DETAILS {
++        let mut strings = vec![page.headline];
++        strings.extend(page.paragraphs());
++        for feature in page.features {
++            strings.extend([feature.title, feature.text]);
++        }
++        strings.extend(page.shots.iter().map(|shot| shot.caption));
++        for text in strings {
++            assert_ne!(tr(Lang::RU, text), text, "{}: {text}", page.id);
++            assert_eq!(tr(Lang::EN, text), text);
++        }
++    }
++}

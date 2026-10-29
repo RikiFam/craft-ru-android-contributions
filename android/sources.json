@@ -1,0 +1,137 @@
+{
+  "workspace_snapshot": "93708b2e2dc0276c9e3e7a738d2e598b7ae99d3c",
+  "component": "android",
+  "status": "experimental; no independent full rebuild",
+  "repositories": {
+    "cadcraft": {
+      "url": "https://github.com/storytold/cadcraft.git",
+      "base": "fbd97d432cdf36a566c0c53739481bd6f0c32b0d",
+      "destination": "tmp/artcraft/cadcraft/repo",
+      "patch": "patches/cadcraft.patch",
+      "sha256": "08d7e011ab19c236661533173aea07f57dd5339ab3dbcc2bcbeec7d01c78f334",
+      "apply_check": "passed"
+    },
+    "craft-launcher": {
+      "url": "https://github.com/storytold/craft-launcher.git",
+      "base": "9613c285dd40095c47772ee4e47494c06618d57a",
+      "destination": "tmp/artcraft/craft-launcher/repo",
+      "patch": "patches/craft-launcher.patch",
+      "sha256": "4794cff6e5661be942fc25c8916c2c5464b527ea7e2961dae33f6d510e258479",
+      "apply_check": "passed"
+    },
+    "deckcraft": {
+      "url": "https://github.com/storytold/deckcraft.git",
+      "base": "29f0f7772c47aa2bfb74fcbb0c4d3b1503300849",
+      "destination": "tmp/artcraft/deckcraft/repo",
+      "patch": "patches/deckcraft.patch",
+      "sha256": "b83f24509c2abfabac8e14e33fb2395c3bfdc56c935ffd37f6e853b92932a257",
+      "apply_check": "passed"
+    },
+    "designcraft": {
+      "url": "https://github.com/storytold/designcraft.git",
+      "base": "7da69c16ce221f46e8f27cb41e0c88167c8be416",
+      "destination": "tmp/artcraft/designcraft/repo",
+      "patch": "patches/designcraft.patch",
+      "sha256": "eff351bac54bf69303102267822206eccacd12542e00eeed613a1ba563e25293",
+      "apply_check": "passed"
+    },
+    "effectcraft": {
+      "url": "https://github.com/storytold/effectcraft.git",
+      "base": "c3600f9b59b109da97871a43a6898683a0163cb1",
+      "destination": "tmp/artcraft/effectcraft/repo",
+      "patch": "patches/effectcraft.patch",
+      "sha256": "a28d8b3ee6a04f23e416873308c46c6e706b5636f108ff6243a5f14cc846b5c6",
+      "apply_check": "passed"
+    },
+    "figcraft": {
+      "url": "https://github.com/storytold/figcraft.git",
+      "base": "ef9721c5b9d0f1cc19a74449cbe175fc06bf8efa",
+      "destination": "tmp/artcraft/figcraft/repo",
+      "patch": "patches/figcraft.patch",
+      "sha256": "c5ccf64d5f7a3b2e75f1f5531283ce37a43f33f752afb92ccf5f7ed7814d101f",
+      "apply_check": "passed"
+    },
+    "filmcraft": {
+      "url": "https://github.com/storytold/filmcraft.git",
+      "base": "a2d8e9ce269aba9c399e36262522e11456df6fbf",
+      "destination": "tmp/artcraft/filmcraft/repo",
+      "patch": "patches/filmcraft.patch",
+      "sha256": "c8e8278c7a6e7e3097b0645d7466fdc206ea79db04d2f4e109343a3e254d51ac",
+      "apply_check": "passed"
+    },
+    "gridcraft": {
+      "url": "https://github.com/storytold/gridcraft.git",
+      "base": "43284377d2466037628e57d8ad0c891778fdb45c",
+      "destination": "tmp/artcraft/gridcraft/repo",
+      "patch": "patches/gridcraft.patch",
+      "sha256": "72ad2dc5d6e51b63fe24c68a776428a513431c1b252c0e338d0bf266a426a339",
+      "apply_check": "passed"
+    },
+    "lightcraft": {
+      "url": "https://github.com/storytold/lightcraft.git",
+      "base": "e381c1ae6b2006ce627b243fe41697ce0d9608e0",
+      "destination": "tmp/artcraft/lightcraft/repo",
+      "patch": "patches/lightcraft.patch",
+      "sha256": "14f60cfd81dddc2e951c96cdb9bba627ba0422c60537cbacf9dc8f85fb61316e",
+      "apply_check": "passed"
+    },
+    "pdfcraft": {
+      "url": "https://github.com/storytold/pdfcraft.git",
+      "base": "75360d1d7db06fed974f48c914d4c04132757187",
+      "destination": "tmp/artcraft/pdfcraft/repo",
+      "patch": "patches/pdfcraft.patch",
+      "sha256": "f96f0f73b994a2d88451433bff68a4bc7e10ece8fd172bebab5c1baae34921bd",
+      "apply_check": "passed"
+    },
+    "photocraft": {
+      "url": "https://github.com/storytold/photocraft.git",
+      "base": "b8c3f3aa8e2918032cadc0e042664414a03be333",
+      "destination": "tmp/artcraft/photocraft/repo",
+      "patch": "patches/photocraft.patch",
+      "sha256": "a2d28301651fd594f63d1c20d03759df25f245d5a1bcbda4edf7b438a371338b",
+      "apply_check": "passed"
+    },
+    "soundcraft": {
+      "url": "https://github.com/storytold/soundcraft.git",
+      "base": "c6befe57afd0dc35fc4b86a01b2a19011ae1df1e",
+      "destination": "tmp/artcraft/soundcraft/repo",
+      "patch": "patches/soundcraft.patch",
+      "sha256": "8dc34fef2c1313ef17ed1270c65bfac06aa87d64c5fafcb444e91f84a9c3d91a",
+      "apply_check": "passed"
+    },
+    "vectorcraft": {
+      "url": "https://github.com/storytold/vectorcraft.git",
+      "base": "68b68a30acad9b3d8a72802b35f43b82e2bd7d3a",
+      "destination": "tmp/artcraft/vectorcraft/repo",
+      "patch": "patches/vectorcraft.patch",
+      "sha256": "ffaaf4884c2e065dfea1119450914f5b77f86eb2264301a480d5018c36526873",
+      "apply_check": "passed"
+    },
+    "wordcraft": {
+      "url": "https://github.com/storytold/wordcraft.git",
+      "base": "3de6ff95af86c19d67030cd96dba15cd6a45a25e",
+      "destination": "tmp/artcraft/wordcraft/repo",
+      "patch": "patches/wordcraft.patch",
+      "sha256": "a32ca8ab9d8ce594bdd5ad89203f09704340da019d02aa75461da52cac803491",
+      "apply_check": "passed"
+    },
+    "craft-i18n": {
+      "url": "https://github.com/storytold/craft-i18n.git",
+      "base": "9205108cfdced5177706264038848b68b2422d2b",
+      "destination": "tmp/artcraft/craft-i18n",
+      "patch": "patches/craft-i18n.patch",
+      "sha256": "1e44fc62684608d5cfbffc485854fbdecac3b3b43fedaf8efe77914149e87e8f",
+      "apply_check": "passed"
+    },
+    "craft-fonts": {
+      "url": "https://github.com/storytold/craft-fonts.git",
+      "base": "aced4137c022f1f587624d48e81ec77e1914a9cc",
+      "destination": "tmp/artcraft/craft-fonts"
+    },
+    "winit-input-source": {
+      "url": "https://github.com/storytold/winit.git",
+      "base": "a517b3846ee8457d84ee4975110bfda6797c44dc",
+      "destination": "tmp/artcraft/android/winit-source"
+    }
+  }
+}

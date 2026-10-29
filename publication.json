@@ -1,0 +1,20 @@
+{
+  "source_snapshot": "93708b2e2dc0276c9e3e7a738d2e598b7ae99d3c",
+  "packages": {
+    "russifier": {
+      "files": 62,
+      "archive": "downloads/russifier-93708b2.zip",
+      "sha256": "93f0cf50c29cc4ae6b8c4f5510977dc21ea8c594442ce4acd6a97754dfbf6a90"
+    },
+    "android": {
+      "files": 130,
+      "archive": "downloads/android-93708b2.zip",
+      "sha256": "1018b390cb90f54962f6dcb780b9af4eefa4e6001363a810cf1acfa46f65f76b"
+    },
+    "printing": {
+      "files": 12,
+      "archive": "downloads/printing-93708b2.zip",
+      "sha256": "789c37b35839fcb343fb6752fd5e7727795ae2f4fd5fff94376e0510c4d3e009"
+    }
+  }
+}

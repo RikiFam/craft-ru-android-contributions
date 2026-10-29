@@ -1,0 +1,86 @@
+diff --git a/crates/ui-egui/src/i18n/ru.tsv b/crates/ui-egui/src/i18n/ru.tsv
+index b74c3983129410fa538739a39e00990b1facff06..376c3059663e6deb78d2b56d5f3db58c2ba2cd7e 100644
+--- a/crates/ui-egui/src/i18n/ru.tsv
++++ b/crates/ui-egui/src/i18n/ru.tsv
+@@ -444,7 +444,7 @@
+ # View
+ 	Proof Setup	Настройка цветопробы
+ 	Proof Colors	Цветопроба
+-	Pixel Aspect Ratio	Пиксельное соотношение сторон
++	Pixel Aspect Ratio	Соотношение сторон пикселя
+ 	Pixel Aspect Ratio Correction	Коррекция пиксельного соотношения
+ 	Zoom In	Увеличить
+ 	Zoom Out	Уменьшить
+@@ -527,7 +527,7 @@
+ 	Navigator	Навигатор
+ 	Paragraph	Абзац
+ 	Paths	Контуры
+-	Patterns	Паттерны
++	Patterns	Узоры
+ 	Properties	Свойства
+ 	Styles	Стили
+ 	Swatches	Образцы
+@@ -577,8 +577,8 @@
+ 	Mixer Brush	Смешивающая кисть
+ 	Mixer Brush Tool	Инструмент «Смешивающая кисть»
+ 	Color Replacement Tool	Инструмент «Замена цвета»
+-	History Brush	Кисть истории
+-	Art History Brush	Кисть истории искусств
++	History Brush	Архивная кисть
++	Art History Brush	Художественная архивная кисть
+ 	Pattern Stamp	Узорный штамп
+ 	Spot Healing	Точечное восстановление
+ 	Red Eye	Красные глаза
+@@ -1038,8 +1038,8 @@
+ 	Current Brush Load	Текущая загрузка кисти
+ 	Load Brush	Загрузить кисть
+ 	Clean Brush	Очистить кисть
+-	Load the brush after each stroke	Загружать кисть после каждого штриха
+-	Clean the brush after each stroke	Очищать кисть после каждого штриха
++	Load the brush after each stroke	Набирать краску на кисть после каждого мазка
++	Clean the brush after each stroke	Очищать кисть после каждого мазка
+ 	Rate	Скорость
+ 	Airbrush: keeps depositing paint while the pointer rests.	Аэрограф: продолжает наносить краску, пока курсор неподвижен.
+ 	Pulled String Mode	Режим натянутой нити
+@@ -1151,17 +1151,17 @@
+ 	Left align text	Выравнивание по левому краю
+ 	Center text	Выравнивание по центру
+ 	Right align text	Выравнивание по правому краю
+-	Justify last left	Выключка по ширине, последняя влево
+-	Justify last centered	Выключка по ширине, последняя по центру
+-	Justify last right	Выключка по ширине, последняя вправо
+-	Justify all	Выключка по ширине, все строки
++	Justify last left	По ширине, последняя строка слева
++	Justify last centered	По ширине, последняя строка по центру
++	Justify last right	По ширине, последняя строка справа
++	Justify all	По ширине, включая последнюю строку
+ 	Indent Left	Отступ слева
+ 	Indent Right	Отступ справа
+ 	First Line Indent	Отступ первой строки
+ 	Space Before	Интервал перед абзацем
+ 	Space After	Интервал после абзаца
+-	Hanging Punctuation	Висячая пунктуация
+-	Roman Hanging Punctuation	Висячая пунктуация (римская)
++	Hanging Punctuation	Выносная пунктуация
++	Roman Hanging Punctuation	Выносная пунктуация для латиницы
+ 	Avoid Widows/Orphans	Избегать висячих строк
+ 	Compose	Компоновка
+ 	Adobe Single-line Composer	Построчная компоновка Adobe
+@@ -4688,3 +4688,17 @@ shape	Appearance	Оформление
+ 	Font size presets	Наборы размеров шрифта
+ 	Leading presets	Наборы интерлиньяжа
+ 	Tracking presets	Наборы трекинга
++	CPU Rendering	Отрисовка на процессоре
++	Calculating…	Вычисление…
++	Click to refresh histogram with uncached data	Нажмите, чтобы пересчитать гистограмму по исходным данным
++	Count:	Число пикселей:
++	Drawn on the CPU: {reason}. Click for System Info.	Отрисовка на процессоре: {reason}. Нажмите, чтобы открыть сведения о системе.
++	Level:	Уровень:
++	Percentile:	Процентиль:
++	Release Notes	Что нового
++	Remember Settings	Запомнить настройки
++	Show Channels in Color	Показывать каналы в цвете
++	Show Statistics	Показывать статистику
++	Source:	Источник:
++	Uncached Refresh	Пересчитать по исходным данным
++	Update and Restart	Обновить и перезапустить
