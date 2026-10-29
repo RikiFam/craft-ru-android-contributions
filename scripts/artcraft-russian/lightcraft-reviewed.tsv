@@ -1,0 +1,69 @@
+A pen's pressure sets the size and flow of the brush	Нажим пера меняет размер кисти и количество наносимой краски
+Add Remove Spot	Добавить область удаления пятна
+Add in place	Добавить без копирования
+Add in place: the library references the files where they are; nothing is copied or moved.	Библиотека будет использовать файлы из их текущих папок, без копирования и перемещения.
+Local photos aren't in the library yet: Add to My Photos first, then move them	Эти фотографии ещё не добавлены в библиотеку. Сначала нажмите «Добавить в Мои фото», затем переместите их.
+Apply Filter Preset	Применить набор настроек фильтра
+Apply Metadata Preset	Применить набор метаданных
+Apply Point Curve Preset	Применить набор настроек точечной кривой
+Apply Preset	Применить набор настроек
+Apply Settings JSON	Применить настройки из JSON
+Create Preset	Создать набор настроек
+Create Preset…	Создать набор настроек…
+Delete Export Preset	Удалить набор настроек экспорта
+Delete Filter Preset	Удалить набор настроек фильтра
+Delete Metadata Preset	Удалить набор настроек метаданных
+Delete Point Curve Preset	Удалить набор настроек точечной кривой
+Delete Preset	Удалить набор настроек
+Export Album with Preset	Экспортировать альбом с набором настроек
+Export Point Curve Presets	Экспортировать наборы настроек точечной кривой
+Export Point Curve Presets…	Экспортировать наборы настроек точечной кривой…
+Export Presets	Экспортировать наборы настроек
+Export Presets…	Экспортировать наборы настроек…
+Export User Presets…	Экспортировать пользовательские наборы настроек…
+Export with Preset	Экспорт с набором настроек
+Favorite Preset	Избранный набор настроек
+Filter Presets	Наборы настроек фильтров
+Import Point Curve Presets	Импортировать наборы настроек точечной кривой
+Import Point Curve Presets…	Импортировать наборы настроек точечной кривой…
+Import Presets	Импортировать наборы настроек
+Import Presets…	Импортировать наборы настроек…
+Import Profiles & Presets…	Импортировать профили и наборы настроек…
+LightCraft Preset	Набор настроек LightCraft
+LightCraft Presets	Наборы настроек LightCraft
+List Presets	Список наборов настроек
+Metadata Preset	Набор настроек метаданных
+Metadata Presets	Наборы настроек метаданных
+Metadata preset	Набор настроек метаданных
+More preset options	Другие параметры набора настроек
+Move Preset to Group	Переместить набор настроек в группу
+No filter presets yet	Наборов настроек фильтров пока нет
+No new presets	Новых наборов настроек нет
+Point Curve Presets	Наборы настроек точечной кривой
+Preset	Набор настроек
+Preset name	Название набора настроек
+Presets	Наборы настроек
+Presets & Profiles	Наборы настроек и профили
+Presets (Shift+P)	Наборы настроек (Shift+P)
+Presets ▾	Наборы настроек ⌄
+Rename Preset	Переименовать набор настроек
+Right-click a preset to delete it	Щёлкните набор настроек правой кнопкой, чтобы удалить его
+Save Current Filter as Preset…	Сохранить текущий фильтр как набор настроек…
+Save Export Preset	Сохранить набор настроек экспорта
+Save Filter Preset	Сохранить набор настроек фильтра
+Save Metadata Preset	Сохранить набор настроек метаданных
+Save Metadata Preset…	Сохранить набор настроек метаданных…
+Save Point Curve Preset	Сохранить набор настроек точечной кривой
+Save as Preset	Сохранить как набор настроек
+Save preset	Сохранить набор настроек
+Update Preset with Current Settings	Обновить набор настроек текущими настройками
+User Presets	Пользовательские наборы настроек
+23 new built-in presets: Portrait, Landscape, Urban, Food, Seasons, Vintage and B&W toners.	23 новых встроенных набора настроек: портрет, пейзаж, город, еда, времена года, винтаж и тонирование Ч/Б.
+Copyright status, rights usage terms and copyright info URL in Info, metadata presets and exports.	Статус авторских прав, условия использования прав и URL сведений об авторских правах в «Информации», наборах настроек метаданных и экспорте.
+Import presets from other editors: XMP presets, classic `.lrtemplate` files, "DNG presets" from mobile apps and `.zip`	Импорт наборов настроек из других редакторов: XMP-наборы настроек, классические файлы `.lrtemplate`, «DNG-наборы настроек» из мобильных приложений и `.zip`
+Import: copy to any folder, by day / by month / one folder, rename on import, metadata preset, Copy as DNG.	Импорт: копирование в любую папку, по дням / по месяцам / в одну папку, переименование при импорте, набор настроек метаданных, копирование как DNG.
+Luminar looks: `.lmp` files and `.mplumpack` collections import as presets (grouped by collection); the sliders	Стили Luminar: файлы `.lmp` и коллекции `.mplumpack` импортируются как наборы настроек (группируются по коллекции); ползунки
+Move Preset to New Group	Переместить набор настроек в новую группу
+Presets and profiles	Наборы настроек и профили
+bundles of any of these — whole folders at once, grouped by pack. Masks inside presets come along.	пакеты любых из них — целые папки сразу, сгруппированные по набору. Маски внутри наборов настроек переносятся тоже.
+Light	Свет

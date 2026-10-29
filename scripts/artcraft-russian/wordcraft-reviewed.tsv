@@ -1,0 +1,9 @@
+A free, open-source word processor written from scratch in Rust.\nPart of the Crafting Apps from the ArtCraft team.	Бесплатный текстовый редактор с открытым исходным кодом, созданный с нуля на Rust.\nВходит в набор приложений ArtCraft.
+About WordCraft	О программе WordCraft
+select a floating picture or shape first	сначала выберите рисунок или фигуру с обтеканием текстом
+Placeholder text	Текст подсказки
+Leave a recipient out of the merge when a field has this value.	Пропустить получателя, если в указанном поле стоит это значение.
+No errors found: every merge field is in the recipient list.	Ошибок нет: в списке получателей есть все поля, используемые в документе.
+These merge fields aren't in the recipient list:	В списке получателей нет следующих полей:
+Show only records that will be merged	Показывать только выбранных получателей
+{count} of {total} recipients will be merged.	Выбрано получателей: {count} из {total}.

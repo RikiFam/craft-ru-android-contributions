@@ -1,0 +1,63 @@
+About FigCraft	О программе FigCraft
+Add a frame (F) or a shape (R) to get started	Для начала добавьте фрейм (F) или фигуру (R)
+Add auto layout	Автокомпоновка
+Remove auto layout	Убрать автоматическую компоновку
+Use auto layout	Использовать автоматическую компоновку
+Ignore auto layout (absolute position)	Не учитывать автоматическую компоновку (абсолютное положение)
+Add background behind overlay	Добавить фон за всплывающим окном
+Close overlay	Закрыть всплывающее окно
+Open overlay	Открыть всплывающее окно
+Swap overlay	Заменить всплывающее окно
+Overlay position	Положение всплывающего окна
+Convert to frame	Преобразовать во фрейм
+Dev Mode	Режим разработчика
+Draw a frame	Нарисовать фрейм
+Frame	Фрейм
+Frames	Фреймы
+Frame selection	Поместить выделенное во фрейм
+Frame tools	Инструменты фрейма
+Next frame	Следующий фрейм
+Previous frame	Предыдущий фрейм
+Preview this frame	Предпросмотр фрейма
+Presenting: next frame	Показ: следующий фрейм
+Presenting: previous frame	Показ: предыдущий фрейм
+Export frames and layers as PNG, JPG, SVG or PDF	Экспорт фреймов и слоёв в PNG, JPG, SVG или PDF
+Every top-level frame already starts a flow	У каждого фрейма верхнего уровня уже есть начальная точка сценария
+Link frames on the Prototype tab, then present the flow	Свяжите фреймы на вкладке «Прототип», затем запустите сценарий
+Nothing here yet. Set a frame's status to list it.	Здесь пока пусто. Задайте статус фрейма, чтобы он появился в списке.
+Pick the Frame tool, then drag on the canvas or choose a device size	Выберите инструмент «Фрейм» и задайте область на холсте мышью или выберите размер устройства
+Place a shape or frame (its tool chosen)	Разместить фигуру или фрейм выбранным инструментом
+Select a frame and add a starting point to present it as a flow.	Выберите фрейм и добавьте начальную точку, чтобы запустить сценарий.
+Select a frame to preview it	Выберите фрейм для предпросмотра
+This frame is new on the branch.	Этот фрейм добавлен в ветке.
+This frame isn't on the branch.	Этого фрейма нет в ветке.
+Smart animate	Плавная анимация
+Adjustment presets	Наборы настроек коррекции
+Delete preset	Удалить набор настроек
+No preset	Без набора настроек
+Save as preset…	Сохранить набор настроек…
+file.exportFramesPdf	Экспортировать фреймы в PDF
+frame.create	Создать фрейм
+frame.presets	Размеры и шаблоны фреймов
+image.deletePreset	Удалить набор настроек изображения
+image.savePreset	Сохранить набор настроек изображения
+layout.add	Добавить автокомпоновку
+layout.remove	Убрать автоматическую компоновку
+layout.suggest	Предложить автоматическую компоновку
+measure.padding	Измерить внутренние отступы компоновки
+object.convertToFrame	Преобразовать во фрейм
+object.frameSelection	Поместить выделенное во фрейм
+object.removeFrame	Убрать фрейм
+tool.frame	Фрейм
+view.devMode	Режим разработчика
+view.frameOutlines	Контуры фреймов
+view.nextFrame	Показать следующий фрейм
+view.prevFrame	Показать предыдущий фрейм
+Resize frames to the device's screen (or the window without a device): their constraints and auto layout respond	Подгонять фреймы под экран устройства или окно просмотра. Ограничения и автоматическая компоновка учитывают новый размер.
+What this changed from isn't known: it changed before FigCraft kept a copy of ready-for-dev frames. Resolve the change (or mark it ready again) to compare from now on.	Исходное состояние неизвестно: изменение произошло до того, как FigCraft начал сохранять копии фреймов, готовых к разработке. Завершите обработку изменения или снова отметьте готовность, чтобы сравнивать дальнейшие изменения.
+Auto layout	Автоматическая компоновка
+Overlay	Всплывающее окно
+Presets	Наборы настроек
+image.presets	Наборы настроек изображения
+New design file	Новый макет
+file.new	Новый макет

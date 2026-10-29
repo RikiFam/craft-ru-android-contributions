@@ -1,0 +1,187 @@
+3D Mouse	3D-мышь
+A drawing opened from a file keeps that file's format.	Чертёж, открытый из файла, сохраняет исходный формат.
+A variable name starts with a letter and has only letters, digits and _	Название переменной должно начинаться с буквы и содержать только буквы, цифры и знак _
+Add: Pick points	Добавить: указать точки
+Add: Select objects	Добавить: выбрать объекты
+Additional angles	Дополнительные углы
+Add…	Добавить…
+Alias	Сокращение команды
+An array that would create more objects than this is refused.	Массивы с большим количеством объектов не создаются.
+Apply	Применить
+Associative	Ассоциативная
+Attach DWG...	Подключить DWG…
+Automatic save every	Автосохранение каждые
+Automatic save file location	Папка автосохранения
+Bind	Внедрить
+Block to create or edit	Блок для создания или редактирования
+Bottom left	Снизу слева
+Bottom right	Снизу справа
+Boundaries	Границы
+Bulleted list	Маркированный список
+CADCraft	CADCraft
+CADCraft keeps these preferences, object snap modes and drafting toggles for your user account and restores them when it starts.	CADCraft сохраняет эти настройки, режимы привязки и параметры черчения для вашей учётной записи и восстанавливает их при запуске.
+Calibrate	Калибровать
+Centered	По центру
+Changes apply at once and are kept for next time.	Изменения применяются сразу и сохраняются для следующего запуска.
+Choose the command the alias starts.	Выберите команду, которую будет запускать сокращение.
+Clear History	Очистить историю
+Click the ruler to add a tab stop, right-click to remove one	Щёлкните по линейке, чтобы добавить позицию табуляции; правая кнопка удаляет её
+Click to set new origin	Укажите новое начало координат
+Close Block Editor	Закрыть редактор блоков
+Close Comparison	Закрыть сравнение
+Collapse Palettes	Свернуть палитры
+Color 1	Цвет 1
+Color 2	Цвет 2
+Command	Команда
+Command Aliases	Сокращения команд
+Command line history	История командной строки
+Convert	Преобразовать
+Copy as JSON	Копировать как JSON
+Create separate hatches	Создавать отдельные штриховки
+Crosshair size	Размер перекрестия
+Crossing selection color:	Цвет пересекающей рамки:
+Curved	Изогнутая
+Default save version	Версия сохранения по умолчанию
+Default to boundary extents	По умолчанию использовать габариты границы
+Define each corner of the selection window with a separate click.	Задавайте каждый угол рамки выделения отдельным щелчком.
+Detach	Отсоединить
+Discard	Отбросить
+Don't Save	Не сохранять
+Drawings with no file yet are saved in the default version. 0 minutes turns automatic save off.	Новые чертежи сохраняются в выбранной версии. Значение 0 минут отключает автосохранение.
+Edit Block Definition	Изменить определение блока
+Edit…	Изменить…
+Enable 3D mouse navigation	Включить управление 3D-мышью
+Evaluate	Вычислить
+Exclude:	Исключить:
+Export Comparison	Экспортировать сравнение
+Get from the Drawing	Взять из чертежа
+Grid snap	Шаговая привязка
+Grip size	Размер ручек
+Grips	Ручки
+Groups	Группы
+Hatch and Gradient	Штриховка и градиент
+Hatch origin	Начало штриховки
+Hatches	Штриховки
+Hemispherical	Полусферическая
+History	История
+Hold Shift to add to the selection	Удерживайте Shift для добавления к выделению
+Ignore	Игнорировать
+Imperial (inches)	Дюймы
+Indicate selection area	Показывать область выделения
+Insert tab	Вставить табуляцию
+Interface language	Язык интерфейса
+Interface scale	Масштаб интерфейса
+Interface theme	Тема интерфейса
+Inverted	Инвертировать
+Island	Островок
+Island detection	Определение островков
+Isometric snap	Изометрическая привязка
+Italic	Курсив
+Justify	По ширине
+Keep the system cursor visible over the drawing area	Показывать системный указатель над областью чертежа
+Largest array	Максимальный размер массива
+Layout paper	Бумага листа
+Left device button: zoom extents. Right device button: calibrate.	Левая кнопка устройства — показать весь чертёж. Правая — калибровка.
+Lock viewport	Заблокировать видовой экран
+Make it a block of this drawing, keeping its layer names	Преобразовать в блок этого чертежа, сохранив названия слоёв
+Make it a block of this drawing; its layers become NAME$0$LAYER	Преобразовать в блок этого чертежа; названия слоёв получат вид NAME$0$LAYER
+Metric (millimetres)	Миллиметры
+Model background	Фон модели
+More toolbar commands	Другие команды панели
+Move sideways to pan; push/pull or twist to zoom.	Сдвиг в стороны перемещает вид; нажатие, вытягивание и поворот меняют масштаб.
+Multiline text	Многострочный текст
+New and the first drawing at startup use these units unless a default template is set (QNEWTEMPLATE).	Эти единицы используются для новых чертежей и первого чертежа при запуске, если не задан шаблон QNEWTEMPLATE.
+New block	Новый блок
+Next Change	Следующее изменение
+No alias file loaded. REINIT replaces these aliases with a file's.	Файл сокращений не загружен. Команда REINIT заменяет сокращения содержимым файла.
+No external references are attached.	Внешние ссылки не подключены.
+Numbered list	Нумерованный список
+Object Snap Tracking Settings	Настройки отслеживания объектной привязки
+Object grouping	Группировка объектов
+Object selection limit for display of grips	Максимум объектов для отображения ручек
+Object snap aperture	Область поиска объектной привязки
+Object snap marker size	Размер маркера объектной привязки
+Objects on locked layers	Объекты на заблокированных слоях
+Open	Открыть
+Open in Block Editor	Открыть в редакторе блоков
+Options	Настройки
+Outer	Внешняя
+Over-constrained	Избыточные ограничения
+Overlay	Наложение
+Overline	Надчёркивание
+Pan sensitivity	Чувствительность перемещения вида
+Paste to Command Line	Вставить в командную строку
+Pickbox size	Размер прицела выбора
+Polar angle measurement	Отсчёт полярных углов
+Polar distance	Полярный шаг
+PolarSnap	Полярная привязка
+Preview	Предпросмотр
+Previous Change	Предыдущее изменение
+Rectangular snap	Прямоугольная привязка
+Reference Name	Название ссылки
+Relative to last segment	Относительно последнего сегмента
+Reload	Перезагрузить
+Reload All	Перезагрузить всё
+Reset keeps the interface language.	При сбросе язык интерфейса сохраняется.
+Reset to Defaults	Сбросить настройки
+Reverse zoom direction	Обратить направление масштабирования
+Save Block	Сохранить блок
+Save Block As	Сохранить блок как
+Save alias	Сохранить сокращение
+Save new drawings as	Сохранять новые чертежи как
+Saved Path	Сохранённый путь
+Screen magnifiers, screen readers and recorders follow the system cursor.	Экранная лупа, программы чтения с экрана и записи экрана следуют за системным указателем.
+Select boundaries to remove	Выберите удаляемые границы
+Select objects first, then choose a command	Сначала выбирать объекты, затем команду
+Select using two clicks only	Выделять только двумя щелчками
+Selection Area Effect	Оформление области выделения
+Selection Preview Filter	Фильтр подсветки при наведении
+Selection area opacity:	Непрозрачность области выделения:
+Selection effect color	Цвет подсветки выделения
+Selection modes	Режимы выделения
+Selection preview	Подсветка при наведении
+Shape	Форма
+Show Quick Properties for selected objects	Показывать быстрые свойства выделенных объектов
+Show and hide the tools of this category	Показать или скрыть инструменты этой категории
+Show command prompting near the crosshairs	Показывать подсказки команд возле перекрестия
+Show grips	Показывать ручки
+Show in Tool Sets	Показать в наборах инструментов
+Snap type	Тип привязки
+Snap, grid, polar tracking and Dynamic Input:	Привязка, сетка, полярное отслеживание и динамический ввод:
+Specified origin	Заданное начало
+Spherical	Сферическая
+Tables	Таблицы
+Text color	Цвет текста
+The aperture is how near the cursor must come to a point for an object snap to find it.	Область поиска определяет, насколько близко нужно подвести указатель к точке для объектной привязки.
+Time-sensitive right-click: a quick click is Enter, holding opens the menu	Правая кнопка с учётом длительности: короткий щелчок — Enter, удержание — меню
+To	В
+Top left	Сверху слева
+Top right	Сверху справа
+Track orthogonally only	Отслеживать только по горизонтали и вертикали
+Track using all polar angle settings	Отслеживать по всем заданным полярным углам
+Turned off, a right-click while a command runs always opens the shortcut menu.	Если выключено, правая кнопка во время команды всегда открывает контекстное меню.
+Type an alias name.	Введите сокращение команды.
+Underline	Подчёркивание
+Units Conversion	Преобразование единиц
+Units of new drawings	Единицы новых чертежей
+Unload	Выгрузить
+Unlock viewport	Разблокировать видовой экран
+Unsaved changes	Несохранённые изменения
+Use current origin	Использовать текущее начало
+Variables	Переменные
+Viewport is locked	Видовой экран заблокирован
+Viewport scale	Масштаб видового экрана
+Visual Effect Settings	Настройки визуальных эффектов
+Visual Effect Settings...	Настройки визуальных эффектов…
+When a command is active	Во время команды
+When no command is active	Когда команда не выполняется
+Window selection color:	Цвет обычной рамки выделения:
+X	X
+Xrefs	Внешние ссылки
+Y	Y
+Your changes will be lost if you don't save them.	Если не сохранить изменения, они будут потеряны.
+Zoom sensitivity	Чувствительность масштабирования
+built-in	встроенное
+min	мин
+objects	объектов
+overrides built-in	заменяет встроенное

@@ -1,0 +1,5 @@
+tmp/
+*.jks
+*.keystore
+*.apk
+__pycache__/

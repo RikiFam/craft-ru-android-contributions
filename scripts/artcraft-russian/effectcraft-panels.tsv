@@ -1,0 +1,711 @@
+# Panel terminology, reviewed separately from menu command labels.
+Composition	Композиция
+About EffectCraft	О программе EffectCraft
+About...	О программе…
+(missing)	(не найдено)
+Active Camera	Активная камера
+Add Animator	Добавить аниматор
+Add Comment	Добавить комментарий
+Add Formatting	Добавить форматирование
+Add Group	Добавить группу
+Add Mirror	Добавить зеркало
+Add Selected As	Добавить выбранное как
+Add a shape, fill, stroke or path operation	Добавить фигуру, заливку, обводку или операцию с контуром
+Add to Composition	Добавить в композицию
+Add to Favorites	Добавить в избранное
+Add:	Добавить:
+Adjust Exposure (stops)	Коррекция экспозиции (ступени)
+Adjust composition duration to the time span of the selected layers	Подогнать длительность композиции под выбранные слои
+Advanced 3D	Расширенное 3D
+Align Layers to:	Выровнять слои по:
+Appearance Mode: {}	Оформление: {}
+Apply Dimensions:	Применить размеры:
+Apply Motion To:	Применить движение к:
+Auto-saves	Автосохранения
+Blend Mode:	Режим наложения:
+Blur Level	Степень размытия
+Browser Storage	Хранилище браузера
+Brush Dynamics	Динамика кисти
+Caching frames…	Подготовка кадров для просмотра…
+Casts Shadows	Отбрасывает тени
+Change Renderer…	Выбрать способ рендеринга…
+Changing a shortcut creates a custom preset; the default stays as it is.	При изменении сочетания клавиш создаётся ваш набор настроек. Стандартный набор остаётся без изменений.
+Chapter:	Глава:
+Choose...	Выбрать…
+Classic 3D	Классическое 3D
+Clear list	Очистить список
+Click a key to see its commands.	Нажмите клавишу, чтобы увидеть назначенные ей команды.
+Click above the bar to add an opacity stop, below it to add a color stop.	Щёлкните над полосой, чтобы добавить точку прозрачности, или под полосой — чтобы добавить цвет.
+Click adds a point (½ height = no change)	Щёлкните, чтобы добавить точку. Середина по высоте соответствует исходному значению.
+Click adds a point; drag one off to remove	Щёлкните, чтобы добавить точку. Для удаления перетащите её за пределы графика.
+Click to make this viewer active	Щёлкните, чтобы сделать это окно просмотра активным
+Click to reveal the expression in the timeline	Показать выражение на монтажной шкале
+Click to show the active composition here	Показать здесь активную композицию
+Click, then click in the Composition panel	Нажмите здесь, затем выберите точку в окне композиции
+Clone Options	Настройки клонирования
+Clone Source Overlay:	Наложение источника клонирования:
+Close tutorial	Закрыть урок
+Color Depth: {}	Глубина цвета: {}
+Colour map	Цветовая карта
+Comment:	Комментарий:
+Composition Mini-Flowchart	Краткая схема связей композиции
+Composition Name:	Название композиции:
+Composition Settings ▸ 3D Renderer	Настройки композиции ▸ Рендеринг 3D
+Composition Settings…	Настройки композиции…
+Composition marker bin: drag a marker to the time ruler	Маркеры композиции: перетащите маркер на шкалу времени
+Cone Angle	Угол светового конуса
+Cone Feather	Мягкость края светового конуса
+Constrain Proportions	Сохранять пропорции
+Continuous (Lock Outgoing to Incoming)	Плавная кривая (связать входящую и исходящую касательные)
+Cue Point	Сигнальная точка
+Current Render	Текущий рендеринг
+Darker	Темнее
+Default Output:	Папка вывода по умолчанию:
+Default: {}	По умолчанию: {}
+Defaults	Стандартные настройки
+Delete Selected Points	Удалить выбранные точки
+Delete selected project items	Удалить выбранные элементы проекта
+Delete this template	Удалить этот шаблон
+Depth of Field	Глубина резкости
+Distribute Layers:	Распределить слои:
+Don't Recover	Не восстанавливать
+Double-click a layer to open it in the Layer panel	Дважды щёлкните слой, чтобы открыть его на панели «Слой»
+Double-click footage in the Project panel to open it here	Дважды щёлкните материал на панели «Проект», чтобы открыть его здесь
+Double-click to edit the comment	Дважды щёлкните, чтобы изменить комментарий
+Drag to change	Перетащите, чтобы изменить значение
+Drag to create a guide	Перетащите, чтобы создать направляющую
+Drag to slip the source	Перетащите, чтобы сдвинуть содержимое внутри клипа
+Drop Frame	С пропуском номеров кадров
+Edit Value…	Изменить значение…
+Remove Expression	Удалить выражение
+Edit Gradient…	Изменить градиент…
+Edit Target: {}	Объект редактирования: {}
+Edit in the Timeline	Изменить на монтажной шкале
+EffectCraft didn't quit normally last time.	В прошлый раз работа EffectCraft завершилась с ошибкой.
+Effects & Presets options	Настройки панели «Эффекты и наборы настроек»
+Copy Presets Folder Path	Копировать путь к папке наборов настроек
+Copy Source Path	Копировать путь к исходному файлу
+Effects: {}	Эффекты: {}
+Empty folder	Папка пуста
+Enable Depth of Field	Включить глубину резкости
+Enable Expression	Включить выражение
+Enhance	Улучшить
+Essential Properties — {}	Основные свойства — {}
+Export Template…	Экспортировать шаблон…
+Expression Language Menu	Команды языка выражений
+Expression pick whip: drag onto a property	Чтобы связать выражение со свойством, перетащите указатель на это свойство
+Expression:	Выражение:
+Eyedropper: click, then click in the Composition panel	Пипетка: нажмите здесь, затем выберите цвет в окне композиции
+Falloff	Ослабление
+Falloff Distance	Расстояние ослабления
+Field Render: {}	Поля развёртки: {}
+Figures	Цифры
+Fill Target	Заполнить область назначения
+Flowchart: {}	Схема связей: {}
+Focus Distance	Расстояние фокусировки
+Follow Feature Rotation and Scale	Отслеживать поворот и масштаб объекта
+Footage: {}	Исходный материал: {}
+Format: {}	Формат: {}
+Frame Aspect Ratio: {}	Соотношение сторон кадра: {}
+Frame Blending: {}	Смешение кадров: {}
+Frame Rate:	Частота кадров:
+Frame Render Time  {}ms	Время рендеринга кадра: {} мс
+Frame Target:	Целевой кадр:
+Guide Layer	Вспомогательный слой
+Guide Layers: {}	Вспомогательные слои: {}
+Hide This	Скрыть
+Hold In Place	Оставить на месте
+If Confidence is Below	Если достоверность ниже
+Import and Add to Composition	Импортировать и добавить в композицию
+Imported media	Импортированные материалы
+Influence:	Влияние:
+Install from File…	Установить из файла…
+Inverted	Инвертировано
+Key: {}	Клавиша: {}
+LEARN	ОБУЧЕНИЕ
+Label Colors and Names:	Цвета и названия меток:
+Latest auto-save: {}	Последнее автосохранение: {}
+Layer controls	Элементы управления слоем
+Layer:	Слой:
+Layer: {}	Слой: {}
+Layer Styles	Стили слоя
+Leave all attributes in "{}"	Оставить все свойства в «{}»
+Licence: {}	Лицензия: {}
+Ligatures	Лигатуры
+Light Type	Тип источника света
+Lighter	Светлее
+Link Selected Property	Связать выбранное свойство
+Lock Aspect Ratio to {}	Зафиксировать соотношение сторон: {}
+Lock to Zoom	Связать с масштабом
+Locked: {} — {}	Закреплено: {} — {}
+Log:	Журнал:
+Loop (Trace Path)	Повторять движение по контуру
+Magnification ratio popup	Выбор масштаба
+Make Comp Size	Подогнать под размер композиции
+Masks	Маски
+Maximize Panel	Развернуть панель
+Media Replacement	Замена материалов
+Mesh:	Сетка:
+Method Used: {}    Average Error: {} pixels	Метод: {}    Средняя ошибка: {} пикс.
+Models folder: {}	Папка моделей: {}
+Modifiers:	Модификаторы:
+More ArtCraft apps	Другие приложения ArtCraft
+More tutorials	Другие уроки
+Motion Blur	Размытие в движении
+Motion Blur: {}	Размытие в движении: {}
+Motion Sketch: drag to record	Запись траектории: перетаскивайте объект
+Move to Project Root	Переместить в корень проекта
+New Comp from Selection	Создать композицию из выделенного
+Replace with Precomposition	Заменить вложенной композицией
+New Duration:	Новая длительность:
+New composition name:	Название новой композиции:
+New from Render Queue item:	Создать на основе задания в очереди рендеринга:
+Nice work. Pick another tutorial on the Home screen's Learn tab.	Урок завершён. Другие уроки находятся на вкладке «Обучение» начального экрана.
+No VR environments yet. Create one with Composition ▸ VR ▸ Create VR Environment…	Среды VR пока нет. Создайте её через меню «Композиция» ▸ VR ▸ «Создать среду VR…».
+No audio layer selected	Выберите звуковой слой
+No background jobs running	Нет выполняющихся фоновых задач
+No composition markers	В композиции нет маркеров
+No device list from this host; the system default output is used.	Список устройств недоступен. Звук выводится через устройство, выбранное в системе по умолчанию.
+No layer selected	Слой не выбран
+No matching effects or presets	Подходящих эффектов и наборов настроек не найдено
+Variable fonts only	Только вариативные шрифты
+No nested compositions	Вложенных композиций нет
+No shortcut	Сочетание клавиш не назначено
+No unlocked layer selected	Выберите незаблокированный слой
+No video	Нет видео
+Not applied: tick it in the list to add it.	Не применено. Установите флажок в списке, чтобы добавить.
+Not assigned	Не назначено
+Note: Shadows are only cast from layers with Cast Shadows enabled.	Тени отбрасывают только слои с включённым параметром «Отбрасывать тени».
+Notify	Уведомлять
+One-Node Camera	Камера без точки наведения
+Open Composition	Открыть композицию
+used once	используется один раз
+used {} times	использований: {}
+Compositions that use this item	Композиции, использующие этот элемент
+Open Last Saved Project	Открыть последний сохранённый проект
+Open New Composition	Открыть новую композицию
+Open Output	Открыть готовый файл
+Open a composition to build Essential Graphics	Откройте композицию для настройки графического шаблона
+Open a composition to see its scopes	Откройте композицию, чтобы увидеть показания измерительных приборов
+Open a composition to track motion.	Откройте композицию для отслеживания движения.
+Opus Tuning: {}	Настройка Opus: {}
+Original Duration:	Исходная длительность:
+Output Cycle: {}	Цикл вывода: {}
+Output To:	Сохранить в:
+Parameter Name:	Название параметра:
+Parent pick whip: drag onto a layer	Чтобы назначить родительский слой, перетащите указатель на нужный слой
+Pixel Aspect Ratio:	Соотношение сторон пикселя:
+Playing on Video Preview	Воспроизведение на устройстве видеопросмотра
+Post-Render Action: {}	После рендеринга: {}
+Preserve frame rate when nested or in render queue	Сохранять частоту кадров при вложении и рендеринге
+Preserve resolution when nested	Сохранять разрешение при вложении
+Primary:	Основной:
+Process Before Match	Обработать перед сопоставлением
+Profile: {}	Профиль: {}
+Project color depth: click to cycle 8/16/32 bpc, Alt-click for Project Settings	Глубина цвета проекта: щелчок переключает 8, 16 и 32 бита на канал. Alt + щелчок открывает настройки проекта.
+Project: {}	Проект: {}
+Projects	Проекты
+Property pick whip: drag onto a property	Чтобы связать свойства, перетащите указатель на нужное свойство
+Protected Region	Защищённый диапазон
+Proxy Use: {}	Использование прокси: {}
+Push All to Comp	Применить всё к композиции
+Rate Control: {}	Управление битрейтом: {}
+Recording	Запись
+Render: {} ms  •  UI {} fps{}	Рендеринг: {} мс  •  Интерфейс: {} кадр/с{}
+Renderer:	Способ рендеринга:
+Request Persistent Storage	Разрешить постоянное хранение данных
+Reset Labels	Сбросить метки
+Reset Preset	Сбросить набор настроек
+Resolution/Down Sample Factor Popup	Выбор разрешения предпросмотра
+Restore Panel Size	Восстановить размер панели
+Revert All	Отменить все изменения
+Roving:	Свободное перемещение по времени:
+Ruler zero point (drag to move, double-click to reset)	Начало координат линеек: перетащите для перемещения, дважды щёлкните для сброса
+Sample Format: {}	Формат отсчётов: {}
+Samples Per Frame:	Выборок на кадр:
+Save from #{}	Сохранить начиная с №{}
+Saved {}	Сохранено {}
+Script… (⌘/Ctrl+Enter runs)	Скрипт… (⌘/Ctrl+Enter — выполнить)
+Search commands or shortcuts	Поиск команд и сочетаний клавиш
+Select a command to change its shortcut.	Выберите команду, чтобы изменить сочетание клавиш.
+Select a layer to see its effects	Выберите слой, чтобы увидеть его эффекты
+Select a layer to see its properties	Выберите слой, чтобы увидеть его свойства
+({}) Selected Objects	Выбрано объектов: {}
+Select a layer with a mask or shape path (or the path property), or Puppet pins.	Выберите слой с маской или контуром фигуры, свойство контура либо точки инструмента «Марионетка».
+Select a text layer	Выберите текстовый слой
+Select an item in the Project panel	Выберите элемент на панели «Проект»
+Select animated properties to show them in the Graph Editor	Выберите анимированные свойства, чтобы показать их в редакторе графиков
+Select the leader pin, then Shift-click the pins that should trail it (hair, cloth, tails)	Выберите ведущую точку, затем с зажатым Shift выберите точки, которые должны следовать за ней: например, на волосах, ткани или хвосте
+   OK   	   ОК   
+  Delete  	  Удалить  
+ Open Auto-Save 	 Открыть автосохранение 
+360 View Orientation	Направление панорамного просмотра
+3:2 Pulldown: {}	Преобразование кадров 3:2: {}
+A clean-room, open-source compositor for motion graphics and visual effects: native on macOS, Windows and Linux, and in the browser. Part of the ArtCraft family of creative apps.	Редактор анимации и визуальных эффектов с открытым исходным кодом, созданный независимо. Работает в macOS, Windows, Linux и браузере. Входит в набор творческих приложений ArtCraft.
+Adapt Feature On Every Frame	Обновлять образец отслеживания на каждом кадре
+Adaptive Sample Limit:	Предел адаптивной выборки:
+All six face cameras turn together; the scene is not changed.	Все шесть камер поворачиваются вместе. Сама сцена остаётся без изменений.
+Drag properties here from the timeline,\nor use Animation > Add Property to Essential Graphics.	Перетащите сюда свойства с монтажной шкалы\nили выберите «Анимация → Добавить свойство в графические шаблоны».
+MIT OR Apache-2.0 • Fonts: Inter, JetBrains Mono (OFL)	MIT OR Apache-2.0 • Шрифты: Inter, JetBrains Mono (OFL)
+On ({}) stop:	При остановке ({}):
+Set Ground Plane and Origin	Задать плоскость земли и начало координат
+Set Paint Colors to Black and White (D)	Вернуть чёрный и белый цвета рисования (D)
+Settings Name:	Название настроек:
+Shadow Darkness	Непрозрачность тени
+Shadow Diffusion	Размытие тени
+Shape…	Фигура…
+Show Layer Name	Показывать название слоя
+Show Source Name	Показывать название исходного файла
+Show me	Показать
+Shutter Angle:	Угол затвора:
+Shutter Phase:	Фаза затвора:
+Skip	Пропустить
+Snapping options	Настройки привязки
+Snapshot	Снимок кадра
+Solo Supported Properties	Показывать только поддерживаемые свойства
+Solo Switches: {}	Переключатели «Соло»: {}
+Spatial Interpolation:	Интерполяция положения:
+Speed:	Скорость:
+Start Timecode:	Начальный тайм-код:
+Start: {}   Duration: {}	Начало: {}   Длительность: {}
+Step {} of {}: {}	Шаг {} из {}: {}
+Stop {} at {}°	Точка градиента {} на {}°
+Stored in: {}	Сохранено в: {}
+Stretch Factor:	Коэффициент растяжения:
+Stylistic Sets	Стилистические наборы
+Subpixel Positioning	Субпиксельное позиционирование
+Swap Colors	Поменять цвета местами
+Swap Paint Colors (X)	Поменять цвета рисования местами (X)
+Sync with System	Использовать настройки системы
+System Default	Как в системе
+Template name	Название шаблона
+Template: {}\n{}	Шаблон: {}\n{}
+Temporal Interpolation:	Интерполяция по времени:
+The Media Browser is not available here (use File ▸ Import)	Здесь нет обозревателя медиафайлов. Используйте «Файл → Импорт».
+The OpenEXR layer shown in red, green, blue and alpha	Слой OpenEXR для отображения цветовых каналов и прозрачности
+The render queue is empty.	В очереди рендеринга пока ничего нет.
+These adjacent keyframes cannot interpolate because their stop counts differ.	Переход между этими ключевыми кадрами невозможен: у них разное число точек градиента.
+This ScriptUI panel has closed	Эта панель ScriptUI закрыта
+This change will create a new solid for this layer.	Для этого слоя будет создана новая цветная подложка.
+Time Stretch…	Изменить длительность…
+Time:	Время:
+Time: {}	Время: {}
+Title/Action Safe	Безопасные области титров и изображения
+Title/action safe	Безопасные области титров и изображения
+Toggle Switches / Modes	Переключатели / режимы наложения
+Track Name:	Название отслеживания:
+Trained models are available in the desktop app; the browser uses the classic engine.	Обученные модели доступны в приложении для компьютера. В браузере используется обычный алгоритм.
+Transparency grid	Сетка прозрачности
+Tutorial complete	Обучение завершено
+Two-Node Camera	Камера с точкой интереса
+Type a command or effect…	Найти команду или эффект…
+Undock Panel	Открепить панель
+Move Panel to New Window	Перенести панель в отдельное окно
+Move Panel to Main Window	Вернуть панель в главное окно
+Unfreeze	Разморозить
+Unlink {}	Отвязать {}
+Use this option to place the currently selected layers together into a new intermediate composition.	Объединяет выделенные слои в новую вложенную композицию.
+VR Environments	Окружения VR
+Variable Font Axes	Параметры вариативного шрифта
+Video Codec: {}	Видеокодек: {}
+Welcome to EffectCraft	Добро пожаловать в EffectCraft
+You can undo this.	Это действие можно отменить.
+You can't undo this.	Это действие нельзя отменить.
+built-in	встроенный
+frames per second	кадров в секунду
+template name	название шаблона
+{} contributors · {} commits	Участников: {} · Коммитов: {}
+{} x {}, {}MB per 8bpc frame	{} × {}, {} МБ на кадр при 8 битах на канал
+{} — coming soon	{} — скоро появится
+{} — double-click to open, {}-click to reveal	{} — двойной щелчок: открыть; {} + щелчок: показать расположение
+⌘/Ctrl-drag a pin to record its motion	Перетаскивайте точку с зажатой ⌘/Ctrl, чтобы записать её движение
+▣ {}	▣ {}
+⚠ {} is used by:	⚠ {} используется в:
+3D Reference Axes	Координатные оси 3D
+Affect all layers that use this solid	Применить ко всем слоям с этой подложкой
+Choose grid and guide options	Настроить сетку и направляющие
+Custom...	Другой вариант…
+Fit up to 100%	Вписать в окно, но не более 100%
+Half	Половина
+Only this layer uses this solid.	Эта подложка используется только в данном слое.
+Proportional Grid	Пропорциональная сетка
+Quarter	Четверть
+Region of Interest	Область просмотра
+Reset Exposure	Сбросить экспозицию
+Show Channel and Color Management Settings	Показать настройки каналов и управления цветом
+Show Snapshot (hold)	Показать снимок кадра (удерживайте)
+Take Snapshot	Сохранить снимок кадра
+Third	Треть
+Toggle Mask and Shape Path Visibility	Показать или скрыть контуры масок и фигур
+Toggle Transparency Grid	Показать или скрыть сетку прозрачности
+16 bits per channel	16 бит на канал
+32 bits per channel (float)	32 бита на канал (с плавающей точкой)
+8 bits per channel	8 бит на канал
+Adaptive Resolution	Адаптивное разрешение
+Adobe-style built-in	Встроенное, совместимое с Adobe
+Current Settings	Текущие настройки
+Disable Per-character 3D	Отключить 3D для отдельных символов
+Enable Per-character 3D	Включить 3D для отдельных символов
+Fast Draft	Быстрый черновой просмотр
+Fast Previews (Draft 3D, Faster Effects)	Быстрый просмотр (черновое 3D, упрощённые эффекты)
+Import Image Sequence	Импорт последовательности изображений
+Import PDF / Illustrator File	Импорт файла PDF / Illustrator
+Import Photoshop File	Импорт файла Photoshop
+Interpret Unlabeled Alpha As	Если тип альфа-канала не указан
+Mercury GPU Acceleration ({})	Аппаратное ускорение Mercury ({})
+Mercury Software Only	Mercury без аппаратного ускорения
+OCIO (built-in ACES config)	OCIO (встроенная конфигурация ACES)
+Off (Final Quality)	Выключено (полное качество)
+OpenGL (compatibility)	OpenGL (режим совместимости)
+Opus Bitrate: {} kbps	Битрейт Opus: {} кбит/с
+RGB Straight	RGB без умножения на альфа-канал
+Tone map	Тоновое отображение
+Use In-Window Menu Bar on macOS	Показывать строку меню внутри окна в macOS
+Wireframe	Каркас
+sRGB IEC61966-2.1 (default)	sRGB IEC61966-2.1 (по умолчанию)
+New Project	Новый проект
+EffectCraft home page	Сайт EffectCraft
+EffectCraft on GitHub	EffectCraft на GitHub
+Motion graphics and visual effects · version {}	Анимация и визуальные эффекты · версия {}
+New Composition	Новая композиция
+Open Demo Project	Открыть пример проекта
+Import Footage…	Импортировать материалы…
+Filter recent files	Найти среди недавних файлов
+NAME	НАЗВАНИЕ
+OPENED	КОГДА ОТКРЫВАЛИ
+SIZE	РАЗМЕР
+KIND	ТИП
+Your recent files will show here	Здесь появятся недавно открытые файлы
+Create a new project, or open the demo project to look around.	Создайте проект или откройте пример, чтобы познакомиться с редактором.
+No recent files match the filter	Подходящих файлов не найдено
+Try another name or folder.	Попробуйте другое название или папку.
+Just now	Только что
+Yesterday	Вчера
+{} minute ago	{} мин. назад
+{} minutes ago	{} мин. назад
+{} hour ago	{} ч. назад
+{} hours ago	{} ч. назад
+{} day ago	{} дн. назад
+{} days ago	{} дн. назад
+EffectCraft project	Проект EffectCraft
+After Effects project	Проект After Effects
+Lottie animation	Анимация Lottie
+Levels of Undo	Количество действий для отмены
+Path Point and Handle Size	Размер точек и управляющих маркеров контура
+Recent Projects Shown	Количество недавних проектов в списке
+Create Layers at Composition Start Time	Создавать слои с начала композиции
+Switches Affect Nested Comps	Применять переключатели к вложенным композициям
+Default Spatial Interpolation to Linear	По умолчанию использовать линейную интерполяцию положения
+Preserve Constant Vertex and Feather Point Count when Editing Masks	Сохранять число вершин и точек растушёвки при изменении масок
+Synchronize Time of All Related Items	Синхронизировать время связанных элементов
+Expression Pick Whip Writes Compact English	Создавать краткие ссылки на английском при связывании свойств
+Create Split Layers Above Original Layer	Помещать отделённую часть выше исходного слоя
+Use System Color Picker	Использовать системное окно выбора цвета
+EffectCraft always uses its own colour picker (the same on every platform and the web).	В EffectCraft всегда используется собственное окно выбора цвета, одинаковое на всех платформах и в браузере.
+Startup & Repair	Запуск и восстановление
+Show Home Screen When Launching	Показывать начальный экран при запуске
+Show Home Screen When Opening a Project	Показывать начальный экран при открытии проекта
+Offer to Open the Latest Auto-Save After a Crash	После сбоя предлагать открыть последнее автосохранение
+Window Graphics	Отрисовка окна
+Window Graphics applies from the next launch. When the graphics driver stops EffectCraft as its window opens, the next launch switches to OpenGL.	Изменения отрисовки окна вступят в силу после перезапуска. Если графический драйвер вызывает сбой при открытии окна, следующий запуск будет выполнен с OpenGL.
+Repair	Восстановление
+Reset Settings	Сбросить настройки
+Empty Disk Cache	Очистить дисковый кэш
+New Project Loads Template	Создавать новые проекты по шаблону
+Template Project	Шаблон проекта
+Auto-Save	Автосохранение
+Automatically Save Projects	Автоматически сохранять проекты
+Save Every	Сохранять каждые
+Minutes	мин.
+Maximum Project Versions	Сколько версий проекта хранить
+Auto-Save Location	Папка автосохранений
+Next to Project	В папке проекта
+Custom Location	Другая папка
+Save When Starting Render Queue	Сохранять перед запуском очереди рендеринга
+Save Now	Сохранить сейчас
+Motion Path	Траектория движения
+All Keyframes	Все ключевые кадры
+No Motion Path	Не показывать траекторию
+No More Than (Seconds)	Не более (секунд)
+No More Than (Keyframes)	Не более (ключевых кадров)
+Seconds	сек.
+Keyframes	Ключевые кадры
+Show Rendering Progress in Info Panel and Flowchart	Показывать ход рендеринга в панели информации и блок-схеме
+Hardware Accelerate Composition, Layer and Footage Panels	Ускорять отрисовку панелей композиции, слоя и исходных материалов
+Panels are always drawn by the GPU (wgpu).	Панели всегда отрисовываются видеокартой через wgpu.
+Previews	Предварительный просмотр
+Adaptive Resolution Limit	Минимальное разрешение при адаптивном просмотре
+Show Internal Wireframes	Показывать внутренние каркасы
+Cache Frames When Idle	Кэшировать кадры во время простоя
+Viewer Zoom Quality	Качество масштабирования при просмотре
+Faster	Выше скорость
+More Accurate	Выше точность
+Display Color Space	Цветовое пространство экрана
+GPU Information...	Сведения о видеокарте…
+UI Scale	Масштаб интерфейса
+Labels and Colors	Метки и цвета
+Use Label Color for Layer Handles and Paths	Использовать цвет метки для маркеров и контуров слоя
+Use Label Color for Related Tabs	Использовать цвет метки для связанных вкладок
+Cycle Mask Colors	Чередовать цвета масок
+Use Gradients	Использовать градиенты
+Menu Bar	Строка меню
+Grids & Guides	Сетки и направляющие
+Gridline Every	Шаг сетки
+Dashed Lines	Пунктирные линии
+Action-safe	Безопасная область изображения
+Title-safe	Безопасная область титров
+Text Engine	Обработка текста
+South Asian and Middle Eastern	Письменности Южной Азии и Ближнего Востока
+Show Font Preview	Показывать образцы шрифтов
+Number of Recent Fonts to Display	Количество недавних шрифтов в списке
+Still Footage	Неподвижные изображения
+Length of Composition	По длительности композиции
+Duration (Seconds)	Длительность (секунды)
+Still Duration	Длительность изображения
+Sequence Footage	Последовательности изображений
+Report Missing Frames	Сообщать об отсутствующих кадрах
+Automatically Reload Footage	Автоматически обновлять исходные материалы
+Non-Sequence Footage	Материалы, кроме последовательностей изображений
+All Footage	Все исходные материалы
+Ask User	Спрашивать
+Guess	Определять автоматически
+Straight	Без умножения на альфа-канал
+Premultiplied	С умножением на альфа-канал
+Default Drag Import As	При перетаскивании импортировать как
+Footage	Исходный материал
+Composition - Retain Layer Sizes	Композиция с сохранением размеров слоёв
+Default Output Folder	Папка экспорта по умолчанию
+Segment Sequences	Разбивать последовательности на части
+Files per Segment	Файлов в одной части
+files	файлов
+Segment Movie Files	Разбивать видеофайлы на части
+Segment Size	Размер части
+Append Bit Depth to File Name	Добавлять глубину цвета к имени файла
+Audio Hardware	Звуковые устройства
+Preview Sample Rate	Частота дискретизации при прослушивании
+Audio Output Mapping	Назначение выходных аудиоканалов
+channel	канал
+Disk	Диск
+Disk Cache	Дисковый кэш
+Enable Disk Cache	Использовать дисковый кэш
+Maximum Disk Cache Size	Предельный размер дискового кэша
+Disk Cache Folder	Папка дискового кэша
+Media Cache	Кэш медиафайлов
+Database and Cache Folder	Папка базы данных и кэша
+Conformed Audio Folder	Папка подготовленных аудиофайлов
+Memory & CPU	Память и процессор
+RAM Reserved for Other Applications	Память, оставляемая другим приложениям
+Cache Budgets	Ограничения размера кэша
+Layer Cache	Кэш слоёв
+Footage Frame Cache	Кэш кадров исходных материалов
+Preview (RAM) Cache	Кэш просмотра в оперативной памяти
+Reduce Cache Size When System Is Low on Memory	Уменьшать кэш при нехватке памяти
+Enable Video Preview Output	Выводить видео для предварительного просмотра
+Video Device	Видеоустройство
+Floating Window	Отдельное окно
+Video Output During Playback	Выводить видео при воспроизведении
+Mirror on Computer Monitor	Дублировать на мониторе компьютера
+Disable Video Output When in Background	Отключать вывод видео, когда приложение в фоне
+Default 3D Renderer	Средство рендеринга 3D по умолчанию
+Show 3D Reference Axes	Показывать координатные оси 3D
+Extended Viewer	Расширенная область просмотра
+Realtime Shadows in Draft	Показывать тени в реальном времени при черновом просмотре
+Scripting & Expressions	Сценарии и выражения
+Application Scripting	Сценарии приложения
+Allow Scripts to Write Files and Access Network	Разрешить сценариям запись файлов и доступ к сети
+Warn User When Executing Files	Предупреждать перед выполнением файлов
+Enable JavaScript Debugger	Включить отладчик JavaScript
+Expressions Editor	Редактор выражений
+Syntax Highlighting	Подсветка синтаксиса
+Auto-complete	Автодополнение
+Bracket Matching	Подсветка парных скобок
+Word Wrap	Перенос строк
+Show Expression Error Banner	Показывать сообщение об ошибке в выражении
+Expressions use the JavaScript engine. Script errors report their file and line in the Script Console; there is no step debugger.	Выражения выполняются движком JavaScript. При ошибке в консоли сценариев показываются файл и строка. Пошаговая отладка не поддерживается.
+Roto Brush	Кисть ротоскопии
+Segmentation Model	Модель выделения объектов
+Roto Brush 2.0 and 3.0 use the model chosen here (Version 1.0 always uses the classic engine). Models are open source, downloaded only when you ask, and checked against their published SHA-256.	Кисть ротоскопии 2.0 и 3.0 использует выбранную здесь модель. Версия 1.0 работает с обычным алгоритмом. Модели открытые; скачиваются только по вашему запросу и проверяются по опубликованной контрольной сумме SHA-256.
+Face Tracking	Отслеживание лица
+Face Model	Модель распознавания лица
+Face tracking in the Tracker panel (Outline Only and Detailed Features) uses the model chosen here. Models are open source, downloaded only when you ask, and checked against their published SHA-256.	Отслеживание контура и черт лица использует выбранную здесь модель. Модели открытые; скачиваются только по вашему запросу и проверяются по опубликованной контрольной сумме SHA-256.
+Match System	Как в системе
+Total Offset	Общее смещение
+Per Layer	Для каждого слоя
+A built-in preset has this name	Такое название уже есть у встроенного набора настроек
+A script wants to open a file	Сценарий запрашивает открытие файла
+A/V Features	Аудио и видео
+Add Percentage Guide	Добавить направляющую с положением в процентах
+All layers	Все слои
+Amount (%)	Величина (%)
+Apply To New Layer	Применить к новому слою
+Assign Profile	Назначить профиль
+Assume this frame rate	Использовать указанную частоту кадров
+Auto-Orientation	Автоматическая ориентация
+Auto-trace	Автоматическая трассировка
+Bitrate (kbps)	Битрейт (кбит/с)
+Blend colors using 1.0 gamma	Смешивать цвета с гаммой 1,0
+Blur (pixels before auto-trace)	Размытие перед трассировкой (пиксели)
+CMX 3600 EDL (.edl, V1 only)	CMX 3600 EDL (.edl, только V1)
+Cannot import dropped files: {}	Не удалось импортировать перетащенные файлы: {}
+Cannot open dropped project {}: {}	Не удалось открыть перетащенный проект {}: {}
+Cascade (farther pins trail longer)	Каскад (дальние точки отстают сильнее)
+Click in the Composition panel to sample text {}	Щёлкните в панели композиции, чтобы взять образец текста: {}
+Click to sample text {}	Щёлкните, чтобы взять образец текста: {}
+Color (#rrggbb)	Цвет (#rrggbb)
+Color engine	Система управления цветом
+Comment of {}: {}	Комментарий к {}: {}
+Compand	Сжать динамический диапазон
+Corner Roundness (%)	Скругление углов (%)
+Create Markers	Создать маркеры
+Cross Dissolve Front and Back Layers	Перекрёстное растворение переднего и заднего слоёв
+Current Frame	Текущий кадр
+Custom Resolution	Другое разрешение
+Delay (s)	Задержка (с)
+Dissolve Front Layer	Растворение переднего слоя
+Drop file to import	Отпустите файл для импорта
+Drop {} files to import	Отпустите файлы для импорта: {}
+Duration (s)	Длительность (с)
+Duration (seconds)	Длительность (секунды)
+Edit Workspaces	Настроить рабочие пространства
+Embed footage files	Включить исходные материалы в файл проекта
+Embed up to (MB)	Предельный размер вложений (МБ)
+Embedded / sRGB	Встроенный профиль / sRGB
+Export Adobe Premiere Pro Project	Экспорт проекта Adobe Premiere Pro
+Feet + Frames (16mm)	Футы и кадры (плёнка 16 мм)
+Feet + Frames (35mm)	Футы и кадры (плёнка 35 мм)
+File Path	Путь к файлу
+First sample at (comp seconds)	Первый отсчёт (секунды композиции)
+Force alphabetical order	Всегда сортировать по алфавиту
+Frame	Кадр
+Frame Rate	Частота кадров
+Frame rate	Частота кадров
+Frame rate (fps)	Частота кадров (кадр/с)
+Frames	Кадры
+Frames between key frames (0 = every 2 s)	Кадров между ключевыми кадрами (0 — каждые 2 с)
+Frames per second	Кадров в секунду
+Go to Time	Перейти к моменту времени
+HDR on SDR displays and outputs	Отображение HDR на экранах и выходах SDR
+ICC profile (replaces the numbers)	Профиль ICC (вместо заданных числовых параметров)
+Import Kind	Способ импорта
+Interpret As Linear Light	Считать цветовые значения линейными
+Interpret Premultiplied - Matted With Color	С умножением на альфа-канал и заданным цветом подложки
+Interpret Straight - Unmatted	Без умножения на альфа-канал
+Invert Alpha	Инвертировать альфа-канал
+Label of {}: {}	Метка {}: {}
+Layer Name	Название слоя
+Layers Premiere can't show (text, shapes, effects…)	Слои, которые Premiere не отображает (текст, фигуры, эффекты…)
+Linearize working space	Перевести рабочее цветовое пространство в линейное
+Loop (times)	Количество повторов
+Lower Field First	Сначала нижнее поле
+Mask Shape	Форма маски
+Matte color (premultiplied)	Цвет подложки при умножении на альфа-канал
+Media Duration	Длительность исходного материала
+Mercury GPU Acceleration (no GPU: software)	Ускорение Mercury (без видеокарты — программное)
+Minimum Area (pixels)	Минимальная площадь (пиксели)
+Modes	Режимы
+Move X	Смещение по X
+Move Y	Смещение по Y
+Multiple Compositions	Несколько композиций
+My Custom RGB	Моё пространство RGB
+Nested sequences	Вложенные эпизоды
+New Composition from Selection	Создать композицию из выделенного
+New Placeholder	Создать временный заменитель
+None (leave them out)	Не включать
+Null Settings	Настройки нуль-объекта
+OMF (.omf, audio)	OMF (.omf, звук)
+Only one project can be opened per drop; skipped {} more	За один раз можно открыть только один проект. Остальные пропущены: {}.
+Orient Along Path	Направлять вдоль траектории
+Orient Towards Camera	Направлять на камеру
+Orient Towards Point of Interest	Направлять на точку интереса
+Original color: click to go back to it	Исходный цвет: щёлкните, чтобы вернуть его
+Output color space	Цветовое пространство на выходе
+Overlap	Перекрытие
+Override Start	Задать другое время начала
+Parent & Link	Родительский слой и связи
+Position (percent of the composition)	Положение (в процентах от размера композиции)
+Position (pixels)	Положение (пиксели)
+Pre-render	Предварительный рендеринг
+Pre-render (ProRes 4444)	Предварительный рендеринг (ProRes 4444)
+Precomps	Вложенные композиции
+Preserve RGB	Сохранять значения RGB
+Project color depth: {}	Глубина цвета проекта: {}
+Puppet Follow-Through	Инерция движения марионетки
+Puppet Record Options	Настройки записи движения марионетки
+Rename to	Новое название
+Render every n-th pixel	Обрабатывать каждый n-й пиксель
+Replaces your preset with this name	Заменит ваш набор настроек с таким названием
+Resize floating panel	Изменить размер откреплённой панели
+Rotation (degrees)	Поворот (градусы)
+Scale X (%)	Масштаб по X (%)
+Scale Y (%)	Масштаб по Y (%)
+Scene Edit Detection	Поиск смены сцен
+Search project	Поиск в проекте
+Select an item to see its details	Выберите элемент, чтобы увидеть сведения о нём
+Sensitivity threshold (0–1, lower finds more)	Порог чувствительности (0–1; ниже — больше найденных сцен)
+Separate Fields	Разделение полей
+Sequence Layers	Расположить слои последовательно
+Single Composition	Одна композиция
+Skipped {} dropped file(s) without a local path. Use File ▸ Import ▸ File…	Пропущены файлы без локального пути: {}. Используйте «Файл → Импорт → Файл…».
+Solid Settings	Настройки цветной подложки
+Solid…	Цветная подложка…
+Sort by {}	Сортировать по: {}
+Sort by {}, {}	Сортировать по: {}, {}
+Source Name	Название исходного файла
+Speed (%)	Скорость (%)
+Split Layers	Разделить слои
+Split and Precompose	Разделить и поместить во вложенную композицию
+Start (s)	Начало (с)
+Start Timecode	Начальный тайм-код
+Still Duration (seconds)	Длительность изображения (секунды)
+Stored, but not used by EffectCraft yet	Сохраняется, но пока не используется в EffectCraft
+Threshold (%)	Порог (%)
+Time Span	Временной диапазон
+Time display style	Формат отображения времени
+Time field (empty: automatic)	Поле времени (пусто — определить автоматически)
+Tolerance (pixels)	Допуск (пиксели)
+Transition	Переход
+Upper Field First	Сначала верхнее поле
+Use Dimensions From	Взять размеры из
+Use Draft Deformation	Использовать черновое качество деформации
+Use Source File Timecode	Использовать тайм-код исходного файла
+Use the sRGB curve (ignore Gamma)	Использовать кривую sRGB вместо значения гаммы
+Video preview is off (Preview panel): audio only	Просмотр видео отключён в панели просмотра: воспроизводится только звук
+Video preview off: audio only	Просмотр видео отключён: только звук
+Video rendering and effects	Рендеринг видео и эффекты
+Video start (ISO date-time, hh:mm:ss, timecode; empty: file date)	Начало видео (дата ISO, чч:мм:сс или тайм-код; пусто — дата файла)
+Work Area	Рабочая область
+Working gamma	Рабочая гамма
+Working space	Рабочее цветовое пространство
+Add to Render Queue	Добавить в очередь рендеринга
+Anchor:	Опорная точка:
+Back	Назад
+Clip	Обрезать диапазон
+Custom	Пользовательский
+In	Начало
+Out	Конец
+Keys	Ключевые кадры
+Labels	Цветовые метки
+Label:	Метка:
+New Workspace	Новое рабочее пространство
+Workspace	Рабочее пространство
+Open in Essential Graphics	Открыть в панели графических шаблонов
+Pixel Aspect Ratio	Соотношение сторон пикселя
+Preset	Набор настроек
+Preset:	Набор настроек:
+Presets	Наборы настроек
+Delete Preset	Удалить набор настроек
+Save Preset…	Сохранить набор настроек…
+Reset to Saved Layout	Вернуть сохранённое расположение панелей
+Roman Hanging Punctuation	Выносная пунктуация для латиницы
+Snapping	Привязка
+Subdivisions	Дополнительные деления
+Timecode	Тайм-код
+Name	Название
+Name:	Название:
+Join the ArtCraft Discord	Сообщество ArtCraft в Discord
+Join the ArtCraft community on Discord	Присоединиться к сообществу ArtCraft в Discord
+Change the frame rate, alpha and start frame later with File ▸ Interpret Footage.	Частоту кадров, альфа-канал и начальный кадр можно изменить позже: «Файл → Интерпретация материала».
+Writes Final Cut Pro XML (.xml), which Premiere Pro opens with File ▸ Import. Native .prproj files are not written.	Сохраняет файл Final Cut Pro XML (.xml). В Premiere Pro его можно открыть через «Файл → Импорт». Сохранение в формате .prproj не поддерживается.
+New Composition From Footage	Создать композицию из файла
+(no composition)	Нет открытой композиции
+Close font search	Закрыть поиск шрифтов

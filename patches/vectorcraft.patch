@@ -1,0 +1,93 @@
+diff --git a/crates/ui-egui/src/i18n/ru.tsv b/crates/ui-egui/src/i18n/ru.tsv
+index 972f4a2b2fafb02291a38b360ca616179a06897e..e6ed530074539788e922c8a766dff1fcf2ff24f6 100644
+--- a/crates/ui-egui/src/i18n/ru.tsv
++++ b/crates/ui-egui/src/i18n/ru.tsv
+@@ -2715,8 +2715,8 @@ mark-style	Japanese	Японский
+ 	Right-to-Left Paragraph Direction	Направление абзаца справа налево
+ 	Right:	Справа:
+ 	Rise…	Подъём…
+-	Roman Baseline	Римская базовая линия
+-	Roman Hanging Punctuation	Римская висячая пунктуация
++	Roman Baseline	Базовая линия латиницы
++	Roman Hanging Punctuation	Выносная пунктуация для латиницы
+ 	Rotate	Повернуть
+ 	Rotate 90° CW	Повернуть на 90° по часовой стрелке
+ 	Rotate Tool	Инструмент «Поворот»
+@@ -3182,7 +3182,7 @@ mark-style	Japanese	Японский
+ 	Stacked Column Graph Tool	Инструмент «Гистограмма с накоплением»
+ 	Stair Step	Ступенчатый
+ 	Standard Ligatures	Стандартные лигатуры
+-	Standard Vertical Roman Alignment	Стандартное вертикальное римское выравнивание
++	Standard Vertical Roman Alignment	Стандартное выравнивание латиницы в вертикальном тексте
+ 	Standard:	Стандартный:
+ 	Star	Звезда
+ 	Star Tool	Инструмент «Звезда»
+@@ -3213,7 +3213,7 @@ mark-style	Japanese	Японский
+ 	Style:	Стиль:
+ 	Styling:	Стилизация:
+ 	Stylize	Стилизация
+-	Subdivisions	Подразделения
++	Subdivisions	Дополнительные деления
+ 	Subscript	Нижний индекс
+ 	Subscript (on the roadmap)	Нижний индекс (в плане развития)
+ 	Subscript:	Нижний индекс:
+@@ -3413,8 +3413,8 @@ mark-style	Japanese	Японский
+ 	Transparency Flattener Presets…	Наборы объединения прозрачностей…
+ 	Transparency Grid	Сетка прозрачности
+ 	Transparency Info	Сведения о прозрачности
+-	Transparency is flattened with the preset. Type is written as outlines; gradients as bands of colour.	Прозрачность объединяется с набором. Текст записывается как контуры; градиенты — как цветовые полосы.
+-	Transparency is flattened with the preset. Type is written as outlines; gradients stay smooth.	Прозрачность объединяется с набором. Текст записывается как контуры; градиенты остаются гладкими.
++	Transparency is flattened with the preset. Type is written as outlines; gradients as bands of colour.	Прозрачные объекты сводятся по выбранным настройкам. Текст преобразуется в контуры, градиенты — в цветовые полосы.
++	Transparency is flattened with the preset. Type is written as outlines; gradients stay smooth.	Прозрачные объекты сводятся по выбранным настройкам. Текст преобразуется в контуры, градиенты сохраняют плавные переходы.
+ 	Transparency Options	Параметры прозрачности
+ 	Transparent	Прозрачный
+ 	Transparent (Default)	Прозрачный (по умолчанию)
+@@ -3582,7 +3582,7 @@ mark-style	Japanese	Японский
+ 	Vector Effects	Векторные эффекты
+ 	Vector Halftone	Векторный полутон
+ 	Vector Halftone…	Векторный полутон…
+-	Vector illustration — fast, open, scriptable.	Векторная иллюстрация — быстрая, открытая, программируемая.
++	Vector illustration — fast, open, scriptable.	Редактор векторной графики с открытым кодом и поддержкой автоматизации.
+ 	VectorCraft didn't quit normally last time. These documents had unsaved changes:	VectorCraft не завершился нормально в прошлый раз. В этих документах были несохранённые изменения:
+ 	VectorCraft Help…	Справка VectorCraft…
+ 	VectorCraft on getartcraft.com	VectorCraft на getartcraft.com
+@@ -3619,7 +3619,7 @@ mark-style	Japanese	Японский
+ 	Warp Options	Параметры деформации
+ 	Warp Tool	Инструмент «Деформация»
+ 	Wave…	Волна…
+-	Web 1920×1080	Web 1920×1080
++	Web 1920×1080	Веб-страница 1920×1080
+ 	Web Safe 216	216 web-безопасных
+ 	Web Safe RGB	Web-безопасный RGB
+ 	Web Shift	Сдвиг к web
+@@ -5226,3 +5226,30 @@ axis	Y Axis	Ось Y
+ @msg	a {width}×{height} screenshot's byte count overflows	количество байтов снимка {width}×{height} переполняется
+ @msg	the window's {what} ({points} points × {scale} DPI) cannot size a screenshot	{what} окна ({points} пунктов × {scale} DPI) не позволяет задать размер снимка
+ 	Live preview	Просмотр в реальном времени
++	Essentials	Основные
++	Essentials Classic	Основные — классический вид
++	Layout	Макет
++	Painting	Рисование
++	Printing and Proofing	Печать и цветопроба
++	Tracing	Трассировка
++	Typography	Типографика
++	Web	Веб-дизайн
++	Touch	Сенсорное управление
++	All shortcuts reset to defaults.	Все сочетания клавиш сброшены.
++	Click, then press the new shortcut (Esc cancels)	Щёлкните и нажмите новое сочетание клавиш (Esc — отмена)
++	Command	Команда
++	Go to Conflict	Перейти к конфликту
++	Keyboard Shortcuts	Сочетания клавиш
++	Press keys…	Нажмите клавиши…
++	Remove the shortcut	Удалить сочетание клавиш
++	Reset to Defaults	Сбросить настройки
++	Set:	Набор:
++	Simulate prints overprints as Overprint Preview shows them; separations always keep them. A preset flattens transparency before printing (PostScript files always flatten it).	Имитация печатает наложение красок так, как оно показано в предпросмотре. При цветоделении наложения сохраняются всегда. Набор настроек объединяет прозрачность перед печатью; для PostScript это выполняется всегда.
++	Tool	Инструмент
++	Use Default	По умолчанию
++	⚠ {chord} was already used by {names} — it has been removed there.	⚠ Сочетание {chord} использовалось командами {names}; прежние назначения удалены.
++	Checking for updates…	Проверка обновлений…
++	Could not check for updates:\n{error}	Не удалось проверить обновления:\n{error}
++	Invalid panel layout; restored the default dock	Не удалось восстановить расположение панелей. Используется стандартное расположение.
++	VectorCraft Updates	Обновления VectorCraft
++	VectorCraft {version} is currently the newest version available.	Установлена последняя версия VectorCraft — {version}.

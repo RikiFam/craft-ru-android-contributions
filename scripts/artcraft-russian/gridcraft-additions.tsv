@@ -1,0 +1,42 @@
+A CSV file, web page or PDF is a copy: the workbook keeps its own file.	CSV, веб-страница и PDF сохраняются как копии. Файл самой книги остаётся прежним.
+Auto Fill Options	Параметры автозаполнения
+AutoSave: save after every change (workbooks saved to a file)	Автосохранение после каждого изменения (для книг, уже сохранённых в файл)
+Background Color:	Цвет фона:
+Calculated Field…	Вычисляемое поле…
+Cancel	Отмена
+Category:	Категория:
+Choose fields to add to report:	Выберите поля для отчёта:
+Color:	Цвет:
+Convert to Number	Преобразовать в число
+Error checking options	Параметры проверки ошибок
+Font	Шрифт
+Glide the selection outline to the cell you move to instead of jumping there	Плавно перемещать рамку выделения к выбранной ячейке
+Hidden	Скрытая
+Indent	Отступ
+Locked	Защищённая
+Locking cells or hiding formulas has no effect until you protect the worksheet (Review › Protect Sheet).	Блокировка ячеек и скрытие формул действуют только после включения защиты листа (Рецензирование › Защитить лист).
+No names defined	Имена не заданы
+None	Нет
+Number Stored as Text	Число сохранено как текст
+OK	ОК
+Orientation (degrees)	Ориентация (градусы)
+Outline	Контур
+Paste List	Вставить список
+Paste Names…	Вставить имена…
+Paste formulas that refer to the copied cells	Вставить формулы со ссылками на скопированные ячейки
+Paste name	Вставить имя
+PivotTable Fields	Поля сводной таблицы
+Refresh	Обновить
+Remove Field	Удалить поле
+Report Layout	Макет отчёта
+Sample	Образец
+Search:	Поиск:
+Show password	Показать пароль
+Shrink to fit	Уменьшать до размера ячейки
+Subscript	Подстрочный
+Superscript	Надстрочный
+Type (custom format code):	Тип (код формата):
+Use a field's menu to move it between areas:	Для перемещения поля между областями используйте его меню:
+Vertical	По вертикали
+Wrap text	Переносить текст
+e.g. lookup, average, date	например: поиск, среднее, дата

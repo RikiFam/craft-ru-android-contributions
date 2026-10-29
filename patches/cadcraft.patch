@@ -1,0 +1,532 @@
+diff --git a/crates/ui-egui/src/i18n/ru.tsv b/crates/ui-egui/src/i18n/ru.tsv
+index b8f97bf73c4b4a6a5899ad2e15b26b18d83fa944..1549310b0ee74f6e0fa0923b3b38627d8edd80be 100644
+--- a/crates/ui-egui/src/i18n/ru.tsv
++++ b/crates/ui-egui/src/i18n/ru.tsv
+@@ -28,7 +28,7 @@
+ 	= Equals	= Равно
+ 	> Greater than	> Больше чем
+ 	About	О программе
+-	About CADCraft	О CADCraft
++	About CADCraft	О программе CADCraft
+ 	Absolute	Абсолютные
+ 	Add Leader	Добавить выноску
+ 	Align	Выровнять
+@@ -56,8 +56,8 @@
+ 	Attribute Display	Отображение атрибутов
+ 	Audit	Проверка чертежа
+ 	Auto (system language)	Авто (язык системы)
+-	Auto Constrain	Автоограничение
+-	AutoConstrain	Автоограничение
++	Auto Constrain	Автоматически задать ограничения
++	AutoConstrain	Автоматически задать ограничения
+ 	Axis, End	Ось, конец
+ 	Base	База
+ 	Baseline	Базовый
+@@ -81,9 +81,9 @@
+ 	Break	Разорвать
+ 	Break At Point	Разорвать в точке
+ 	Bring to Front	На передний план
+-	ByBlock	Поблоку
+-	ByColor	ПоЦвету
+-	ByLayer	Послою
++	ByBlock	По блоку
++	ByColor	По цвету
++	ByLayer	По слою
+ 	CADCraft Help	Справка CADCraft
+ 	Cancel	Отмена
+ 	Cartesian (x, y)	Декартовы (x, y)
+@@ -101,7 +101,7 @@
+ 	Chamfer	Фаска
+ 	Change Space	Изменить пространство
+ 	Change to Current Layer	Перенести на текущий слой
+-	Circle	Круг
++	Circle	Окружность
+ 	Circumference	Длина окружности
+ 	Clear	Очистить
+ 	Clipboard	Буфер обмена
+@@ -122,7 +122,7 @@
+ 	Command Reference	Справочник команд
+ 	Commits	Коммиты
+ 	Company	Организация
+-	Computer-aided design and drafting: an open-source, clean-room CAD application written in pure Rust.	Автоматизированное проектирование и черчение: CAD-приложение с открытым кодом, независимо разработанное на Rust.
++	Computer-aided design and drafting: an open-source, clean-room CAD application written in pure Rust.	Редактор чертежей для автоматизированного проектирования. Создан независимо на Rust, исходный код открыт.
+ 	Concentric	Концентричность
+ 	Cone	Конус
+ 	Constraint Bars	Панели ограничений
+@@ -182,7 +182,7 @@
+ 	Dimensional Constraint	Размерное ограничение
+ 	Dimensional Constraint Parameters	Параметры размерных ограничений
+ 	Dimensional Constraints	Размерные ограничения
+-	Disassociate Dimensions	Разъединить размеры
++	Disassociate Dimensions	Отвязать размеры от объектов
+ 	Display name	Отображаемое имя
+ 	Distance	Расстояние
+ 	Divide	Поделить
+@@ -197,8 +197,8 @@
+ 	Draw Order	Порядок отрисовки
+ 	Drawing (DWG)	Чертеж (DWG)
+ 	Drawing (DXF)	Чертеж (DXF)
+-	Drawing Limits	Лимиты чертежа
+-	Drawing Utilities	Утилиты чертежа
++	Drawing Limits	Пределы области чертежа
++	Drawing Utilities	Обслуживание чертежа
+ 	Drawings (DWG, DXF)	Чертежи (DWG, DXF)
+ 	Dynamic Dimensions	Динамические размеры
+ 	Dynamic Input	Динамический ввод
+@@ -328,7 +328,7 @@
+ 	Hide Palettes	Скрыть палитры
+ 	Home	Исходный вид
+ 	Horizontal	Горизонтальность
+-	HorizontalDistance	ГоризонтальноеРасстояние
++	HorizontalDistance	Горизонтальное расстояние
+ 	How to apply:	Способ применения:
+ 	ID Point	Координаты точки
+ 	Import	Импортировать
+@@ -399,8 +399,8 @@
+ 	Linetype scale	Масштаб типа линии
+ 	Ltscale	Масштаб типа линии
+ 	Linetype...	Тип линии...
+-	Lineweight	Вес линии
+-	Lineweight...	Вес линии...
++	Lineweight	Толщина линии
++	Lineweight...	Толщина линии...
+ 	List	Список
+ 	List Blocks	Список блоков
+ 	List Dimension Styles	Список размерных стилей
+@@ -416,7 +416,7 @@
+ 	Lock Layer	Заблокировать слой
+ 	Lock/Unlock	Заблокировать/разблокировать
+ 	Loft	Тело по сечениям
+-	MIT OR Apache-2.0. Not affiliated with Autodesk, Inc.	MIT OR Apache-2.0. Не аффилировано с Autodesk, Inc.
++	MIT OR Apache-2.0. Not affiliated with Autodesk, Inc.	Лицензия MIT OR Apache-2.0. Проект не связан с Autodesk, Inc.
+ 	MODEL	МОДЕЛЬ
+ 	MText	Многострочный текст
+ 	Magenta	Пурпурный
+@@ -438,7 +438,7 @@
+ 	Model Space (in viewport)	Пространство модели (в видовом экране)
+ 	Modeling	Моделирование
+ 	Models	Модели
+-	Modify	Модификация
++	Modify	Редактирование объектов
+ 	Move	Переместить
+ 	Multileader	Мультивыноска
+ 	Multileader Style...	Стиль мультивыносок...
+@@ -456,7 +456,7 @@
+ 	Named Viewports...	Именованные видовые экраны...
+ 	Nearest	Ближайшая точка
+ 	New	Создать
+-	New (metric)	Создать (метрический)
++	New (metric)	Новый чертёж (метрические единицы)
+ 	New Drawing	Новый чертеж
+ 	New Drawing (⌘N)	Новый чертеж (⌘N)
+ 	New Drawing...	Новый чертеж...
+@@ -467,7 +467,7 @@
+ 	New layout	Новый лист
+ 	New state name	Название нового состояния
+ 	No	Нет
+-	No blocks defined in this drawing.	В этом чертеже нет определенных блоков.
++	No blocks defined in this drawing.	В этом чертеже пока нет блоков.
+ 	No contributor data was built into this copy.	В эту сборку не включены данные об участниках.
+ 	No model credits were built into this copy.	В эту сборку не включены данные о моделях.
+ 	No saved layer states	Нет сохраненных состояний слоев
+@@ -489,7 +489,7 @@
+ 	Offset	Смещение
+ 	On	Включено
+ 	On/Off	Включить/выключить
+-	One of the Crafting Apps by the ArtCraft team and community.	Одна из программ Crafting Apps от команды и сообщества ArtCraft.
++	One of the Crafting Apps by the ArtCraft team and community.	Входит в набор приложений ArtCraft, созданный командой проекта и сообществом.
+ 	Open (⌘O)	Открыть (⌘O)
+ 	Open Sample Drawing	Открыть образец чертежа
+ 	Open sample drawing	Открыть образец чертежа
+@@ -547,7 +547,7 @@
+ 	Grayscale	Оттенки серого
+ 	Screening	Тонирование
+ 	Use object linetype	Тип линии объекта
+-	Use object lineweight	Вес линии объекта
++	Use object lineweight	Использовать толщину линии объекта
+ 	Remove	Удалить
+ 	Add	Добавить
+ 	Open a drawing first.	Сначала откройте чертеж.
+@@ -588,7 +588,7 @@
+ 	Quick Select	Быстрый выбор
+ 	Quick Select Properties	Свойства быстрого выбора
+ 	Quick Select...	Быстрый выбор...
+-	QuickCalc	Быстрокалькулятор
++	QuickCalc	Калькулятор
+ 	Quit CADCraft	Выйти из CADCraft
+ 	Radius	Радиус
+ 	Raster Image	Растровое изображение
+@@ -596,7 +596,7 @@
+ 	Read-only	Только для чтения
+ 	Real name	Настоящее имя
+ 	Realtime	В реальном времени
+-	Reassociate Dimensions	Восстановить ассоциативность размеров
++	Reassociate Dimensions	Восстановить связь размеров с объектами
+ 	Recent	Недавние
+ 	Recover...	Восстановить...
+ 	Rectangle	Прямоугольник
+@@ -627,7 +627,7 @@
+ 	Restore Layer State	Восстановить состояние слоев
+ 	Reverse	Изменить направление
+ 	Reverse the order	Изменить порядок на обратный
+-	Revision Cloud	Облако
++	Revision Cloud	Облако изменений
+ 	Revolve	Тело вращения
+ 	Right	Справа
+ 	Rotate	Повернуть
+@@ -649,9 +649,9 @@
+ 	Select Objects	Выбрать объекты
+ 	Select a 2D polyline.	Выберите 2D-полилинию.
+ 	Select a block reference.	Выберите вхождение блока.
+-	Select a circle or arc.	Выберите круг или дугу.
++	Select a circle or arc.	Выберите окружность или дугу.
+ 	Select a closed polyline	Выберите замкнутую полилинию
+-	Select a closed polyline, circle, ellipse or closed spline.	Выберите замкнутую полилинию, круг, эллипс или замкнутый сплайн.
++	Select a closed polyline, circle, ellipse or closed spline.	Выберите замкнутую полилинию, окружность, эллипс или замкнутый сплайн.
+ 	Select a closed polyline.	Выберите замкнутую полилинию.
+ 	Select a curve as the path.	Выберите кривую в качестве траектории.
+ 	Select a dimension constraint type	Выберите тип размерного ограничения
+@@ -660,18 +660,18 @@
+ 	Select a line or an arc.	Выберите отрезок или дугу.
+ 	Select a line or polyline segment	Выберите отрезок или сегмент полилинии
+ 	Select a line, arc or open polyline.	Выберите отрезок, дугу или незамкнутую полилинию.
+-	Select a line, arc, circle, polyline, ellipse or spline as the path.	Выберите отрезок, дугу, круг, полилинию, эллипс или сплайн в качестве траектории.
+-	Select a line, circle, arc or polyline segment.	Выберите отрезок, круг, дугу или сегмент полилинии.
++	Select a line, arc, circle, polyline, ellipse or spline as the path.	Выберите отрезок, дугу, окружность, полилинию, эллипс или сплайн в качестве траектории.
++	Select a line, circle, arc or polyline segment.	Выберите отрезок, окружность, дугу или сегмент полилинии.
+ 	Select a line.	Выберите отрезок.
+ 	Add to Working Set	Добавить в рабочий набор
+-	Edit Reference In-Place	Редактировать ссылку на месте
++	Edit Reference In-Place	Редактировать ссылку прямо в чертеже
+ 	Save Reference Edits	Сохранить изменения ссылки
+ 	Working Set	Рабочий набор
+-	Xref and Block In-place Editing	Редактирование xref и блоков на месте
++	Xref and Block In-place Editing	Редактирование внешних ссылок и блоков прямо в чертеже
+ 	Select a polyline.	Выберите полилинию.
+ 	Select a text, mtext, attribute definition or dimension.	Выберите текст, многострочный текст, определение атрибута или размер.
+ 	Select an annotation object	Выберите аннотационный объект
+-	Select an arc or circle	Выберите дугу или круг
++	Select an arc or circle	Выберите дугу или окружность
+ 	Select an arc.	Выберите дугу.
+ 	Select an object	Выберите объект
+ 	Select an object to change or	Выберите объект для изменения или
+@@ -679,13 +679,13 @@
+ 	Select an object.	Выберите объект.
+ 	Select an open curve.	Выберите незамкнутую кривую.
+ 	Select an open line, arc, polyline, ellipse arc or spline.	Выберите незамкнутый отрезок, дугу, полилинию, эллиптическую дугу или сплайн.
+-	Select arc or circle	Выберите дугу или круг
++	Select arc or circle	Выберите дугу или окружность
+ 	Select arc or polyline arc segment	Выберите дугу или дуговой сегмент полилинии
+ 	Select arc style	Выберите стиль дуги
+-	Select arc, circle, line	Выберите дугу, круг, отрезок
++	Select arc, circle, line	Выберите дугу, окружность, отрезок
+ 	Select at least two objects to join.	Выберите не менее двух объектов для объединения.
+-	Select circle or arc to add center mark	Выберите круг или дугу для знака центра
+-	Select closed objects (regions, closed polylines, circles).	Выберите замкнутые объекты (области, замкнутые полилинии, круги).
++	Select circle or arc to add center mark	Выберите окружность или дугу для знака центра
++	Select closed objects (regions, closed polylines, circles).	Выберите замкнутые объекты (области, замкнутые полилинии, окружности).
+ 	Select first line	Выберите первый отрезок
+ 	Select first line or arc	Выберите первый отрезок или дугу
+ 	Select first object	Выберите первый объект
+@@ -732,7 +732,7 @@
+ 	Show All Constraint Bars	Показать все панели ограничений
+ 	Show All Dynamic Dimensions	Показать все динамические размеры
+ 	Show Layer List	Показать список слоев
+-	Show/Hide Lineweight	Показать/скрыть вес линий
++	Show/Hide Lineweight	Показать или скрыть толщину линий
+ 	Show/Hide Transparency	Показать/скрыть прозрачность
+ 	Single Line Text	Однострочный текст
+ 	Single Point	Одна точка
+@@ -766,13 +766,13 @@
+ 	Specify center of donut	Укажите центр кольца
+ 	Specify center of ellipse	Укажите центр эллипса
+ 	Specify center of polygon	Укажите центр многоугольника
+-	Specify center point for circle	Укажите центр круга
++	Specify center point for circle	Укажите центр окружности
+ 	Specify center point of arc	Укажите центр дуги
+ 	Specify center point of array	Укажите центр массива
+ 	Specify center point of base	Укажите центр основания
+ 	Specify corner of viewport	Укажите угол видового экрана
+ 	Specify corner of window, enter a scale factor (nX or nXP)	Укажите угол рамки, введите масштабный коэффициент (nX или nXP)
+-	Specify diameter of circle	Укажите диаметр круга
++	Specify diameter of circle	Укажите диаметр окружности
+ 	Specify dimension arc line location	Укажите положение размерной дуги
+ 	Specify dimension line location	Укажите положение размерной линии
+ 	Specify distance between turns	Укажите расстояние между витками
+@@ -795,13 +795,13 @@
+ 	Specify first corner	Укажите первый угол
+ 	Specify first corner point	Укажите первую угловую точку
+ 	Specify first destination point	Укажите первую целевую точку
+-	Specify first end point of circle's diameter	Укажите первую конечную точку диаметра круга
++	Specify first end point of circle's diameter	Укажите первую конечную точку диаметра окружности
+ 	Specify first endpoint of edge	Укажите первую конечную точку ребра
+ 	Specify first extension line origin	Укажите начало первой выносной линии
+ 	Specify first point	Укажите первую точку
+ 	Specify first point of mirror line	Укажите первую точку оси зеркального отражения
+-	Specify first point on circle	Укажите первую точку на круге
+-	Specify first point on circle: _tan to	Укажите первую точку на круге: _tan к
++	Specify first point on circle	Укажите первую точку на окружности
++	Specify first point on circle: _tan to	Укажите первую точку на окружности: _tan к
+ 	Specify first source point	Укажите первую исходную точку
+ 	Specify height	Укажите высоту
+ 	Specify helix height or	Укажите высоту спирали или
+@@ -829,11 +829,11 @@
+ 	Specify other endpoint of axis	Укажите другую конечную точку оси
+ 	Specify outside diameter of donut	Укажите внешний диаметр кольца
+ 	Specify point	Укажите точку
+-	Specify point on object for first tangent of circle	Укажите точку на объекте для первой касательной круга
+-	Specify point on object for second tangent of circle	Укажите точку на объекте для второй касательной круга
++	Specify point on object for first tangent of circle	Укажите точку на объекте для первой касательной окружности
++	Specify point on object for second tangent of circle	Укажите точку на объекте для второй касательной окружности
+ 	Specify point on side to offset	Укажите точку со стороны смещения
+ 	Specify radius of arc	Укажите радиус дуги
+-	Specify radius of circle	Укажите радиус круга
++	Specify radius of circle	Укажите радиус окружности
+ 	Specify rotation angle	Укажите угол поворота
+ 	Specify rotation angle of text	Укажите угол поворота текста
+ 	Specify rotation angle or	Укажите угол поворота или
+@@ -843,14 +843,14 @@
+ 	Specify second chamfer distance for rectangles	Укажите второе расстояние фаски прямоугольников
+ 	Specify second constraint point	Укажите вторую точку ограничения
+ 	Specify second destination point	Укажите вторую целевую точку
+-	Specify second end point of circle's diameter	Укажите вторую конечную точку диаметра круга
++	Specify second end point of circle's diameter	Укажите вторую конечную точку диаметра окружности
+ 	Specify second endpoint of edge	Укажите вторую конечную точку ребра
+ 	Specify second extension line origin	Укажите начало второй выносной линии
+ 	Specify second point	Укажите вторую точку
+ 	Specify second point of arc	Укажите вторую точку дуги
+ 	Specify second point of mirror line	Укажите вторую точку оси зеркального отражения
+-	Specify second point on circle	Укажите вторую точку на круге
+-	Specify second point on circle: _tan to	Укажите вторую точку на круге: _tan к
++	Specify second point on circle	Укажите вторую точку на окружности
++	Specify second point on circle: _tan to	Укажите вторую точку на окружности: _tan к
+ 	Specify second point or <use first point as displacement>	Укажите вторую точку или <использовать первую точку как смещение>
+ 	Specify second source point	Укажите вторую исходную точку
+ 	Specify side to offset	Укажите сторону смещения
+@@ -864,8 +864,8 @@
+ 	Specify tangent direction for the start point of arc	Укажите направление касательной в начальной точке дуги
+ 	Specify the elevation for rectangles	Укажите уровень прямоугольников
+ 	Specify thickness for rectangles	Укажите высоту выдавливания прямоугольников
+-	Specify third point on circle	Укажите третью точку на круге
+-	Specify third point on circle: _tan to	Укажите третью точку на круге: _tan к
++	Specify third point on circle	Укажите третью точку на окружности
++	Specify third point on circle: _tan to	Укажите третью точку на окружности: _tan к
+ 	Specify third source point or <continue>	Укажите третью исходную точку или <продолжить>
+ 	Specify through point	Укажите точку, через которую проходит прямая
+ 	Specify top diameter	Укажите диаметр вершины
+@@ -958,7 +958,7 @@
+ 	Version	Версия
+ 	Version {version}	Версия {version}
+ 	Vertical	Вертикальность
+-	VerticalDistance	ВертикальноеРасстояние
++	VerticalDistance	Вертикальное расстояние
+ 	View	Вид
+ 	ViewCube	Видовой куб
+ 	Viewport	Видовой экран
+@@ -973,12 +973,12 @@
+ 	Width factor	Коэффициент ширины
+ 	Window	Окно
+ 	Wipeout	Маскировка
+-	Workspace Switching	Переключение рабочих сред
++	Workspace Switching	Переключение рабочих пространств
+ 	Write Block	Записать блок в файл
+ 	Xline	Вспомогательная прямая
+ 	Yellow	Желтый
+ 	Yes	Да
+-	Zoom	Показать
++	Zoom	Масштаб
+ 	Zoom All	Показать все
+ 	Zoom Extents	Показать границы объектов
+ 	Zoom In	Увеличить
+@@ -1018,3 +1018,191 @@
+ 	Check for Updates…	Проверить обновления…
+ 	CADCraft is up to date.	У вас последняя версия CADCraft.
+ 	Could not check for updates.	Не удалось проверить обновления.
++	3D Mouse	3D-мышь
++	A drawing opened from a file keeps that file's format.	Чертёж, открытый из файла, сохраняет исходный формат.
++	A variable name starts with a letter and has only letters, digits and _	Название переменной должно начинаться с буквы и содержать только буквы, цифры и знак _
++	Add: Pick points	Добавить: указать точки
++	Add: Select objects	Добавить: выбрать объекты
++	Additional angles	Дополнительные углы
++	Add…	Добавить…
++	Alias	Сокращение команды
++	An array that would create more objects than this is refused.	Массивы с большим количеством объектов не создаются.
++	Apply	Применить
++	Associative	Ассоциативная
++	Attach DWG...	Подключить DWG…
++	Automatic save every	Автосохранение каждые
++	Automatic save file location	Папка автосохранения
++	Bind	Внедрить
++	Block to create or edit	Блок для создания или редактирования
++	Bottom left	Снизу слева
++	Bottom right	Снизу справа
++	Boundaries	Границы
++	Bulleted list	Маркированный список
++	CADCraft	CADCraft
++	CADCraft keeps these preferences, object snap modes and drafting toggles for your user account and restores them when it starts.	CADCraft сохраняет эти настройки, режимы привязки и параметры черчения для вашей учётной записи и восстанавливает их при запуске.
++	Calibrate	Калибровать
++	Centered	По центру
++	Changes apply at once and are kept for next time.	Изменения применяются сразу и сохраняются для следующего запуска.
++	Choose the command the alias starts.	Выберите команду, которую будет запускать сокращение.
++	Clear History	Очистить историю
++	Click the ruler to add a tab stop, right-click to remove one	Щёлкните по линейке, чтобы добавить позицию табуляции; правая кнопка удаляет её
++	Click to set new origin	Укажите новое начало координат
++	Close Block Editor	Закрыть редактор блоков
++	Close Comparison	Закрыть сравнение
++	Collapse Palettes	Свернуть палитры
++	Color 1	Цвет 1
++	Color 2	Цвет 2
++	Command	Команда
++	Command Aliases	Сокращения команд
++	Command line history	История командной строки
++	Convert	Преобразовать
++	Copy as JSON	Копировать как JSON
++	Create separate hatches	Создавать отдельные штриховки
++	Crosshair size	Размер перекрестия
++	Crossing selection color:	Цвет пересекающей рамки:
++	Curved	Изогнутая
++	Default save version	Версия сохранения по умолчанию
++	Default to boundary extents	По умолчанию использовать габариты границы
++	Define each corner of the selection window with a separate click.	Задавайте каждый угол рамки выделения отдельным щелчком.
++	Detach	Отсоединить
++	Discard	Отбросить
++	Don't Save	Не сохранять
++	Drawings with no file yet are saved in the default version. 0 minutes turns automatic save off.	Новые чертежи сохраняются в выбранной версии. Значение 0 минут отключает автосохранение.
++	Edit Block Definition	Изменить определение блока
++	Edit…	Изменить…
++	Enable 3D mouse navigation	Включить управление 3D-мышью
++	Evaluate	Вычислить
++	Exclude:	Исключить:
++	Export Comparison	Экспортировать сравнение
++	Get from the Drawing	Взять из чертежа
++	Grid snap	Шаговая привязка
++	Grip size	Размер ручек
++	Grips	Ручки
++	Groups	Группы
++	Hatch and Gradient	Штриховка и градиент
++	Hatch origin	Начало штриховки
++	Hatches	Штриховки
++	Hemispherical	Полусферическая
++	History	История
++	Hold Shift to add to the selection	Удерживайте Shift для добавления к выделению
++	Ignore	Игнорировать
++	Imperial (inches)	Дюймы
++	Indicate selection area	Показывать область выделения
++	Insert tab	Вставить табуляцию
++	Interface language	Язык интерфейса
++	Interface scale	Масштаб интерфейса
++	Interface theme	Тема интерфейса
++	Inverted	Инвертировать
++	Island	Островок
++	Island detection	Определение островков
++	Isometric snap	Изометрическая привязка
++	Italic	Курсив
++	Justify	По ширине
++	Keep the system cursor visible over the drawing area	Показывать системный указатель над областью чертежа
++	Largest array	Максимальный размер массива
++	Layout paper	Бумага листа
++	Left device button: zoom extents. Right device button: calibrate.	Левая кнопка устройства — показать весь чертёж. Правая — калибровка.
++	Lock viewport	Заблокировать видовой экран
++	Make it a block of this drawing, keeping its layer names	Преобразовать в блок этого чертежа, сохранив названия слоёв
++	Make it a block of this drawing; its layers become NAME$0$LAYER	Преобразовать в блок этого чертежа; названия слоёв получат вид NAME$0$LAYER
++	Metric (millimetres)	Миллиметры
++	Model background	Фон модели
++	More toolbar commands	Другие команды панели
++	Move sideways to pan; push/pull or twist to zoom.	Сдвиг в стороны перемещает вид; нажатие, вытягивание и поворот меняют масштаб.
++	Multiline text	Многострочный текст
++	New and the first drawing at startup use these units unless a default template is set (QNEWTEMPLATE).	Эти единицы используются для новых чертежей и первого чертежа при запуске, если не задан шаблон QNEWTEMPLATE.
++	New block	Новый блок
++	Next Change	Следующее изменение
++	No alias file loaded. REINIT replaces these aliases with a file's.	Файл сокращений не загружен. Команда REINIT заменяет сокращения содержимым файла.
++	No external references are attached.	Внешние ссылки не подключены.
++	Numbered list	Нумерованный список
++	Object Snap Tracking Settings	Настройки отслеживания объектной привязки
++	Object grouping	Группировка объектов
++	Object selection limit for display of grips	Максимум объектов для отображения ручек
++	Object snap aperture	Область поиска объектной привязки
++	Object snap marker size	Размер маркера объектной привязки
++	Objects on locked layers	Объекты на заблокированных слоях
++	Open	Открыть
++	Open in Block Editor	Открыть в редакторе блоков
++	Options	Настройки
++	Outer	Внешняя
++	Over-constrained	Избыточные ограничения
++	Overlay	Наложение
++	Overline	Надчёркивание
++	Pan sensitivity	Чувствительность перемещения вида
++	Paste to Command Line	Вставить в командную строку
++	Pickbox size	Размер прицела выбора
++	Polar angle measurement	Отсчёт полярных углов
++	Polar distance	Полярный шаг
++	PolarSnap	Полярная привязка
++	Preview	Предпросмотр
++	Previous Change	Предыдущее изменение
++	Rectangular snap	Прямоугольная привязка
++	Reference Name	Название ссылки
++	Relative to last segment	Относительно последнего сегмента
++	Reload	Перезагрузить
++	Reload All	Перезагрузить всё
++	Reset keeps the interface language.	При сбросе язык интерфейса сохраняется.
++	Reset to Defaults	Сбросить настройки
++	Reverse zoom direction	Обратить направление масштабирования
++	Save Block	Сохранить блок
++	Save Block As	Сохранить блок как
++	Save alias	Сохранить сокращение
++	Save new drawings as	Сохранять новые чертежи как
++	Saved Path	Сохранённый путь
++	Screen magnifiers, screen readers and recorders follow the system cursor.	Экранная лупа, программы чтения с экрана и записи экрана следуют за системным указателем.
++	Select boundaries to remove	Выберите удаляемые границы
++	Select objects first, then choose a command	Сначала выбирать объекты, затем команду
++	Select using two clicks only	Выделять только двумя щелчками
++	Selection Area Effect	Оформление области выделения
++	Selection Preview Filter	Фильтр подсветки при наведении
++	Selection area opacity:	Непрозрачность области выделения:
++	Selection effect color	Цвет подсветки выделения
++	Selection modes	Режимы выделения
++	Selection preview	Подсветка при наведении
++	Shape	Форма
++	Show Quick Properties for selected objects	Показывать быстрые свойства выделенных объектов
++	Show and hide the tools of this category	Показать или скрыть инструменты этой категории
++	Show command prompting near the crosshairs	Показывать подсказки команд возле перекрестия
++	Show grips	Показывать ручки
++	Show in Tool Sets	Показать в наборах инструментов
++	Snap type	Тип привязки
++	Snap, grid, polar tracking and Dynamic Input:	Привязка, сетка, полярное отслеживание и динамический ввод:
++	Specified origin	Заданное начало
++	Spherical	Сферическая
++	Tables	Таблицы
++	Text color	Цвет текста
++	The aperture is how near the cursor must come to a point for an object snap to find it.	Область поиска определяет, насколько близко нужно подвести указатель к точке для объектной привязки.
++	Time-sensitive right-click: a quick click is Enter, holding opens the menu	Правая кнопка с учётом длительности: короткий щелчок — Enter, удержание — меню
++	To	В
++	Top left	Сверху слева
++	Top right	Сверху справа
++	Track orthogonally only	Отслеживать только по горизонтали и вертикали
++	Track using all polar angle settings	Отслеживать по всем заданным полярным углам
++	Turned off, a right-click while a command runs always opens the shortcut menu.	Если выключено, правая кнопка во время команды всегда открывает контекстное меню.
++	Type an alias name.	Введите сокращение команды.
++	Underline	Подчёркивание
++	Units Conversion	Преобразование единиц
++	Units of new drawings	Единицы новых чертежей
++	Unload	Выгрузить
++	Unlock viewport	Разблокировать видовой экран
++	Unsaved changes	Несохранённые изменения
++	Use current origin	Использовать текущее начало
++	Variables	Переменные
++	Viewport is locked	Видовой экран заблокирован
++	Viewport scale	Масштаб видового экрана
++	Visual Effect Settings	Настройки визуальных эффектов
++	Visual Effect Settings...	Настройки визуальных эффектов…
++	When a command is active	Во время команды
++	When no command is active	Когда команда не выполняется
++	Window selection color:	Цвет обычной рамки выделения:
++	X	X
++	Xrefs	Внешние ссылки
++	Y	Y
++	Your changes will be lost if you don't save them.	Если не сохранить изменения, они будут потеряны.
++	Zoom sensitivity	Чувствительность масштабирования
++	built-in	встроенное
++	min	мин
++	objects	объектов
++	overrides built-in	заменяет встроенное
++	Font	Шрифт
