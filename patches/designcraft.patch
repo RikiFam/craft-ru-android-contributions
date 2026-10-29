@@ -1,5 +1,5 @@
 diff --git a/crates/ui-egui/src/chrome/start_screen.rs b/crates/ui-egui/src/chrome/start_screen.rs
-index 6e52487240463e2a2a84d9d6b321448a9486ba5b..2682e332ddfcba833f56b1ff7150eb14b98cd0b0 100644
+index 6e52487240463e2a2a84d9d6b321448a9486ba5b..b882273a0691401af8e70621bf5e79f0a9e95c75 100644
 --- a/crates/ui-egui/src/chrome/start_screen.rs
 +++ b/crates/ui-egui/src/chrome/start_screen.rs
 @@ -82,7 +82,7 @@ pub fn start_screen(app: &mut DesignApp, ui: &mut egui::Ui) {
@@ -11,20 +11,23 @@ index 6e52487240463e2a2a84d9d6b321448a9486ba5b..2682e332ddfcba833f56b1ff7150eb14
                              semibold(12.0),
                              t.text_strong,
                          );
-@@ -252,7 +252,7 @@ fn community_card(app: &mut DesignApp, ui: &mut egui::Ui) {
+@@ -252,7 +252,10 @@ fn community_card(app: &mut DesignApp, ui: &mut egui::Ui) {
                      for (text, id) in [("DesignCraft page", "help.appPage"), ("GitHub", "help.github"), ("getartcraft.com", "help.website")] {
                          let url = designcraft_engine::links::get(&id[5..]).unwrap_or_default();
                          let l = ui
 -                            .add(egui::Label::new(egui::RichText::new(text).size(12.0).color(t.accent).underline()).sense(Sense::click()))
-+                            .add(egui::Label::new(egui::RichText::new(crate::i18n::tr(&app.ui.language, text)).size(12.0).color(t.accent).underline()).sense(Sense::click()))
++                            .add(
++                                egui::Label::new(egui::RichText::new(crate::i18n::tr(&app.ui.language, text)).size(12.0).color(t.accent).underline())
++                                    .sense(Sense::click()),
++                            )
                              .on_hover_text(url)
                              .on_hover_cursor(egui::CursorIcon::PointingHand);
                          if l.clicked() {
 diff --git a/crates/ui-egui/src/i18n/ru.rs b/crates/ui-egui/src/i18n/ru.rs
-index c37e44bcbb5b4db9823bd468a5416c830ebf08bf..4873dea054f9554eb1c5a9e2498caf949b857ae2 100644
+index c37e44bcbb5b4db9823bd468a5416c830ebf08bf..1a84ce527b0962ac22cac6dd127a560d188159df 100644
 --- a/crates/ui-egui/src/i18n/ru.rs
 +++ b/crates/ui-egui/src/i18n/ru.rs
-@@ -3,6 +3,226 @@
+@@ -3,6 +3,241 @@
  //! The translations are our own; counted nouns are genitive plurals because the caption puts the
  //! category before the number ("страниц: 5"), see `count_label`.
  pub(super) const TABLE: &[(&str, &str)] = &[
@@ -116,8 +119,14 @@ index c37e44bcbb5b4db9823bd468a5416c830ebf08bf..4873dea054f9554eb1c5a9e2498caf94
 +    ("Drop Caps", "Буквицы"),
 +    ("EPUB Export Options", "Параметры экспорта EPUB"),
 +    ("Edit page size", "Изменить размер страницы"),
-+    ("Equal fixed heights for the selected rows; cell text may become overset.", "Установить одинаковую фиксированную высоту выбранных строк. Часть текста может перестать помещаться в ячейках."),
-+    ("Export a PDF, IDML or package to share — no cloud account needed.", "Чтобы поделиться документом, экспортируйте PDF, IDML или пакет файлов. Облачная учётная запись не нужна."),
++    (
++        "Equal fixed heights for the selected rows; cell text may become overset.",
++        "Установить одинаковую фиксированную высоту выбранных строк. Часть текста может перестать помещаться в ячейках.",
++    ),
++    (
++        "Export a PDF, IDML or package to share — no cloud account needed.",
++        "Чтобы поделиться документом, экспортируйте PDF, IDML или пакет файлов. Облачная учётная запись не нужна.",
++    ),
 +    ("Fit to Width", "По ширине"),
 +    ("Found", "Найдено"),
 +    ("Gap Tint:", "Оттенок промежутков:"),
@@ -130,7 +139,10 @@ index c37e44bcbb5b4db9823bd468a5416c830ebf08bf..4873dea054f9554eb1c5a9e2498caf94
 +    ("Hanging Type:", "Свисающая пунктуация:"),
 +    ("Ignore Optical Margin", "Не учитывать оптическое выравнивание полей"),
 +    ("Import InDesign Set…", "Импорт набора InDesign…"),
-+    ("Imported {count} shortcuts from “{set}”; {unmatched} items not matched, {unreadable} unreadable.", "Из набора «{set}» импортировано сочетаний: {count}; без соответствия: {unmatched}, не удалось прочитать: {unreadable}."),
++    (
++        "Imported {count} shortcuts from “{set}”; {unmatched} items not matched, {unreadable} unreadable.",
++        "Из набора «{set}» импортировано сочетаний: {count}; без соответствия: {unmatched}, не удалось прочитать: {unreadable}.",
++    ),
 +    ("Include Roman Characters", "Включить латинские символы"),
 +    ("Invalid panel layout; restored the default dock", "Некорректное расположение панелей; восстановлено стандартное"),
 +    ("Invalid value", "Недопустимое значение"),
@@ -221,7 +233,10 @@ index c37e44bcbb5b4db9823bd468a5416c830ebf08bf..4873dea054f9554eb1c5a9e2498caf94
 +    ("Tate-chu-yoko Digits:", "Цифр в горизонтальной вставке (татэ-тю-ёко):"),
 +    ("Text Color", "Цвет текста"),
 +    ("The selected fonts have no OpenType features.", "У выбранных шрифтов нет возможностей OpenType."),
-+    ("This story was edited in the layout: you'll be asked before those edits are replaced", "Текст был изменён в макете. Перед заменой этих правок потребуется подтверждение."),
++    (
++        "This story was edited in the layout: you'll be asked before those edits are replaced",
++        "Текст был изменён в макете. Перед заменой этих правок потребуется подтверждение.",
++    ),
 +    ("This style is in use. Text using it will be reassigned to:", "Этот стиль используется. Применённый к тексту стиль будет заменён на:"),
 +    ("Top Edge:", "Верхний край:"),
 +    ("Unsaved Changes", "Несохранённые изменения"),
@@ -242,7 +257,10 @@ index c37e44bcbb5b4db9823bd468a5416c830ebf08bf..4873dea054f9554eb1c5a9e2498caf94
 +    ("{count} match(es)", "Совпадений: {count}"),
 +    ("{count} replacement(s) made", "Выполнено замен: {count}"),
 +    ("{label}: {name} (double-click: Color Picker)", "{label}: {name} (двойной щелчок — выбор цвета)"),
-+    ("{name}: import cancelled while a dialog is open; choose the file again", "{name}: импорт отменён, пока открыто диалоговое окно; выберите файл ещё раз"),
++    (
++        "{name}: import cancelled while a dialog is open; choose the file again",
++        "{name}: импорт отменён, пока открыто диалоговое окно; выберите файл ещё раз",
++    ),
 +    ("{name}: {count} step(s) done", "{name}: выполнено шагов: {count}"),
 +    ("“{}” has changes that are not saved. Save them before closing?", "В «{}» есть несохранённые изменения. Сохранить их перед закрытием?"),
 +    ("Letter - Half", "Половина Letter"),
@@ -251,7 +269,7 @@ index c37e44bcbb5b4db9823bd468a5416c830ebf08bf..4873dea054f9554eb1c5a9e2498caf94
      ("File", "Файл"),
      ("Edit", "Редактирование"),
      ("Can't Open the File", "Не удалось открыть файл"),
-@@ -36,12 +256,12 @@ pub(super) const TABLE: &[(&str, &str)] = &[
+@@ -36,12 +271,12 @@ pub(super) const TABLE: &[(&str, &str)] = &[
      ("Paste", "Вставить"),
      ("Restart Numbering", "Начать нумерацию заново"),
      ("Continue Numbering", "Продолжить нумерацию"),
@@ -266,7 +284,7 @@ index c37e44bcbb5b4db9823bd468a5416c830ebf08bf..4873dea054f9554eb1c5a9e2498caf94
      ("Drop Caps and Nested Styles…", "Буквицы и вложенные стили…"),
      ("GREP Styles…", "Стили GREP…"),
      ("Restart/Continue Numbering", "Начать заново/продолжить нумерацию"),
-@@ -50,18 +270,18 @@ pub(super) const TABLE: &[(&str, &str)] = &[
+@@ -50,18 +285,18 @@ pub(super) const TABLE: &[(&str, &str)] = &[
      ("Hyphenation Settings", "Параметры расстановки переносов"),
      ("hyphens", "дефисов"),
      ("Hyphenation Zone:", "Зона переносов:"),
@@ -289,12 +307,15 @@ index c37e44bcbb5b4db9823bd468a5416c830ebf08bf..4873dea054f9554eb1c5a9e2498caf94
      ("Left Indent", "Отступ слева"),
      ("Right Indent", "Отступ справа"),
      ("First Line Left Indent", "Отступ первой строки слева"),
-@@ -930,7 +1150,7 @@ pub(super) const TABLE: &[(&str, &str)] = &[
+@@ -930,7 +1165,10 @@ pub(super) const TABLE: &[(&str, &str)] = &[
      ("Other", "Другое"),
      ("Output", "Вывод"),
      ("Page Numbering", "Нумерация страниц"),
 -    ("Page layout for print and screen — fast, open and scriptable.", "Верстка для печати и экрана — быстрая, открытая, с поддержкой сценариев."),
-+    ("Page layout for print and screen — fast, open and scriptable.", "Вёрстка печатных и электронных изданий. Открытый код и поддержка автоматизации."),
++    (
++        "Page layout for print and screen — fast, open and scriptable.",
++        "Вёрстка печатных и электронных изданий. Открытый код и поддержка автоматизации.",
++    ),
      ("Page · PPI", "Страница · PPI"),
      ("Part of the ArtCraft suite of open creative tools.", "Часть набора открытых творческих инструментов ArtCraft."),
      ("Pasteboard Options", "Параметры монтажного стола"),

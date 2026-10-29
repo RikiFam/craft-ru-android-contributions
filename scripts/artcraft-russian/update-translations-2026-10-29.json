@@ -87,5 +87,17 @@
   "Reference:": "Ссылка:",
   "Select a Solving Method:": "Метод решения:",
   "Split tabs": "Разделить вкладки",
-  "Close font search": "Закрыть поиск шрифтов"
+  "Close font search": "Закрыть поиск шрифтов",
+  " the object to select  |  ": " по объекту — выделить  |  ",
+  " to select multiple objects  |  ": " — выделить несколько объектов  |  ",
+  " the object to duplicate": " объект — создать копию",
+  " an anchor or path segment to select it  |  ": " по опорной точке или сегменту контура — выделить  |  ",
+  " to pan the view": " — переместить область просмотра",
+  " an object to copy its attributes  |  ": " по объекту — скопировать его оформление  |  ",
+  " to apply the selection's to it  |  ": " — применить оформление выделенного объекта  |  ",
+  " a point to edit it  |  ": " по точке — изменить её параметры  |  ",
+  " the art to add a pin  |  ": " по рисунку — добавить булавку  |  ",
+  " an object, then another to blend them  |  ": " по двум объектам по очереди — создать переход  |  ",
+  " on the canvas to create one (": " на холсте — создать монтажную область (",
+  " keeps its proportions)": " сохраняет пропорции)"
 }

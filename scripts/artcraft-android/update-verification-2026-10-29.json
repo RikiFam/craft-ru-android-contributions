@@ -1,0 +1,140 @@
+{
+  "photocraft": {
+    "version": "0.17.0",
+    "apk_sha256": "ce2f2e1b86e92ed305dac457c5a18251ed08749e585e0de83bd2871d02d8e66e",
+    "installed": true,
+    "visual_main_window": true,
+    "screenshot": "tmp\\artcraft\\android\\photocraft-update-check.png",
+    "save_check": {
+      "file": "ArtCraft-update-test.psd",
+      "bytes": 215208,
+      "drawing": true
+    },
+    "device_version_verified": true,
+    "device_version": "0.17.0-ru-android-preview3"
+  },
+  "launcher": {
+    "version": "0.9.0",
+    "apk_sha256": "3c2b812835407aec2f3b278c68fcb2ac3499625e6dcaac1ab93edf1f1532e6f8",
+    "installed": true,
+    "visual_main_window": true,
+    "screenshot": "tmp\\artcraft\\android\\launcher-update-check.png",
+    "device_version_verified": true,
+    "device_version": "0.9.0-ru-android-preview3",
+    "final_screenshot": "tmp/artcraft/android/launcher-update-final.png"
+  },
+  "deckcraft": {
+    "version": "0.12.0",
+    "apk_sha256": "00e0811d6b1386553708bddaa5c2d46cb662e1042e59c87269c9609eb595eb96",
+    "installed": true,
+    "visual_main_window": true,
+    "screenshot": "tmp\\artcraft\\android\\deckcraft-update-check.png",
+    "device_version_verified": true,
+    "device_version": "0.12.0-ru-android-preview3"
+  },
+  "designcraft": {
+    "version": "0.14.0",
+    "apk_sha256": "1e3e9c63b99c6e31258856e91f19147ff1ff53e387aeaa0a57f518fbd1f1d6eb",
+    "installed": true,
+    "visual_main_window": true,
+    "screenshot": "tmp\\artcraft\\android\\designcraft-update-check.png",
+    "device_version_verified": true,
+    "device_version": "0.14.0-ru-android-preview3"
+  },
+  "cadcraft": {
+    "version": "0.14.0",
+    "apk_sha256": "26792907dc2ed89e8342564ee6d4dd0249704be00bcc5225f878d086ec7ca9b4",
+    "installed": true,
+    "visual_main_window": true,
+    "screenshot": "tmp/artcraft/android/cadcraft-update-check.png",
+    "device_version_verified": true,
+    "device_version": "0.14.0-ru-android-preview3"
+  },
+  "effectcraft": {
+    "version": "0.18.0",
+    "apk_sha256": "d366ad4b4c3321d84a485c1648d9e8daebd6f0aaf04a419f11cc19f75f401eed",
+    "installed": true,
+    "visual_main_window": true,
+    "screenshot": "tmp/artcraft/android/effectcraft-update-final.png",
+    "device_version_verified": true,
+    "device_version": "0.18.0-ru-android-preview3"
+  },
+  "filmcraft": {
+    "version": "0.14.0",
+    "apk_sha256": "f9375a88181d30b5749d9e0af946949c3f890b2982ebe4477c5affd33a9c3b98",
+    "installed": true,
+    "visual_main_window": true,
+    "screenshot": "tmp/artcraft/android/filmcraft-update-final.png",
+    "device_version_verified": true,
+    "device_version": "0.14.0-ru-android-preview3"
+  },
+  "gridcraft": {
+    "version": "0.13.0",
+    "apk_sha256": "fac8b720a967e19d5dc0273ea7376ee395fd849fa5d15c50e32ca69d26df5a90",
+    "installed": true,
+    "visual_main_window": true,
+    "screenshot": "tmp/artcraft/android/gridcraft-update-check.png",
+    "device_version_verified": true,
+    "device_version": "0.13.0-ru-android-preview3"
+  },
+  "figcraft": {
+    "version": "0.12.1",
+    "apk_sha256": "359d68acafbad70d4e611a90bb41e293c482d0186a64d4afad95e8a5befeb304",
+    "installed": true,
+    "visual_main_window": true,
+    "screenshot": "tmp/artcraft/android/figcraft-update-check.png",
+    "device_version_verified": true,
+    "device_version": "0.12.1-ru-android-preview3"
+  },
+  "lightcraft": {
+    "version": "0.15.0",
+    "apk_sha256": "626ad21dd3120e6e81cec37ea50e92b7c5f542de2f8956bcdaaa98ed7a455c48",
+    "installed": true,
+    "visual_main_window": true,
+    "screenshot": "tmp/artcraft/android/lightcraft-update-final.png",
+    "device_version_verified": true,
+    "device_version": "0.15.0-ru-android-preview3"
+  },
+  "pdfcraft": {
+    "version": "0.15.0",
+    "apk_sha256": "302c25dbc62872d40495ee73532a1dad81512e1b987c1b60c5f93ade007545cf",
+    "installed": true,
+    "visual_main_window": true,
+    "screenshot": "tmp/artcraft/android/pdfcraft-update-check.png",
+    "open_check": {
+      "file": "codex-test-form.pdf",
+      "rendered": true,
+      "interactive_fields": 5,
+      "screenshot": "tmp/artcraft/android/pdfcraft-update-open.png"
+    },
+    "device_version_verified": true,
+    "device_version": "0.15.0-ru-android-preview3"
+  },
+  "soundcraft": {
+    "version": "0.14.0",
+    "apk_sha256": "c0b2d90be09a41394fcc46988fbfabdc8e36df779ecb3ee6ac262e0e5f3d1d1b",
+    "installed": true,
+    "visual_main_window": true,
+    "screenshot": "tmp/artcraft/android/soundcraft-update-check.png",
+    "device_version_verified": true,
+    "device_version": "0.14.0-ru-android-preview3"
+  },
+  "wordcraft": {
+    "version": "0.12.0",
+    "apk_sha256": "1e1289da422f1ffad02f5a639c684c2efb0b11646bbf93b6315e41b3532ecb73",
+    "installed": true,
+    "visual_main_window": true,
+    "screenshot": "tmp/artcraft/android/wordcraft-update-check.png",
+    "device_version_verified": true,
+    "device_version": "0.12.0-ru-android-preview3"
+  },
+  "vectorcraft": {
+    "version": "0.18.0",
+    "apk_sha256": "e13b61dc23cd4b121fbc117d9e3ace8de98ca8aacae7ab8112b93f513cc14467",
+    "installed": true,
+    "visual_main_window": true,
+    "screenshot": "tmp/artcraft/android/vectorcraft-update-final.png",
+    "device_version_verified": true,
+    "device_version": "0.18.0-ru-android-preview3"
+  }
+}

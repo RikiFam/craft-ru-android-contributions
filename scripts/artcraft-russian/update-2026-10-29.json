@@ -24,7 +24,7 @@
     "release_url": "https://github.com/storytold/deckcraft/releases/tag/v0.12.0",
     "status": "translation-ported-build-verification-pending",
     "upstream_commit": "29f0f7772c47aa2bfb74fcbb0c4d3b1503300849",
-    "local_commit": "9427e49552f0733d2bf9a35f1e5adcc4e45e7fcd"
+    "local_commit": "dc640f9715bd02ab8c49b74928639f8fa8e4f5eb"
   },
   "designcraft": {
     "old_base": "dcce40fb8731213c1f8e31cdd23444995afc62ce",
@@ -33,7 +33,7 @@
     "release_url": "https://github.com/storytold/designcraft/releases/tag/v0.14.0",
     "status": "translation-ported-build-verification-pending",
     "upstream_commit": "7da69c16ce221f46e8f27cb41e0c88167c8be416",
-    "local_commit": "353cef1dfaf907d16aceac076ab84a7df358b73d"
+    "local_commit": "cb63ceae7dd84127f5707647d5dedd13dc1cc306"
   },
   "effectcraft": {
     "old_base": "362474a843ddb67555d4c2d19ad6a590388aad0e",
@@ -42,7 +42,7 @@
     "release_url": "https://github.com/storytold/effectcraft/releases/tag/v0.18.0",
     "status": "translation-ported-build-verification-pending",
     "upstream_commit": "c3600f9b59b109da97871a43a6898683a0163cb1",
-    "local_commit": "18751af7f953254dca6d44dab2e0e978067c9d1d"
+    "local_commit": "28f15520daf1248e075aa5ca955c3fcaed6e8595"
   },
   "figcraft": {
     "old_base": "d4a303d4708602a9df1738960852d18b185a616b",
@@ -78,7 +78,7 @@
     "release_url": "https://github.com/storytold/lightcraft/releases/tag/v0.15.0",
     "status": "translation-ported-build-verification-pending",
     "upstream_commit": "e381c1ae6b2006ce627b243fe41697ce0d9608e0",
-    "local_commit": "74caf9e7b78d398aea07cb7d69320745847b036b"
+    "local_commit": "ed3225143420390c35416b4796b7516b6b21ca1e"
   },
   "pdfcraft": {
     "old_base": "5a78b223871add8e3883856205cc653d741e0e94",
@@ -114,7 +114,7 @@
     "release_url": "https://github.com/storytold/vectorcraft/releases/tag/v0.18.0",
     "status": "translation-ported-build-verification-pending",
     "upstream_commit": "68b68a30acad9b3d8a72802b35f43b82e2bd7d3a",
-    "local_commit": "d6b4c7e307ca663113f13dbd5c7ab446346d0d78"
+    "local_commit": "37587ce15e3aba6c71b43f4493180d3eb288f68c"
   },
   "wordcraft": {
     "old_base": "e31f2f06a5f8004ceaa88f68c00b47908e321aa4",

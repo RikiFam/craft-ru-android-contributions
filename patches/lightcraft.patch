@@ -650,3 +650,16 @@ index 306804df0457e61160b8abf79c28c6e4b0971f9c..aa3a3f87b7b284ce068a5cf60d011ae2
 +  "Unit": "Единица измерения",
 +  "{title}: {line}": "{title}: {line}"
  }
+diff --git a/crates/ui-egui/src/panels/detail/filmstrip.rs b/crates/ui-egui/src/panels/detail/filmstrip.rs
+index 4a0de28cf24b512a4ce7ae786df0ef85e4eaf266..a2136a3b948485a95a7ccc81f0f6ea1674eb5a72 100644
+--- a/crates/ui-egui/src/panels/detail/filmstrip.rs
++++ b/crates/ui-egui/src/panels/detail/filmstrip.rs
+@@ -65,7 +65,7 @@ pub(crate) fn filmstrip(app: &mut LightcraftApp, ui: &mut egui::Ui, r: Rect) {
+     let ppp = ui.ctx().pixels_per_point();
+     if ids.is_empty() {
+         let why = if app.session.filter != Default::default() { "No photos match the filters (View → Clear Filters)" } else { "No photos" };
+-        ui.painter().text(r.center(), Align2::CENTER_CENTER, why, t.font(12.5), t.text_dim);
++        ui.painter().text(r.center(), Align2::CENTER_CENTER, crate::i18n::tr(why), t.font(12.5), t.text_dim);
+         return;
+     }
+     let mut child = ui.new_child(egui::UiBuilder::new().max_rect(r.shrink2(vec2(0.0, 4.0))));

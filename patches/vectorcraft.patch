@@ -1,5 +1,5 @@
 diff --git a/crates/ui-egui/src/i18n/ru.tsv b/crates/ui-egui/src/i18n/ru.tsv
-index 972f4a2b2fafb02291a38b360ca616179a06897e..e6ed530074539788e922c8a766dff1fcf2ff24f6 100644
+index 972f4a2b2fafb02291a38b360ca616179a06897e..77b93bfaf38383472079fdeb494f38f0c22be004 100644
 --- a/crates/ui-egui/src/i18n/ru.tsv
 +++ b/crates/ui-egui/src/i18n/ru.tsv
 @@ -2715,8 +2715,8 @@ mark-style	Japanese	Японский
@@ -60,6 +60,70 @@ index 972f4a2b2fafb02291a38b360ca616179a06897e..e6ed530074539788e922c8a766dff1fc
  	Web Safe 216	216 web-безопасных
  	Web Safe RGB	Web-безопасный RGB
  	Web Shift	Сдвиг к web
+@@ -3698,10 +3698,10 @@ imageTrace	Outline	Контур
+ @plural	{n} star|{n} stars	{n} звезда|{n} звезды|{n} звёзд
+ @plural	{n} step|{n} steps	{n} шаг|{n} шага|{n} шагов
+ @plural	{n} stroke|{n} strokes	{n} обводка|{n} обводки|{n} обводок
+-	 the object to select  |  	 в объект для его выделения  |  
+-	 to select multiple objects  |  	 для выделения нескольких объектов  |  
+-	 the object to duplicate	 объект для его дублирования
+-	 an anchor or path segment to select it  |  	 в опорную точку или сегмент контура для его выделения  |  
++	 the object to select  |  	 по объекту — выделить  |  
++	 to select multiple objects  |  	 — выделить несколько объектов  |  
++	 the object to duplicate	 объект — создать копию
++	 an anchor or path segment to select it  |  	 по опорной точке или сегменту контура — выделить  |  
+ 	 to move  |  	 для перемещения  |  
+ 	 to add	 для добавления
+ 	 to add a corner point  |  	 для добавления угловой точки  |  
+@@ -3720,40 +3720,40 @@ imageTrace	Outline	Контур
+ 	 to set the reference point  |  	 для задания точки отсчёта  |  
+ 	 to transform  |  	 для трансформирования  |  
+ 	 for exact values	 для точных значений
+-	 to pan the view	 для панорамирования вида
++	 to pan the view	 — переместить область просмотра
+ 	 to zoom in  |  	 для увеличения  |  
+ 	 to zoom out  |  	 для уменьшения  |  
+ 	 to zoom into an area	 для увеличения области
+ 	Hold	Удерживать
+ 	 right or left to zoom in or out  |  	 вправо или влево для увеличения или уменьшения  |  
+ 	 to keep zooming	 для непрерывного масштабирования
+-	 an object to copy its attributes  |  	 в объект для копирования его атрибутов  |  
+-	 to apply the selection's to it  |  	 для применения атрибутов выделения к нему  |  
++	 an object to copy its attributes  |  	 по объекту — скопировать его оформление  |  
++	 to apply the selection's to it  |  	 — применить оформление выделенного объекта  |  
+ 	 to sample a color	 для взятия образца цвета
+ 	 across a selected object to set the gradient direction	 по выделенному объекту для задания направления градиента
+ 	 to select an artboard  |  	 для выбора монтажной области  |  
+-	 on the canvas to create one (	 на холсте для создания одной (
++	 on the canvas to create one (	 на холсте — создать монтажную область (
+ 	 selects several, or draws one inside an artboard)	 выбирает несколько или создаёт новую внутри монтажной области)
+ 	 a stroke to add a width point  |  	 обводку для добавления точки ширины  |  
+ 	 to change one side  |  	 для изменения одной стороны  |  
+ 	 to select more points  |  	 для выделения большего числа точек  |  
+-	 a point to edit it  |  	 в точку для её редактирования  |  
++	 a point to edit it  |  	 по точке — изменить её параметры  |  
+ 	 to remove points	 для удаления точек
+-	 the art to add a pin  |  	 в рисунок для добавления булавки  |  
++	 the art to add a pin  |  	 по рисунку — добавить булавку  |  
+ 	 to select more pins  |  	 для выделения большего числа булавок  |  
+ 	 a pin to warp  |  	 булавку для деформации  |  
+ 	 near a selected pin to rotate  |  	 рядом с выбранной булавкой для поворота  |  
+ 	 to remove pins	 для удаления булавок
+ 	 across paths to push them along  |  	 по контурам для их сдвига  |  
+ 	 to size the brush (	 для изменения размера кисти (
+-	 keeps its proportions)	 сохраняет свои пропорции)
++	 keeps its proportions)	 сохраняет пропорции)
+ 	 over paths, and hold still to keep going  |  	 по контурам; задержите, чтобы продолжить  |  
+ 	 over paths to roughen their outlines  |  	 по контурам для огрубления их очертаний  |  
+ 	 to move in perspective  |  	 для перемещения в перспективе  |  
+ 	 to copy  |  	 для копирования  |  
+ 	 while dragging to move perpendicular to the plane  |  	 при перетаскивании для перемещения перпендикулярно плоскости  |  
+ 	 to scale in perspective	 для масштабирования в перспективе
+-	 an object, then another to blend them  |  	 в объект, затем в другой для их перехода  |  
++	 an object, then another to blend them  |  	 по двум объектам по очереди — создать переход  |  
+ 	 to blend from it  |  	 для перехода от него  |  
+ 	 to set spacing and orientation	 для задания интервала и ориентации
+ 	:	:
 @@ -5226,3 +5226,30 @@ axis	Y Axis	Ось Y
  @msg	a {width}×{height} screenshot's byte count overflows	количество байтов снимка {width}×{height} переполняется
  @msg	the window's {what} ({points} points × {scale} DPI) cannot size a screenshot	{what} окна ({points} пунктов × {scale} DPI) не позволяет задать размер снимка

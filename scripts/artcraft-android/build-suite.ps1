@@ -50,8 +50,10 @@ $env:ARTCRAFT_NDK_CLANG = Join-Path $llvm 'clang.exe'
 Push-Location $project
 try {
     $linker = Join-Path $output 'android-link.exe'
-    rustc --edition 2024 "$PSScriptRoot\android-link.rs" -o $linker
-    if ($LASTEXITCODE -ne 0) { throw 'Linker adapter build failed' }
+    if (!(Test-Path -LiteralPath $linker) -or (Get-Item "$PSScriptRoot\android-link.rs").LastWriteTimeUtc -gt (Get-Item $linker).LastWriteTimeUtc) {
+        rustc --edition 2024 "$PSScriptRoot\android-link.rs" -o $linker
+        if ($LASTEXITCODE -ne 0) { throw 'Linker adapter build failed' }
+    }
     # NDK tools narrow Unicode arguments to the system codepage. Use an ASCII
     # junction for link inputs only, preserving the compiled Cargo cache in place.
     if (-not $PackageOnly) {

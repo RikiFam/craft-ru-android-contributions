@@ -11,7 +11,7 @@ struct App {
 }
 impl eframe::App for App {
     fn logic(&mut self, ctx: &egui::Context, _: &mut eframe::Frame) {
-        self.editor.logic(ctx);
+        ui::windows::guard(&mut self.editor, ctx, |editor| editor.background_tick(ctx));
     }
     fn ui(&mut self, ui: &mut egui::Ui, _: &mut eframe::Frame) {
         if let Some((save, path)) = self.files.show(ui) {
@@ -53,10 +53,9 @@ fn android_main(android: AndroidApp) {
     if let Err(e) = eframe::run_native(
         "FigCraft",
         options,
-        Box::new(move |cc| {
+        Box::new(move |_cc| {
             let mut editor = ui::FigApp::new(Session::new(), Box::new(ui::NoServices));
             editor.session.prefs.language = "ru".into();
-            editor.logic(&cc.egui_ctx);
             Ok(Box::new(App {
                 editor,
                 files: mobile_files::Files::new(home, "Дизайн.figcraft"),

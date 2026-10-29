@@ -32,10 +32,13 @@ No signing keys, installed programs, private documents or device logs are includ
 ## Validation and limits
 
 All 14 application patches were checked against their recorded upstream Git trees.
-The prior suite launched on Galaxy Tab S7+ (Android 13). The 0.37-based update was
-still being built and tested when this snapshot was recorded. Historical reports in
-the subdirectories describe their own versions; they do not certify this whole snapshot.
-This export has not undergone a fresh full Android/desktop build or complete device test.
+The source chat records installation, device version and Russian window checks for all
+14 updated Android packages on Galaxy Tab S7+ (Android 13). PhotoCraft drawing/PSD saving
+and opening a test PDF in PdfCraft were checked. These are launch and selected workflow
+checks, not complete functional coverage. Shared craft-i18n: 26 tests and Clippy passed.
+Windows update work was still in progress at this snapshot. The export itself has not
+undergone an independent full rebuild. Historical subdirectory reports describe their
+own versions; the dated update report describes these newer device checks.
 Android document pickers use app folders; SAF, sharing, rotation and every editor function
 are not comprehensively tested. This is contribution material for review.
 
@@ -50,6 +53,6 @@ APK as an official release. Other projects retain their own asset licenses.
 MIT OR Apache-2.0 for contributions and applicable upstream code; third-party assets
 retain their original terms. See LICENSE files and the source repositories' attribution.
 
-## Download the complete source bundle
+## Download this source snapshot
 
-[Download the source ZIP](downloads/contribution-2026-10-29.zip) and extract it into a fresh directory, or clone this repository. ZIP SHA-256: `787eceeac4b42673fc047c461dc1e0447dd4d8cdffbfd41a35d34bfc248074b1`.
+[Source ZIP](downloads/contribution-a209e3b.zip), SHA-256: `a06ab614753258a1fa4235d92a39a643f6414b504e3c0c001774e120ba5b6f1d`. The archive contains source files, not APKs.
