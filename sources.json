@@ -1,0 +1,28 @@
+{
+  "application": "photocraft",
+  "bundle_commit": "74836d4de05e09f5b2d6921c2d0741f6e6b6eb3a",
+  "branch_role": "focused review slice, not standalone build checkout",
+  "application_sources": {
+    "russifier": {
+      "url": "https://github.com/storytold/photocraft.git",
+      "base": "b8c3f3aa8e2918032cadc0e042664414a03be333",
+      "destination": "tmp/artcraft/photocraft/repo",
+      "patch": "patches/photocraft.patch",
+      "sha256": "6138f354935693892c55c49191ee50b3ee556377b5060ffdb34ee423def400dc",
+      "apply_check": "passed"
+    },
+    "android": {
+      "url": "https://github.com/storytold/photocraft.git",
+      "base": "b8c3f3aa8e2918032cadc0e042664414a03be333",
+      "destination": "tmp/artcraft/photocraft/repo",
+      "patch": "patches/photocraft.patch",
+      "sha256": "a2d28301651fd594f63d1c20d03759df25f245d5a1bcbda4edf7b438a371338b",
+      "apply_check": "passed"
+    }
+  },
+  "shared_dependencies": {
+    "russifier": "https://github.com/RikiFam/craft-ru-android-contributions/blob/74836d4de05e09f5b2d6921c2d0741f6e6b6eb3a/russifier/sources.json",
+    "android": "https://github.com/RikiFam/craft-ru-android-contributions/blob/74836d4de05e09f5b2d6921c2d0741f6e6b6eb3a/android/sources.json",
+    "printing": "https://github.com/RikiFam/craft-ru-android-contributions/blob/74836d4de05e09f5b2d6921c2d0741f6e6b6eb3a/printing/sources.json"
+  }
+}
