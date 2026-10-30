@@ -24,5 +24,15 @@
     "russifier": "https://github.com/RikiFam/craft-ru-android-contributions/blob/74836d4de05e09f5b2d6921c2d0741f6e6b6eb3a/russifier/sources.json",
     "android": "https://github.com/RikiFam/craft-ru-android-contributions/blob/74836d4de05e09f5b2d6921c2d0741f6e6b6eb3a/android/sources.json",
     "printing": "https://github.com/RikiFam/craft-ru-android-contributions/blob/74836d4de05e09f5b2d6921c2d0741f6e6b6eb3a/printing/sources.json"
+  },
+  "dex_input_update": {
+    "bundle_commit": "d78e5df11394a50c5082572aa0488d8cd4815dc0",
+    "source_snapshot": "e706b13524f28a33895d965e52be63863c9b030e",
+    "shared_instructions": "https://github.com/RikiFam/craft-ru-android-contributions/blob/d78e5df11394a50c5082572aa0488d8cd4815dc0/android/README.md",
+    "application_overlay_files": [
+      "android/dex-overlay/scripts/artcraft-android/suite/cadcraft/AndroidManifest.xml",
+      "android/dex-overlay/scripts/artcraft-android/suite/cadcraft/Cargo.lock",
+      "android/dex-overlay/scripts/artcraft-android/suite/cadcraft/Cargo.toml"
+    ]
   }
 }
