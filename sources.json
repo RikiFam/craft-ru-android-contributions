@@ -1,0 +1,28 @@
+{
+  "application": "vectorcraft",
+  "bundle_commit": "74836d4de05e09f5b2d6921c2d0741f6e6b6eb3a",
+  "branch_role": "focused review slice, not standalone build checkout",
+  "application_sources": {
+    "russifier": {
+      "url": "https://github.com/storytold/vectorcraft.git",
+      "base": "68b68a30acad9b3d8a72802b35f43b82e2bd7d3a",
+      "destination": "tmp/artcraft/vectorcraft/repo",
+      "patch": "patches/vectorcraft.patch",
+      "sha256": "5a53d6ed96dc373fc1eb616de110a224d72bb2d6ab8b46e9ec48a276c4d5653b",
+      "apply_check": "passed"
+    },
+    "android": {
+      "url": "https://github.com/storytold/vectorcraft.git",
+      "base": "68b68a30acad9b3d8a72802b35f43b82e2bd7d3a",
+      "destination": "tmp/artcraft/vectorcraft/repo",
+      "patch": "patches/vectorcraft.patch",
+      "sha256": "ffaaf4884c2e065dfea1119450914f5b77f86eb2264301a480d5018c36526873",
+      "apply_check": "passed"
+    }
+  },
+  "shared_dependencies": {
+    "russifier": "https://github.com/RikiFam/craft-ru-android-contributions/blob/74836d4de05e09f5b2d6921c2d0741f6e6b6eb3a/russifier/sources.json",
+    "android": "https://github.com/RikiFam/craft-ru-android-contributions/blob/74836d4de05e09f5b2d6921c2d0741f6e6b6eb3a/android/sources.json",
+    "printing": "https://github.com/RikiFam/craft-ru-android-contributions/blob/74836d4de05e09f5b2d6921c2d0741f6e6b6eb3a/printing/sources.json"
+  }
+}
