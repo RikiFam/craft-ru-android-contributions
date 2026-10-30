@@ -1,0 +1,28 @@
+{
+  "application": "figcraft",
+  "bundle_commit": "74836d4de05e09f5b2d6921c2d0741f6e6b6eb3a",
+  "branch_role": "focused review slice, not standalone build checkout",
+  "application_sources": {
+    "russifier": {
+      "url": "https://github.com/storytold/figcraft.git",
+      "base": "ef9721c5b9d0f1cc19a74449cbe175fc06bf8efa",
+      "destination": "tmp/artcraft/figcraft/repo",
+      "patch": "patches/figcraft.patch",
+      "sha256": "2d4409e99ae2f50f206b715e56febef3c4c1de23c1ae1f660dda38c896f98088",
+      "apply_check": "passed"
+    },
+    "android": {
+      "url": "https://github.com/storytold/figcraft.git",
+      "base": "ef9721c5b9d0f1cc19a74449cbe175fc06bf8efa",
+      "destination": "tmp/artcraft/figcraft/repo",
+      "patch": "patches/figcraft.patch",
+      "sha256": "c5ccf64d5f7a3b2e75f1f5531283ce37a43f33f752afb92ccf5f7ed7814d101f",
+      "apply_check": "passed"
+    }
+  },
+  "shared_dependencies": {
+    "russifier": "https://github.com/RikiFam/craft-ru-android-contributions/blob/74836d4de05e09f5b2d6921c2d0741f6e6b6eb3a/russifier/sources.json",
+    "android": "https://github.com/RikiFam/craft-ru-android-contributions/blob/74836d4de05e09f5b2d6921c2d0741f6e6b6eb3a/android/sources.json",
+    "printing": "https://github.com/RikiFam/craft-ru-android-contributions/blob/74836d4de05e09f5b2d6921c2d0741f6e6b6eb3a/printing/sources.json"
+  }
+}

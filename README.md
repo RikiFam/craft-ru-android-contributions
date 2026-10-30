@@ -1,23 +1,38 @@
-# ArtCraft: три отдельных направления
+# figcraft: focused contribution review
 
-Неофициальные экспериментальные исходники для review и самостоятельной сборки.
+One application per branch. Translation, Android and printer work remain separate
+directories. This is a review slice of verified bundle `74836d4de05e09f5b2d6921c2d0741f6e6b6eb3a`, not an upstream PR
+branch and not a standalone build checkout. No other editor's application patches
+or suite-wide ZIPs are included. Shared implementation is linked below at immutable
+commits, rather than copied into every branch. Parent history still contains the bundle.
 
-| Раздел | Содержимое | Скачать |
-|---|---|---|
-| [Русификатор](russifier/) | Перевод интерфейса без Android и доработок принтера | [ZIP](downloads/russifier-69ae9d8.zip) |
-| [Порт на Android](android/) | Хосты ARM64, файлы, ввод, системные диалоги | [ZIP](downloads/android-69ae9d8.zip) |
-| [Печать и принтер](printing/) | WordCraft, Epson/Windows preferences, PrintTicket | [ZIP](downloads/printing-d49897d.zip) |
+## Review and reproduce
 
-У каждого пакета свои инструкции, точные upstream SHA, патчи, лицензии и ограничения.
-Android включает русские переводы как зависимость. Системный мост печати относится
-к Android-порту; настройки конкретного принтера выделены в printing.
-В printing отдельно опубликованы прямая Wi-Fi-печать и три пункта сервиса Epson L3250; обычная очистка физически не проверена.
-Русская орфография включена отдельным шагом russifier; Android-интеграция находится в android/spelling-overlay. APK и ключей подписи нет.
-Независимая полная пересборка отдельных пакетов не проведена; подтверждённые
-проверки исходного чата и их пределы указаны в каждом README.
+- [Application upstream](https://github.com/storytold/figcraft); exact base and patch hashes: sources.json.
+- [Russian translation and optional spelling instructions](https://github.com/RikiFam/craft-ru-android-contributions/tree/74836d4de05e09f5b2d6921c2d0741f6e6b6eb3a/russifier).
+- [Android build instructions and shared platform](https://github.com/RikiFam/craft-ru-android-contributions/tree/74836d4de05e09f5b2d6921c2d0741f6e6b6eb3a/android).
+- [Shared spelling sources, templates and tests](https://github.com/RikiFam/craft-ru-android-contributions/tree/74836d4de05e09f5b2d6921c2d0741f6e6b6eb3a/russifier/scripts/artcraft-spelling).
+- [Shared dictionaries, original licenses and hashes](https://github.com/RikiFam/craft-ru-android-contributions/tree/74836d4de05e09f5b2d6921c2d0741f6e6b6eb3a/russifier/scripts/artcraft-russian/dictionaries).
 
-Базовый снимок русификатора и Android: `93708b2e2dc0276c9e3e7a738d2e598b7ae99d3c`.
-Предыдущие общие пакеты доступны через историю Git.
-[Предложение авторам](https://github.com/storytold/craft-launcher/issues/990).
+Use the complete pinned packages linked above for builds. Apply their optional overlays
+in the documented order; the patches here are alternative review views, not a series
+to apply one after another. Android patches already include translation prerequisites.
+Shared changes affecting several applications must be reviewed in the linked modules too.
 
-Обновление printing: `d49897d8fab1e526e8a49d4e45f81eb36b370079`. Дополнение орфографии: `69ae9d8`, экспериментальное, с ограничениями проверок.
+## Development and verification
+
+This is personal experimental work made with substantial AI assistance ("vibe coding").
+Changes are developed iteratively on Windows and an Android tablet, tested where
+possible, committed, then exported as source-only snapshots with documented limitations.
+AI-generated code is not presented as professionally audited or production-ready.
+
+The source chat records builds/installations and selected workflows. For spelling,
+five existing checkers support native replacement; eight additional panels copy a
+corrected fragment for manual insertion. The final Android sweep and broad CI were
+incomplete. Publication checks covered source preparation on exact upstream trees,
+three shared Rust tests and Android Java/DEX compilation, not a full independent rebuild.
+See each package's detailed dated verification notes before relying on a feature.
+No APKs or signing keys are distributed. Original copyright and asset/brand restrictions
+remain in force; this is not an official Storytold release.
+
+No new direct-printer integration is claimed for this application.
