@@ -2,14 +2,18 @@
   "source_snapshot": "93708b2e2dc0276c9e3e7a738d2e598b7ae99d3c",
   "packages": {
     "russifier": {
-      "files": 62,
-      "archive": "downloads/russifier-93708b2.zip",
-      "sha256": "93f0cf50c29cc4ae6b8c4f5510977dc21ea8c594442ce4acd6a97754dfbf6a90"
+      "source_snapshot": "69ae9d88831b99313d9f36b6c58174e01822f9f1",
+      "base_snapshot": "93708b2e2dc0276c9e3e7a738d2e598b7ae99d3c",
+      "files": 85,
+      "archive": "downloads/russifier-69ae9d8.zip",
+      "sha256": "88093e2a995128eac309706458fa8de24d7b8bcd30594d15104ad3a286c08f4d"
     },
     "android": {
-      "files": 130,
-      "archive": "downloads/android-93708b2.zip",
-      "sha256": "1018b390cb90f54962f6dcb780b9af4eefa4e6001363a810cf1acfa46f65f76b"
+      "source_snapshot": "69ae9d88831b99313d9f36b6c58174e01822f9f1",
+      "base_snapshot": "93708b2e2dc0276c9e3e7a738d2e598b7ae99d3c",
+      "files": 152,
+      "archive": "downloads/android-69ae9d8.zip",
+      "sha256": "d9b8d30108f79ae817f853746abe56870603e36cb44a2f738b16d881f9650f7c"
     },
     "printing": {
       "source_snapshot": "d49897d8fab1e526e8a49d4e45f81eb36b370079",

@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-30",
+  "release_builds": {"windows": 13, "android": 13, "failed": 0},
+  "installation": "All 26 installed artifacts match build hashes; see installation-verification.json.",
+  "passed": [
+    "Russian dictionary regression: inflections, case, yo, typos and suggestions",
+    "WordCraft, DeckCraft, DesignCraft and PhotoCraft native spelling regressions",
+    "GridCraft live command regression: detect typo, replace, recheck with no issues",
+    "PhotoCraft text module: 258 passed, 5 ignored",
+    "Shared panel exact-source harness: 3 passed; clippy -D warnings passed",
+    "PhotoCraft architecture layers: 31 crates passed",
+    "VectorCraft Windows and Android actual UI: Russian typo and suggestions",
+    "Android real system clipboard: corrected Russian fragment pasted and read back",
+    "Python helper syntax compilation"
+  ],
+  "broader_checks": {
+    "overall": "NOT FULLY PASSED",
+    "repository_ci": "Multiple existing formatting/lint failures; GridCraft Unix-only test cannot compile on Windows; LightCraft dependency cache write denied.",
+    "photocraft_clippy": "Existing overly_complex_bool_expr in crates/text/src/psd_path.rs:157",
+    "photocraft_wasm": "Unavailable wasm32-unknown-unknown standard library (E0463)",
+    "effectcraft_ci": "Stopped during broad compilation; not completed",
+    "soundcraft_ci": "Not reached by the broad serial runner",
+    "photocraft_corpus": "Stopped during broad compilation; not completed"
+  },
+  "android_final_sweep": "Not completed: secure lock screen; user asked to unlock. VectorCraft functional test completed before lock.",
+  "limitations": "Eight new panels copy corrected fragments for manual insertion. No automatic project mutation or universal live underlining. Scope is documented per editor in README.md."
+}

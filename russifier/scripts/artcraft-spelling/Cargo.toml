@@ -1,0 +1,15 @@
+[package]
+name = "artcraft-russian-spelling-tests"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[lib]
+path = "harness.rs"
+
+[dependencies]
+egui = { git = "https://github.com/storytold/egui.git", rev = "6d518fc799681571963842f95b55a6b68431b15a" }
+serde_json = "1"
+
+[profile.dev]
+debug = 0
