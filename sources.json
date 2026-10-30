@@ -1,0 +1,28 @@
+{
+  "application": "filmcraft",
+  "bundle_commit": "74836d4de05e09f5b2d6921c2d0741f6e6b6eb3a",
+  "branch_role": "focused review slice, not standalone build checkout",
+  "application_sources": {
+    "russifier": {
+      "url": "https://github.com/storytold/filmcraft.git",
+      "base": "a2d8e9ce269aba9c399e36262522e11456df6fbf",
+      "destination": "tmp/artcraft/filmcraft/repo",
+      "patch": "patches/filmcraft.patch",
+      "sha256": "798788e06bf8a9dd1cd1f1d922433a476fc62ffb7974567356573bfd936468bc",
+      "apply_check": "passed"
+    },
+    "android": {
+      "url": "https://github.com/storytold/filmcraft.git",
+      "base": "a2d8e9ce269aba9c399e36262522e11456df6fbf",
+      "destination": "tmp/artcraft/filmcraft/repo",
+      "patch": "patches/filmcraft.patch",
+      "sha256": "c8e8278c7a6e7e3097b0645d7466fdc206ea79db04d2f4e109343a3e254d51ac",
+      "apply_check": "passed"
+    }
+  },
+  "shared_dependencies": {
+    "russifier": "https://github.com/RikiFam/craft-ru-android-contributions/blob/74836d4de05e09f5b2d6921c2d0741f6e6b6eb3a/russifier/sources.json",
+    "android": "https://github.com/RikiFam/craft-ru-android-contributions/blob/74836d4de05e09f5b2d6921c2d0741f6e6b6eb3a/android/sources.json",
+    "printing": "https://github.com/RikiFam/craft-ru-android-contributions/blob/74836d4de05e09f5b2d6921c2d0741f6e6b6eb3a/printing/sources.json"
+  }
+}
