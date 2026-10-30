@@ -38,3 +38,19 @@ remain in force; this is not an official Storytold release.
 ## Printing
 
 [Shared direct printing and Epson L3250 service source](https://github.com/RikiFam/craft-ru-android-contributions/tree/74836d4de05e09f5b2d6921c2d0741f6e6b6eb3a/printing). A physical print and nozzle-check page were confirmed on the common module; cleaning was not physically run. Not every editor was separately print-tested.
+
+## Android touchpad and DeX overlay: e706b13
+
+This branch includes only designcraft's updated host files. The common SDK/JNI input
+backend, overlay hash guards and build instructions are pinned at
+[d78e5df11394a50c5082572aa0488d8cd4815dc0](https://github.com/RikiFam/craft-ru-android-contributions/tree/d78e5df11394a50c5082572aa0488d8cd4815dc0/android).
+Use that complete package and its printing, spelling, then DeX overlay sequence
+for reproduction. This branch is still a review slice, not a build checkout.
+No combined editor archives are copied here.
+
+The source development session checked launches and native DeX captions in all
+14 applications. Manual touchpad gesture confirmation is limited to WordCraft.
+The publication check compiled the Java/DEX bridge and SDK tests, prepared the
+exact pinned winit source, and verified the sequential overlay hashes. It did
+not independently rebuild every Rust application or run new device tests.
+Experimental AI-assisted (vibe coding) sources only; no APK or signing key.
