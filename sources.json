@@ -1,0 +1,28 @@
+{
+  "application": "effectcraft",
+  "bundle_commit": "74836d4de05e09f5b2d6921c2d0741f6e6b6eb3a",
+  "branch_role": "focused review slice, not standalone build checkout",
+  "application_sources": {
+    "russifier": {
+      "url": "https://github.com/storytold/effectcraft.git",
+      "base": "c3600f9b59b109da97871a43a6898683a0163cb1",
+      "destination": "tmp/artcraft/effectcraft/repo",
+      "patch": "patches/effectcraft.patch",
+      "sha256": "80372a2fa6fd9594aff2647627a5622b5310793d4722f4c7d3a9814765c5cc43",
+      "apply_check": "passed"
+    },
+    "android": {
+      "url": "https://github.com/storytold/effectcraft.git",
+      "base": "c3600f9b59b109da97871a43a6898683a0163cb1",
+      "destination": "tmp/artcraft/effectcraft/repo",
+      "patch": "patches/effectcraft.patch",
+      "sha256": "a28d8b3ee6a04f23e416873308c46c6e706b5636f108ff6243a5f14cc846b5c6",
+      "apply_check": "passed"
+    }
+  },
+  "shared_dependencies": {
+    "russifier": "https://github.com/RikiFam/craft-ru-android-contributions/blob/74836d4de05e09f5b2d6921c2d0741f6e6b6eb3a/russifier/sources.json",
+    "android": "https://github.com/RikiFam/craft-ru-android-contributions/blob/74836d4de05e09f5b2d6921c2d0741f6e6b6eb3a/android/sources.json",
+    "printing": "https://github.com/RikiFam/craft-ru-android-contributions/blob/74836d4de05e09f5b2d6921c2d0741f6e6b6eb3a/printing/sources.json"
+  }
+}
