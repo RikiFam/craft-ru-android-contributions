@@ -1,0 +1,28 @@
+{
+  "application": "craft-launcher",
+  "bundle_commit": "74836d4de05e09f5b2d6921c2d0741f6e6b6eb3a",
+  "branch_role": "focused review slice, not standalone build checkout",
+  "application_sources": {
+    "russifier": {
+      "url": "https://github.com/storytold/craft-launcher.git",
+      "base": "9613c285dd40095c47772ee4e47494c06618d57a",
+      "destination": "tmp/artcraft/craft-launcher/repo",
+      "patch": "patches/craft-launcher.patch",
+      "sha256": "4794cff6e5661be942fc25c8916c2c5464b527ea7e2961dae33f6d510e258479",
+      "apply_check": "passed"
+    },
+    "android": {
+      "url": "https://github.com/storytold/craft-launcher.git",
+      "base": "9613c285dd40095c47772ee4e47494c06618d57a",
+      "destination": "tmp/artcraft/craft-launcher/repo",
+      "patch": "patches/craft-launcher.patch",
+      "sha256": "4794cff6e5661be942fc25c8916c2c5464b527ea7e2961dae33f6d510e258479",
+      "apply_check": "passed"
+    }
+  },
+  "shared_dependencies": {
+    "russifier": "https://github.com/RikiFam/craft-ru-android-contributions/blob/74836d4de05e09f5b2d6921c2d0741f6e6b6eb3a/russifier/sources.json",
+    "android": "https://github.com/RikiFam/craft-ru-android-contributions/blob/74836d4de05e09f5b2d6921c2d0741f6e6b6eb3a/android/sources.json",
+    "printing": "https://github.com/RikiFam/craft-ru-android-contributions/blob/74836d4de05e09f5b2d6921c2d0741f6e6b6eb3a/printing/sources.json"
+  }
+}
