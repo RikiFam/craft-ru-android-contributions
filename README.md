@@ -54,3 +54,17 @@ The publication check compiled the Java/DEX bridge and SDK tests, prepared the
 exact pinned winit source, and verified the sequential overlay hashes. It did
 not independently rebuild every Rust application or run new device tests.
 Experimental AI-assisted (vibe coding) sources only; no APK or signing key.
+
+## Shared DeX pointer-origin correction: e8eb893
+
+Use the updated [complete Android source package](https://github.com/RikiFam/craft-ru-android-contributions/tree/27ed3a01bcdd1cf5ec389a5047dcb5852484d385/android)
+and apply its pointer overlay after printing, spelling and DeX. Rebuild the native
+host fully. The shared change translates window-relative input to the live child
+surface origin; scroll distances and pinch factors are unchanged. No application
+host files changed in this update, so this branch links the common implementation.
+
+The source chat confirmed mouse hit-testing in the launcher, installed the fix in
+all 14 apps and checked their startup and DeX captions. Individual mouse hit-tests
+in every editor were not performed. Publication independently checked overlay hashes,
+pinned winit generation and idempotence, not a full Rust rebuild or new device test.
+Experimental AI-assisted sources only; no APKs or signing keys.

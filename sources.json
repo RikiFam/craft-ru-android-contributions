@@ -34,5 +34,11 @@
       "android/dex-overlay/scripts/artcraft-android/suite/cadcraft/Cargo.lock",
       "android/dex-overlay/scripts/artcraft-android/suite/cadcraft/Cargo.toml"
     ]
+  },
+  "pointer_origin_update": {
+    "bundle_commit": "27ed3a01bcdd1cf5ec389a5047dcb5852484d385",
+    "source_snapshot": "e8eb893cd5b011d7fc90cf27bab8fb90eb5455ce",
+    "shared_instructions": "https://github.com/RikiFam/craft-ru-android-contributions/blob/27ed3a01bcdd1cf5ec389a5047dcb5852484d385/android/README.md",
+    "scope": "Shared platform only; existing application files unchanged"
   }
 }
