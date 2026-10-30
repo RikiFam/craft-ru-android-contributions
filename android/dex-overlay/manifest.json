@@ -1,0 +1,216 @@
+{
+  "snapshot": "e706b13524f28a33895d965e52be63863c9b030e",
+  "required_spelling_snapshot": "69ae9d88831b99313d9f36b6c58174e01822f9f1",
+  "required_printing_snapshot": "d49897d8fab1e526e8a49d4e45f81eb36b370079",
+  "winit_base": "a517b3846ee8457d84ee4975110bfda6797c44dc",
+  "files": {
+    "scripts/artcraft-android/AndroidManifest.xml": {
+      "base_sha256": "01b8eac3125e421358360358f807d7f54eefd92af365b85849056c4a44401b7e",
+      "sha256": "f988e44890f4793169762c4089e83091bc9267dc7a197ec06c292e04fc706744"
+    },
+    "scripts/artcraft-android/Cargo.lock": {
+      "base_sha256": "f44bae8fb13b57013a60b325f95ed5b507e7b4c9f065557faa09dea09a54cf09",
+      "sha256": "c95b664fe40f5da60736b98ac1deb7431a69850561450b80526683dfd3b36a4a"
+    },
+    "scripts/artcraft-android/Cargo.toml": {
+      "base_sha256": "a79cc29556e9dffb4f5c057286417f0324e80bb7c0bb4a46845f819e0161c92a",
+      "sha256": "cff64948950c47cfe56f76ec2cae0bee4e0defe03ab79d025c62c31832bf63d1"
+    },
+    "scripts/artcraft-android/build-suite.ps1": {
+      "base_sha256": "a841ddb28eb083ceea1c2154f5117d041bba14747b0cef120d111da24f65a8ca",
+      "sha256": "cfdcbae1a5faf64e87048a2ebca2e6886b0caf04e2b0893bdda911140f571f39"
+    },
+    "scripts/artcraft-android/build.ps1": {
+      "base_sha256": "b0cbedd696f00ec91314489bf8c2db45da87190353f00d8af546dcc68371431b",
+      "sha256": "d5db0d5241e995cdb36461cd19d72c2bebf87ea2f43c3f5dc75911470bc4876f"
+    },
+    "scripts/artcraft-android/platform/INPUT-DEX.md": {
+      "base_sha256": null,
+      "sha256": "2f1ed7cc6ef6b2c25f75a705166d26b71da44be97a6ec2212bbd409ba69e709c"
+    },
+    "scripts/artcraft-android/platform/java/ai/storyteller/android/CraftActivity.java": {
+      "base_sha256": "bc49938ee9e1c023133cba40902671d9d3ded37140413a03662f64b0f7569a69",
+      "sha256": "6af500adcb1ef0d42e2094fda1322acbd7eab43f27de3e122865fc1e8fd45e35"
+    },
+    "scripts/artcraft-android/platform/java/ai/storyteller/android/CraftTouchpad.java": {
+      "base_sha256": null,
+      "sha256": "58f20115cad9e95bd5d4423211ca270ddedd3d17cdde77bf67ab5773bc95850e"
+    },
+    "scripts/artcraft-android/platform/pointer_input.rs.inc": {
+      "base_sha256": null,
+      "sha256": "03e2e33cd0b312834b7db100f84ab71c8d46f8c438c87449f0ec97077d0e1f97"
+    },
+    "scripts/artcraft-android/platform/prepare_input.py": {
+      "base_sha256": "cdc3d0f58daace0634225e97aea75cb60d12a6fffc1c5ae9718bca8a70bad607",
+      "sha256": "29598e8a2766de174b227c11d3b65a72cdaf9a291781dcdda5607c0a008f7494"
+    },
+    "scripts/artcraft-android/platform/tests/TouchpadSdkTest.java": {
+      "base_sha256": null,
+      "sha256": "788926366be431c740ab6421615474b80832e42f8e0eda6891ced4c0d9aeb5ab"
+    },
+    "scripts/artcraft-android/platform/tests/run-touchpad-tests.ps1": {
+      "base_sha256": null,
+      "sha256": "168d7f8653b0ae7f1f84c0b69a86021f3bcc7f00f3103732d54b445288e17105"
+    },
+    "scripts/artcraft-android/platform/touchpad_sdk.rs": {
+      "base_sha256": null,
+      "sha256": "0ee62475a8e963e7e9a48530c998208ee26301faf3ec090977880fb1b2acfc00"
+    },
+    "scripts/artcraft-android/suite/cadcraft/AndroidManifest.xml": {
+      "base_sha256": "c4a0b3c82dad39a4d03a6feea1f4fee3644f73d5f3917da9d1828a802e4d78c7",
+      "sha256": "71db211f4a29048f8d56a2e656178f7e74e4a30811fe9a522bbb6c95f5292e7d"
+    },
+    "scripts/artcraft-android/suite/cadcraft/Cargo.lock": {
+      "base_sha256": "471a3ac4b794ceaec3989178e53912a42fb96ed138fd1c820479ef933e0fd6d7",
+      "sha256": "b4629ec12325566f90a2e3a7f0c029d7a1ce31bd50a9be52e1937d191728d66b"
+    },
+    "scripts/artcraft-android/suite/cadcraft/Cargo.toml": {
+      "base_sha256": "36a87a4f992a766e287c81bd4516faeea2d939d18c044698ba2e903f2c15a0ab",
+      "sha256": "5788485267b2c24eb74bc53ec6d28cf93d007a6ac1175ec894572aaab2dbf7e1"
+    },
+    "scripts/artcraft-android/suite/deckcraft/AndroidManifest.xml": {
+      "base_sha256": "83589fa21bc7593c3caa2f4415c18d7675955bf9f2a881f906b53cb7de397db2",
+      "sha256": "21d13eaee9ca206e766555b94ff7a0bb37cfd95e6729ac66e9114c91f6638765"
+    },
+    "scripts/artcraft-android/suite/deckcraft/Cargo.lock": {
+      "base_sha256": "eec71c5d66c5a43b0546576f7b07336c575d1749d66b7a038d70ff7d1bdcb2b5",
+      "sha256": "417f6765660ba4a58f4cff446561ccb62951744040a325d6ad79e1707f144b9f"
+    },
+    "scripts/artcraft-android/suite/deckcraft/Cargo.toml": {
+      "base_sha256": "cb0c849479ce98b3277df9bbd6130dcc7ef94a0a2b5a2d795c5d8416369c445b",
+      "sha256": "ad273fc5dcd91e6201efea7bd0f54fffadeeb2c09deb7a5e15866ec50dbaa0df"
+    },
+    "scripts/artcraft-android/suite/designcraft/AndroidManifest.xml": {
+      "base_sha256": "6af9ba2fa41474e0c87fc3c9bc5ffe1b7651493b5a6ad559ad25a8f6becccf5b",
+      "sha256": "f1da2a167412d13cbe36df9cfe1b9dcd1b4b85e2db141c1b0a9ccd7ed12589d4"
+    },
+    "scripts/artcraft-android/suite/designcraft/Cargo.lock": {
+      "base_sha256": "9042a125773fe88c503e31e76dbaad237455e4775a4ddc5bff1282048190da98",
+      "sha256": "a94773d2fcff40004db448f24da64496a9a518b8e3f7aa672dfb2c9fe71541be"
+    },
+    "scripts/artcraft-android/suite/designcraft/Cargo.toml": {
+      "base_sha256": "16990bd09dd4b6ea3281d17f7451a60ec70166d4c74c351801fb881f4f921557",
+      "sha256": "acd3f3d9989b9814a987be98eb8d9fa1ce0533212bd93541a1f4400c5ea634cc"
+    },
+    "scripts/artcraft-android/suite/effectcraft/AndroidManifest.xml": {
+      "base_sha256": "bf221414abcfbce246613b568e60de7491ff5115b864e4c6c9f829857e394a39",
+      "sha256": "c38dbae1e85a2c3ef6e80c39dc9094da447ca70bfb155dccfb3c86edc942a8fc"
+    },
+    "scripts/artcraft-android/suite/effectcraft/Cargo.lock": {
+      "base_sha256": "ce5b1e008dcde90121c5b26a48f9325cfa3f1f717143876ed244e68e5ee65a64",
+      "sha256": "c5cb4c5b4e0945b0003228d9cbe4b72c4b4770e5fbf88d1737f89c57d8d3696a"
+    },
+    "scripts/artcraft-android/suite/effectcraft/Cargo.toml": {
+      "base_sha256": "e0d7d976e5bdd34fb0e24470f74b70f1a185e947f3fef9177b394de868a41b35",
+      "sha256": "18a4f8149936f780f215c1bec66f77f12484502814090152e98c9337685b31fc"
+    },
+    "scripts/artcraft-android/suite/figcraft/AndroidManifest.xml": {
+      "base_sha256": "71ec28cd2bb3206f5d2ee90c0c4da1ef155c03343179473a38f1c4e9348a9e0a",
+      "sha256": "acf28afafc48da88505b3895bc9131dc35b78592e6adce623b1dc25f4792741a"
+    },
+    "scripts/artcraft-android/suite/figcraft/Cargo.lock": {
+      "base_sha256": "a090e37276d591dae1cd7a11446762504ea24a1a991b0d1d83c4a61745558dd4",
+      "sha256": "f11490f748984ace787a24b7ba1ea1bece01df8f09ab159108e820a741355a30"
+    },
+    "scripts/artcraft-android/suite/figcraft/Cargo.toml": {
+      "base_sha256": "fce5b3797ae7bd338e32556bd0aabb17bfe0a3f18280856e23ce554fc80a1455",
+      "sha256": "a930faad7ca801be11a56cb54d98a0759e0249b4663f5d86a03ec311e6994d34"
+    },
+    "scripts/artcraft-android/suite/filmcraft/AndroidManifest.xml": {
+      "base_sha256": "9b9105fef39d954be34e7b255afd712c4068f98112dfdec2e2431568c01710a6",
+      "sha256": "0e4626c3de50667a2fc5a9b1f4306a0c69609069266043509e584449ac93282a"
+    },
+    "scripts/artcraft-android/suite/filmcraft/Cargo.lock": {
+      "base_sha256": "9ca66c110d1136560432ec2d2103148109b6337b5bab310f740570bdc7e7a6bc",
+      "sha256": "18ed56d2bfa0e988e01dca6cb140cce5285be758000142bbd149219767eb0db8"
+    },
+    "scripts/artcraft-android/suite/filmcraft/Cargo.toml": {
+      "base_sha256": "ece67e32fd2c233446e24873867a463c026eb68a81341625a261ffb45d70f068",
+      "sha256": "b8129999836d9fd204f13c88d60aa9cf952aca3c0b659c13fad2bed0ec14796e"
+    },
+    "scripts/artcraft-android/suite/gridcraft/AndroidManifest.xml": {
+      "base_sha256": "e969788345c5951a6c4007606231b5494dfc30f9ec2996db090654131e4256fe",
+      "sha256": "deeda9e817e29e505a6d8c3d9a06bf5f10f057e87b2b595c89a242a5a26ad50b"
+    },
+    "scripts/artcraft-android/suite/gridcraft/Cargo.lock": {
+      "base_sha256": "acca6bd7307e34d14a57a312ff9660ca148eb09ac99beccb7b5db3c61af36c36",
+      "sha256": "c3f3e33c771f9a73bad450e38624354d5ceb9ec07848c89608ec2009ebf3c4ba"
+    },
+    "scripts/artcraft-android/suite/gridcraft/Cargo.toml": {
+      "base_sha256": "ef3506ef41b071fe0d57e4c317c85402d660434084d6b46994ca1c01ed5011c7",
+      "sha256": "1a108853c276ceb7f952dfdde5a5a164297ece0c9b98ddbc9ba391d5b2c3a783"
+    },
+    "scripts/artcraft-android/suite/launcher/AndroidManifest.xml": {
+      "base_sha256": "78dc4cb22edd9f6e8945b8162befd6e96e35986abc1330a4f7ed7f5befaed92b",
+      "sha256": "0cc58e265fd4ef8c11dde60f671e06e1d3401e0e9f11695d45b5e96316e0d773"
+    },
+    "scripts/artcraft-android/suite/launcher/Cargo.lock": {
+      "base_sha256": "f23f5e2de78625923dbdc01eaa8cb6ca03ef5b721b6b075485b30bb418cb6a5d",
+      "sha256": "fc1ed7c90bfed6c0c772e026e32bfea754e0ddd162c671eaf1da02f38da50769"
+    },
+    "scripts/artcraft-android/suite/launcher/Cargo.toml": {
+      "base_sha256": "d2f698946bf98a22aafe3d38d86f81b6092770ec0e1cadcb1a0a91322aa541fe",
+      "sha256": "b0c65fed2528f96bd3bbce44108eed9e5f0ad427b8456fe6afe6065aa8a98ea9"
+    },
+    "scripts/artcraft-android/suite/lightcraft/AndroidManifest.xml": {
+      "base_sha256": "b645771f75a5ce9e65cbac30c148d50681228be025436d6a3195f24d7ef126a3",
+      "sha256": "4d9415880dd446ce4ed7946d67d16e4cec4b4d6717106bf1e6166cdef94e13a3"
+    },
+    "scripts/artcraft-android/suite/lightcraft/Cargo.lock": {
+      "base_sha256": "9fffcfd4f025cecfe340d30480d1456ca0f59deff9a1fcbde60819d790fbf765",
+      "sha256": "767262c3626da90b560f277951a02b1c865726942f6c64d7b588ee087857dcb0"
+    },
+    "scripts/artcraft-android/suite/lightcraft/Cargo.toml": {
+      "base_sha256": "0bbc5f2001f2f9e377bbdb18ece077fd9037ff55ebb29f087ad985c9762f0143",
+      "sha256": "3ac7dfc7f5e87912559a0d2bf0727c06905ad208a61f43b96f4ed883c84abe14"
+    },
+    "scripts/artcraft-android/suite/pdfcraft/AndroidManifest.xml": {
+      "base_sha256": "5bb164ed1c1f0113b6d0895562ff56197545bb6c74b4a36867d8e35ac8142a15",
+      "sha256": "c3077a705d3073824d79134acc85774e400771eea1a9796fdf8e233a6f213552"
+    },
+    "scripts/artcraft-android/suite/pdfcraft/Cargo.lock": {
+      "base_sha256": "7c843a761dd2d00895e816d4159bf16ea6e48e5819ba18e367141cda13b0e091",
+      "sha256": "08b918084a5c2ff99a0e915b1ec1a29cbe93a8813b685a33df587e533eb5f65e"
+    },
+    "scripts/artcraft-android/suite/pdfcraft/Cargo.toml": {
+      "base_sha256": "2a1f5019d85b385a114e85fe3882fd13cd703a7ffaece6315949cc4c9102517e",
+      "sha256": "9db7c59da2a7a13bdced602913a1e123841ed3afaa254e2a340fff56533185bf"
+    },
+    "scripts/artcraft-android/suite/soundcraft/AndroidManifest.xml": {
+      "base_sha256": "6b3ddefaf00a47abeb79f1d46c024dc3fcf03e61cec34430267cdbe19a69fb0f",
+      "sha256": "5ba4024e6750188fa2561a56e9f567887a2abfb8348af809b9dfb9b4b4d549ee"
+    },
+    "scripts/artcraft-android/suite/soundcraft/Cargo.lock": {
+      "base_sha256": "07a6d12ca0dedde53a089f929b472d3e2d788b4f9debcb8873770c734e230f4f",
+      "sha256": "3accee5f7aa83e7b51c3a4203ad93aa3f85b5f288054e5e10a9633765f42f0d4"
+    },
+    "scripts/artcraft-android/suite/soundcraft/Cargo.toml": {
+      "base_sha256": "9b7b603d21eb50d05e06c873448f786523b7db7592d445b07c26c9cd0fc04cd7",
+      "sha256": "441605039e8354717ae5dae9a2f5a32f022a536e224b4c2eb5c4b0166c16131e"
+    },
+    "scripts/artcraft-android/suite/vectorcraft/AndroidManifest.xml": {
+      "base_sha256": "6a6f3a4ccf23193d97a24971c632ac2d56e37bbbfff89b61cef318443673cc56",
+      "sha256": "2069f08bee437ae034a5c1a14202a79b28542bac41c4326926bbcd2fd479fdfc"
+    },
+    "scripts/artcraft-android/suite/vectorcraft/Cargo.lock": {
+      "base_sha256": "f673e060b67c9f2e28c0241f8be39622bc817744bed9704e84d7c8800e308c90",
+      "sha256": "efccbcada05b672ad0ba14bcaf9da7b41e3e34ad21740aba84e760d3b65b5a6d"
+    },
+    "scripts/artcraft-android/suite/vectorcraft/Cargo.toml": {
+      "base_sha256": "49ec1c65dfe1f45e6236b47e06e32f4f8b4a8b0ea0d3e5085d525ece9cbf2f6c",
+      "sha256": "3ad16446f6e880e4486c6e164713168e43e4790cbd9824030112bc4d083f31aa"
+    },
+    "scripts/artcraft-android/suite/wordcraft/AndroidManifest.xml": {
+      "base_sha256": "7954ffac50eb55f66f0bc8456a1851707606d8dee5de9c991381ef3899ebed83",
+      "sha256": "96a876f02240512204a56503965d0a318d1b1501e6680c4256f0430898027c27"
+    },
+    "scripts/artcraft-android/suite/wordcraft/Cargo.lock": {
+      "base_sha256": "4f3d5d120071067eef8b6b0858bf7ac4b67a3e26c3f64e815bc72477b69039d3",
+      "sha256": "858af9840d6c22597a6c26bc558b4379527bcfa61e538801d922b449da8eb1ac"
+    }
+  },
+  "excluded": [
+    "platform/update-input-dex.py",
+    "platform/verify-input-dex.py (local device install/inspection helpers)"
+  ]
+}

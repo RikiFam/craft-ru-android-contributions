@@ -134,5 +134,6 @@
       "destination": "tmp/artcraft/android/winit-source"
     }
   },
-  "spelling_snapshot": "69ae9d88831b99313d9f36b6c58174e01822f9f1"
+  "spelling_snapshot": "69ae9d88831b99313d9f36b6c58174e01822f9f1",
+  "dex_input_snapshot": "e706b13524f28a33895d965e52be63863c9b030e"
 }

@@ -11,8 +11,8 @@ ARM64 Rust/egui-хосты, сборочные скрипты, Android document 
 Сначала соберите PhotoCraft (создаётся локальный ключ разработки):
 
 ```powershell
-./scripts/artcraft-android/build.ps1 -Sdk C:/Android/Sdk -Ndk C:/Android/ndk-r27d -Jdk C:/Java/jdk-17 -LinkAlias C:/CraftAndroidBuild
-./scripts/artcraft-android/build-suite.ps1 -App wordcraft -Sdk C:/Android/Sdk -Ndk C:/Android/ndk-r27d -Jdk C:/Java/jdk-17 -LinkAlias C:/CraftAndroidBuild
+./scripts/artcraft-android/build.ps1 -Sdk $env:ANDROID_HOME -Ndk $env:ANDROID_NDK_HOME -Jdk $env:JAVA_HOME -LinkAlias $env:ARTCRAFT_BUILD_ALIAS
+./scripts/artcraft-android/build-suite.ps1 -App wordcraft -Sdk $env:ANDROID_HOME -Ndk $env:ANDROID_NDK_HOME -Jdk $env:JAVA_HOME -LinkAlias $env:ARTCRAFT_BUILD_ALIAS
 ```
 
 LinkAlias должен быть свободным ASCII-путём. PdfCraft требует rfd 0.17.2 в Cargo
@@ -57,3 +57,29 @@ SHA и SHA256 патчей находятся в `sources.json`. Патчи уж
 ## Необязательный вывод на печать
 
 [Печать и поддерживаемые принтеры](printing/) вынесены в подраздел портов. [Лаунчер](../launcher/) — отдельное главное направление. [Разбивка редакторов по веткам](../APPS.md).
+
+## DeX и системные жесты Android — e706b13
+
+Для нового каталога сначала примените printing overlay d49897d и spelling overlay
+69ae9d8 по инструкциям выше, затем `python apply_dex_overlay.py`. Подготовьте исходники
+через prepare_sources.py (один раз) и prepare_spelling.py. Выполните полную сборку
+нужных редакторов/лаунчера без PackageOnly: изменяется Rust-backend winit.
+prepare_input.py берёт точный winit SHA из tmp/artcraft/android/winit-source,
+загруженного prepare_sources.py; личный Cargo-кэш не используется и не изменяется.
+Проверяемые хеши исходных и новых файлов — dex-overlay/manifest.json.
+
+Общий backend передаёт потоки мыши/тачпада штатным Android GestureDetector и
+ScaleGestureDetector; обычный сенсорный ввод сохраняется. Child SurfaceView оставляет
+системе настоящую панель DeX: перемещение, изменение размера, сворачивание/разворачивание.
+
+Исходный чат подтвердил установку, запуск и системную панель во всех 14 приложениях.
+Пользователь подтвердил жесты в WordCraft; каждый жест вручную во всех редакторах
+не проверялся. Автотесты SDK-детекторов запускались на устройстве в исходном чате.
+Это экспериментальный исходный снимок, не гарантия всех устройств/версий Android.
+Независимая полная Rust-пересборка и новый тест на планшете при экспорте не проводились.
+
+Локальная проверка компиляции: platform/tests/run-touchpad-tests.ps1 с параметрами
+-Sdk и -Jdk (путь внутри scripts/artcraft-android). Только явный -RunOnDevice с -Adb
+и -Serial запускает тесты на вашем устройстве. Скрипты установки на авторское устройство
+и сырые журналы исключены. APK, ключи и идентификатор личного устройства не включены.
+Подробности: dex-overlay/scripts/artcraft-android/platform/INPUT-DEX.md.
