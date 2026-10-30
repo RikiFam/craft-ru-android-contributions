@@ -1,0 +1,33 @@
+{
+  "application": "wordcraft",
+  "bundle_commit": "74836d4de05e09f5b2d6921c2d0741f6e6b6eb3a",
+  "branch_role": "focused review slice, not standalone build checkout",
+  "application_sources": {
+    "russifier": {
+      "url": "https://github.com/storytold/wordcraft.git",
+      "base": "3de6ff95af86c19d67030cd96dba15cd6a45a25e",
+      "destination": "tmp/artcraft/wordcraft/repo"
+    },
+    "android": {
+      "url": "https://github.com/storytold/wordcraft.git",
+      "base": "3de6ff95af86c19d67030cd96dba15cd6a45a25e",
+      "destination": "tmp/artcraft/wordcraft/repo",
+      "patch": "patches/wordcraft.patch",
+      "sha256": "a32ca8ab9d8ce594bdd5ad89203f09704340da019d02aa75461da52cac803491",
+      "apply_check": "passed"
+    },
+    "printing": {
+      "url": "https://github.com/storytold/wordcraft.git",
+      "base": "3de6ff95af86c19d67030cd96dba15cd6a45a25e",
+      "destination": "tmp/artcraft/wordcraft/repo",
+      "patch": "patches/wordcraft.patch",
+      "sha256": "973c45b3f332c40aeaabd2bf4257e9dd86c3654e8f5abb74d473118a1b2e3b86",
+      "apply_check": "passed"
+    }
+  },
+  "shared_dependencies": {
+    "russifier": "https://github.com/RikiFam/craft-ru-android-contributions/blob/74836d4de05e09f5b2d6921c2d0741f6e6b6eb3a/russifier/sources.json",
+    "android": "https://github.com/RikiFam/craft-ru-android-contributions/blob/74836d4de05e09f5b2d6921c2d0741f6e6b6eb3a/android/sources.json",
+    "printing": "https://github.com/RikiFam/craft-ru-android-contributions/blob/74836d4de05e09f5b2d6921c2d0741f6e6b6eb3a/printing/sources.json"
+  }
+}
