@@ -1,0 +1,28 @@
+{
+  "application": "designcraft",
+  "bundle_commit": "74836d4de05e09f5b2d6921c2d0741f6e6b6eb3a",
+  "branch_role": "focused review slice, not standalone build checkout",
+  "application_sources": {
+    "russifier": {
+      "url": "https://github.com/storytold/designcraft.git",
+      "base": "7da69c16ce221f46e8f27cb41e0c88167c8be416",
+      "destination": "tmp/artcraft/designcraft/repo",
+      "patch": "patches/designcraft.patch",
+      "sha256": "b24ce835e0923dbe7b900e5d8599b3bdf085eaa79c05c77f7d38617554740938",
+      "apply_check": "passed"
+    },
+    "android": {
+      "url": "https://github.com/storytold/designcraft.git",
+      "base": "7da69c16ce221f46e8f27cb41e0c88167c8be416",
+      "destination": "tmp/artcraft/designcraft/repo",
+      "patch": "patches/designcraft.patch",
+      "sha256": "eff351bac54bf69303102267822206eccacd12542e00eeed613a1ba563e25293",
+      "apply_check": "passed"
+    }
+  },
+  "shared_dependencies": {
+    "russifier": "https://github.com/RikiFam/craft-ru-android-contributions/blob/74836d4de05e09f5b2d6921c2d0741f6e6b6eb3a/russifier/sources.json",
+    "android": "https://github.com/RikiFam/craft-ru-android-contributions/blob/74836d4de05e09f5b2d6921c2d0741f6e6b6eb3a/android/sources.json",
+    "printing": "https://github.com/RikiFam/craft-ru-android-contributions/blob/74836d4de05e09f5b2d6921c2d0741f6e6b6eb3a/printing/sources.json"
+  }
+}
