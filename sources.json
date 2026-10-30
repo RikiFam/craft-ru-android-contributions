@@ -1,0 +1,28 @@
+{
+  "application": "gridcraft",
+  "bundle_commit": "74836d4de05e09f5b2d6921c2d0741f6e6b6eb3a",
+  "branch_role": "focused review slice, not standalone build checkout",
+  "application_sources": {
+    "russifier": {
+      "url": "https://github.com/storytold/gridcraft.git",
+      "base": "43284377d2466037628e57d8ad0c891778fdb45c",
+      "destination": "tmp/artcraft/gridcraft/repo",
+      "patch": "patches/gridcraft.patch",
+      "sha256": "5a1751e39c279f9b5bdfddf29a5c7261201dbeba7d06172557f3d96487b1357b",
+      "apply_check": "passed"
+    },
+    "android": {
+      "url": "https://github.com/storytold/gridcraft.git",
+      "base": "43284377d2466037628e57d8ad0c891778fdb45c",
+      "destination": "tmp/artcraft/gridcraft/repo",
+      "patch": "patches/gridcraft.patch",
+      "sha256": "72ad2dc5d6e51b63fe24c68a776428a513431c1b252c0e338d0bf266a426a339",
+      "apply_check": "passed"
+    }
+  },
+  "shared_dependencies": {
+    "russifier": "https://github.com/RikiFam/craft-ru-android-contributions/blob/74836d4de05e09f5b2d6921c2d0741f6e6b6eb3a/russifier/sources.json",
+    "android": "https://github.com/RikiFam/craft-ru-android-contributions/blob/74836d4de05e09f5b2d6921c2d0741f6e6b6eb3a/android/sources.json",
+    "printing": "https://github.com/RikiFam/craft-ru-android-contributions/blob/74836d4de05e09f5b2d6921c2d0741f6e6b6eb3a/printing/sources.json"
+  }
+}
