@@ -1,0 +1,28 @@
+{
+  "application": "pdfcraft",
+  "bundle_commit": "74836d4de05e09f5b2d6921c2d0741f6e6b6eb3a",
+  "branch_role": "focused review slice, not standalone build checkout",
+  "application_sources": {
+    "russifier": {
+      "url": "https://github.com/storytold/pdfcraft.git",
+      "base": "75360d1d7db06fed974f48c914d4c04132757187",
+      "destination": "tmp/artcraft/pdfcraft/repo",
+      "patch": "patches/pdfcraft.patch",
+      "sha256": "8a9ccccf7bc0c32dc255784734d55e223149211ac5f9c4a13f54bb8f2b125176",
+      "apply_check": "passed"
+    },
+    "android": {
+      "url": "https://github.com/storytold/pdfcraft.git",
+      "base": "75360d1d7db06fed974f48c914d4c04132757187",
+      "destination": "tmp/artcraft/pdfcraft/repo",
+      "patch": "patches/pdfcraft.patch",
+      "sha256": "f96f0f73b994a2d88451433bff68a4bc7e10ece8fd172bebab5c1baae34921bd",
+      "apply_check": "passed"
+    }
+  },
+  "shared_dependencies": {
+    "russifier": "https://github.com/RikiFam/craft-ru-android-contributions/blob/74836d4de05e09f5b2d6921c2d0741f6e6b6eb3a/russifier/sources.json",
+    "android": "https://github.com/RikiFam/craft-ru-android-contributions/blob/74836d4de05e09f5b2d6921c2d0741f6e6b6eb3a/android/sources.json",
+    "printing": "https://github.com/RikiFam/craft-ru-android-contributions/blob/74836d4de05e09f5b2d6921c2d0741f6e6b6eb3a/printing/sources.json"
+  }
+}
