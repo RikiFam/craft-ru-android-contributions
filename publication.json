@@ -9,11 +9,11 @@
       "sha256": "88093e2a995128eac309706458fa8de24d7b8bcd30594d15104ad3a286c08f4d"
     },
     "android": {
-      "source_snapshot": "e706b13524f28a33895d965e52be63863c9b030e",
+      "source_snapshot": "e8eb893cd5b011d7fc90cf27bab8fb90eb5455ce",
       "base_snapshot": "93708b2e2dc0276c9e3e7a738d2e598b7ae99d3c",
-      "files": 206,
-      "archive": "downloads/android-e706b13.zip",
-      "sha256": "fb075203cdb38e08506b4e10495f0b0f1d7726b9f9d97698627f8b4ae1676d39"
+      "files": 210,
+      "archive": "downloads/android-e8eb893.zip",
+      "sha256": "e8ab7db26521f21d4b1aca18659ae4fa3892ec182165c513c867e6ae4b0e07d4"
     },
     "printing": {
       "source_snapshot": "d49897d8fab1e526e8a49d4e45f81eb36b370079",

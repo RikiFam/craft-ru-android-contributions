@@ -1,0 +1,14 @@
+{
+  "snapshot": "e8eb893cd5b011d7fc90cf27bab8fb90eb5455ce",
+  "required_dex_snapshot": "e706b13524f28a33895d965e52be63863c9b030e",
+  "files": {
+    "scripts/artcraft-android/platform/prepare_input.py": {
+      "base_sha256": "29598e8a2766de174b227c11d3b65a72cdaf9a291781dcdda5607c0a008f7494",
+      "sha256": "415670f89093bd8076e1fc68b9ab02324f4a522242e714623428b8feb293d257"
+    },
+    "scripts/artcraft-android/platform/INPUT-DEX.md": {
+      "base_sha256": "2f1ed7cc6ef6b2c25f75a705166d26b71da44be97a6ec2212bbd409ba69e709c",
+      "sha256": "96c7b932fc99265da81ce7b984be0fd2ecd8d9d191d141c841b5c54a51bbb0e3"
+    }
+  }
+}

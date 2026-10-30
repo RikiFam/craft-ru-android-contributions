@@ -13,7 +13,7 @@
 ## Скачать исходники
 
 - [Русификатор и орфография](downloads/russifier-69ae9d8.zip).
-- [Android-порты](downloads/android-e706b13.zip).
+- [Android-порты](downloads/android-e8eb893.zip).
 - [Лаунчер — отдельная ветка](https://github.com/RikiFam/craft-ru-android-contributions/tree/codex/craft-launcher).
 - [Дополнение печати](downloads/printing-d49897d.zip) — по желанию; прежде прочитайте ограничения в подразделе портов.
 
@@ -23,3 +23,5 @@ APK и ключей подписи нет. Сохраняются upstream-ли�
 [Обсуждение с авторами](https://github.com/storytold/craft-launcher/issues/990).
 
 Обновление Android/DeX: `e706b13524f28a33895d965e52be63863c9b030e` — [инструкции и границы проверки](android/README.md). Все 14 приложений используют общий backend; ручная проверка жестов подтверждена в WordCraft.
+
+Исправление попадания мышью в DeX: `e8eb893cd5b011d7fc90cf27bab8fb90eb5455ce` — [общий модуль и ограничения](android/README.md).
