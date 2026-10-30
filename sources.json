@@ -1,0 +1,28 @@
+{
+  "application": "soundcraft",
+  "bundle_commit": "74836d4de05e09f5b2d6921c2d0741f6e6b6eb3a",
+  "branch_role": "focused review slice, not standalone build checkout",
+  "application_sources": {
+    "russifier": {
+      "url": "https://github.com/storytold/soundcraft.git",
+      "base": "c6befe57afd0dc35fc4b86a01b2a19011ae1df1e",
+      "destination": "tmp/artcraft/soundcraft/repo",
+      "patch": "patches/soundcraft.patch",
+      "sha256": "625da6dea21bd47b9c19a5eef4ebbc035d279b439d0ff7bc6f7eb9b90deb8c09",
+      "apply_check": "passed"
+    },
+    "android": {
+      "url": "https://github.com/storytold/soundcraft.git",
+      "base": "c6befe57afd0dc35fc4b86a01b2a19011ae1df1e",
+      "destination": "tmp/artcraft/soundcraft/repo",
+      "patch": "patches/soundcraft.patch",
+      "sha256": "8dc34fef2c1313ef17ed1270c65bfac06aa87d64c5fafcb444e91f84a9c3d91a",
+      "apply_check": "passed"
+    }
+  },
+  "shared_dependencies": {
+    "russifier": "https://github.com/RikiFam/craft-ru-android-contributions/blob/74836d4de05e09f5b2d6921c2d0741f6e6b6eb3a/russifier/sources.json",
+    "android": "https://github.com/RikiFam/craft-ru-android-contributions/blob/74836d4de05e09f5b2d6921c2d0741f6e6b6eb3a/android/sources.json",
+    "printing": "https://github.com/RikiFam/craft-ru-android-contributions/blob/74836d4de05e09f5b2d6921c2d0741f6e6b6eb3a/printing/sources.json"
+  }
+}
